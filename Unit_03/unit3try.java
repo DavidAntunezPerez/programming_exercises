@@ -1,8 +1,8 @@
 
-public class unit3try {
+public class Unit3Try {
   
   public static void main (String[] args) {
-    System.out.println("Introduzca el nombre de la fruta");
+    System.out.println("Type a fruit name: ");
     String fruta = System.console().readLine();
   }
 }
