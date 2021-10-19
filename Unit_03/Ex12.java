@@ -22,7 +22,7 @@ public class Ex12 {
      number2 = Integer.parseInt(line);
      System.out.println( " Mark in first exam: " + number1 );
      System.out.println( " The mark you want to obtain: " + number2);
-     double result = ((2*number2)-(0.4*number1)) / (0.6);
+     double result = ((100 * number2)-(40 * number1)) / (60);
      System.out.println( " To get " + number2 + ", you will have to get " + result + " in the second exam");
   }
 }
