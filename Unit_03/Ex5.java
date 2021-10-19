@@ -9,11 +9,11 @@ public class Ex5 {
   
   public static void main (String[] args) {
      String line;
-     System.out.println("Rectangle height: ");
+     System.out.print(" Rectangle height: ");
      line = System.console().readLine();
      double number1;
      number1 = Integer.parseInt(line);
-     System.out.println("Rectangle base: ");
+     System.out.print(" Rectangle base: ");
      line = System.console().readLine();
      double number2;
      number2 = Integer.parseInt(line);
