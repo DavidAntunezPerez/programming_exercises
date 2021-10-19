@@ -12,7 +12,7 @@ public class Ex12 {
   
   public static void main (String[] args) {
      String line;
-     System.out.print(" Nota primer examen: ");
+     System.out.print(" Mark obtained in the first exam: ");
      line = System.console().readLine();
      double number1;
      number1 = Integer.parseInt(line);
@@ -22,7 +22,7 @@ public class Ex12 {
      number2 = Integer.parseInt(line);
      System.out.println( " Mark in first exam: " + number1 );
      System.out.println( " The mark you want to obtain: " + number2);
-     double result = ((2*number2)-(0.4*number1)) / 0.6;
+     double result = ((2*number2)-(0.4*number1)) / (0.6);
      System.out.println( " To get " + number2 + ", you will have to get " + result + " in the second exam");
   }
 }
