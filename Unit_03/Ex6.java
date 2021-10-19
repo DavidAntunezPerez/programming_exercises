@@ -9,11 +9,11 @@ public class Ex6 {
   
   public static void main (String[] args) {
      String line;
-     System.out.println("Triangle height: ");
+     System.out.println(" Triangle height: ");
      line = System.console().readLine();
      double number1;
      number1 = Integer.parseInt(line);
-     System.out.println("Triangle base: ");
+     System.out.println(" Triangle base: ");
      line = System.console().readLine();
      double number2;
      number2 = Integer.parseInt(line);
