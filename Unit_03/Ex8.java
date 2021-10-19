@@ -9,12 +9,12 @@ public class Ex8 {
   
   public static void main (String[] args) {
     String line;
-     System.out.print(" Number of hours of work: ");
+     System.out.print(" Number of hours of work during all the week: ");
      line = System.console().readLine();
      double hoursWork;
      hoursWork = Integer.parseInt(line);
      double salary = hoursWork * 12;
-     System.out.print(" The salary obtained is: " + salary);
+     System.out.print(" The salary obtained is " + salary + "€");
     
   }
 }
