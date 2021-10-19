@@ -14,7 +14,7 @@ public class Ex10 {
     number1 = Integer.parseInt(line);
     System.out.println( " Selected value: " + number1 + "kB");
     double result = number1 / 1000;
-    System.out.println( " Value converted " + result + "MB");
+    System.out.println( " Value converted: " + result + "MB");
   }
 }
 
