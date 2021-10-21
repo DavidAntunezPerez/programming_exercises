@@ -37,10 +37,10 @@ public class SwitchUse {
       case 2:
         monthName = "February";
         break;
-        default:
+      default:
         monthName= "Another Month";
       }
-      System.out.println("The month is " + monthName);
+    System.out.println("The month is " + monthName);
   }
 }
 
