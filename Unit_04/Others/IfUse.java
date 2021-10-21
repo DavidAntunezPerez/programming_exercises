@@ -10,7 +10,7 @@ public class IfUse {
   public static void main (String[] args) {
     String fruit = "Mango";
     
-    if ("Orange".equals(fruit)){
+    if (!"Orange".equals(fruit)){
       System.out.println("Orange");
       } 
       else {
