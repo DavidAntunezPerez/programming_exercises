@@ -8,7 +8,7 @@
 public class IfUse2 {
   
   public static void main (String[] args) {
-    System.out.print("Please select a number: ");
+    System.out.print("Please select a number from 1 to 99: ");
     String line = System.console().readLine();
     int x = Integer.parseInt(line);
     
