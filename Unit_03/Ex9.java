@@ -19,7 +19,7 @@ public class Ex9 {
     System.out.println( " Cone height is " + number1 + "cm");
     System.out.println( " Cone base is " + number2 + "cm");
     double result = (number1 * Math.pow(number2, 2) * Math.PI) / 3;
-    System.out.println( " The area of the cone is " + result + "cm^3");
+    System.out.printf( " The area of the cone is " + result + " cm^3");
   }
 }
 
