@@ -19,10 +19,10 @@ public class Ex2 {
     if ((hour > 5) && (hour < 13)) {
       System.out.println( " Buenos días ");
       }
-    if ((hour > 12) && (hour < 21))    {
+    else if ((hour > 12) && (hour < 21))    {
       System.out.println( " Buenas tardes ");
       }
-    if ((hour > 20) ||  (hour < 6)) {
+    else if ((hour > 20) ||  (hour < 6)) {
       System.out.println( " Buenas noches ");
       }
   }
