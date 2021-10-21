@@ -8,7 +8,7 @@
 public class IfUse {
   
   public static void main (String[] args) {
-    String fruit = "Orange";
+    String fruit = "Mango";
     
     if ("Orange".equals(fruit)){
       System.out.println("Orange");
