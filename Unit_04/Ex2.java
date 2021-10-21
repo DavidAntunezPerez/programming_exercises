@@ -10,7 +10,21 @@
 public class Ex2 {
   
   public static void main (String[] args) {
-    
+    String line;
+    System.out.print(" ¿Qué hora es? Escríbelo en números enteros. ");
+    line = System.console().readLine();
+    System.out.println("");
+    int hour;
+    hour = Integer.parseInt(line);
+    if ((hour > 5) && (hour < 13)) {
+      System.out.println( " Buenos días ");
+      }
+    if ((hour > 12) && (hour < 21))    {
+      System.out.println( " Buenas tardes ");
+      }
+    if ((hour > 20) ||  (hour < 6)) {
+      System.out.println( " Buenas noches ");
+      }
   }
 }
 
