@@ -18,7 +18,7 @@ public class Ex12 {
       ans1 = System.console().readLine();
         switch (ans1){
         case "a":
-        System.out.printf(" ¡Respuesta correcta! \nIMS es una base de datos jerárquica creada por IBM \n");
+        System.out.printf(" ¡Respuesta correcta! \n IMS es una base de datos jerárquica creada por IBM \n");
         result++;
         System.out.println(" Puntuación: " + result);
         break;
@@ -90,7 +90,7 @@ public class Ex12 {
       System.out.print(" Selecciona la respuesta: ");
       ans5 = System.console().readLine();
       switch (ans5){
-        case "a":
+        case "b":
         System.out.printf("¡Respuesta correcta! \nEl OS Ubuntu 22.10 fue lanzado en 14/10/21 bajo el nombre de Impish Indri\n");
         result++;
         System.out.println(" Puntuación: " + result);
@@ -103,7 +103,7 @@ public class Ex12 {
           System.out.println("-------------");
     System.out.println("PREGUNTA 6:");
     System.out.println("¿Qué es una boolean en Java ?");
-    System.out.println(" a) Sirve para compilar un archivo .java para poder ejecutarlo posteriormente \n b) Un tipo de datos primitivo que puede almacenar valores verdaderos o falsos.  \n c) Se utiliza para analizar los errores de un archivo .java para compilarlos ");
+    System.out.println(" a) Sirve para compilar un archivo .java para poder ejecutarlo posteriormente \n b) Un tipo de datos primitivo que puede almacenar valores verdaderos o falsos.\n c) Se utiliza para analizar los errores de un archivo .java para compilarlos ");
     String ans6;
       System.out.print(" Selecciona la respuesta: ");
       ans6 = System.console().readLine();
@@ -118,16 +118,16 @@ public class Ex12 {
         System.out.println(" Puntuación: " + result);
       }
       
-          System.out.println("-------------");
+    System.out.println("-------------");
     System.out.println("PREGUNTA 7:");
-    System.out.println("¿ ?");
-    System.out.println(" a) ... \n b) ... \n c) ... ");
+    System.out.println("¿Qué componente se encarga de convertir la corriente alterna en continua en un ordenador regulando el voltaje de los componentes?");
+    System.out.println(" a) Socket \n b) PSU \n c) PCIExpress ");
     String ans7;
       System.out.print(" Selecciona la respuesta: ");
       ans7 = System.console().readLine();
         switch (ans7){
-          case "a":
-          System.out.printf("¡Respuesta correcta! \n \n");
+          case "b":
+          System.out.printf("¡Respuesta correcta! \nLa PSU o Power Supply Unit se encarga de suministrar la energía electrica de los componentes del ordenador. \n");
           result++;
           System.out.println(" Puntuación: " + result);
           break;
@@ -138,14 +138,14 @@ public class Ex12 {
       
           System.out.println("-------------");
     System.out.println("PREGUNTA 8:");
-    System.out.println("¿ ?");
-    System.out.println(" a) ... \n b) ... \n c) ... ");
+    System.out.println("¿Cuáles de estos son Lenguajes de Programación Orientados a Objetos?");
+    System.out.println(" a) C \n b) C++ \n c) SQL ");
     String ans8;
       System.out.print(" Selecciona la respuesta: ");
       ans8 = System.console().readLine();
       switch (ans8){
-        case "a":
-        System.out.printf("¡Respuesta correcta! \n \n");
+        case "b":
+        System.out.printf("¡Respuesta correcta! \n C++ es una extensión a C para soportar la programación orientada a objetos (POO).  \n");
         result++;
         System.out.println(" Puntuación: " + result);
         break;
@@ -156,14 +156,14 @@ public class Ex12 {
       
           System.out.println("-------------");
     System.out.println("PREGUNTA 9:");
-    System.out.println("¿ ?");
-    System.out.println(" a) ... \n b) ... \n c) ... ");
+    System.out.println("¿Cuantas versiones oficiales tiene HTML actualmente (23/10/21?");
+    System.out.println(" a) 5 \n b) 4 \n c) 6 ");
     String ans9;
       System.out.print(" Selecciona la respuesta: ");
       ans9 = System.console().readLine();
       switch (ans9){
         case "a":
-        System.out.printf("¡Respuesta correcta! \n \n");
+        System.out.printf("¡Respuesta correcta! \nHTLM 5 es la última especificación oficial y se espera que continúe evolucionando a lo largo de los próximos años. \n");
         result++;
         System.out.println(" Puntuación: " + result);
         break;
@@ -175,20 +175,35 @@ public class Ex12 {
       
           System.out.println("-------------");
     System.out.println("PREGUNTA 10:");
-    System.out.println("¿ ?");
-    System.out.println(" a) ... \n b) ... \n c) ... ");
+    System.out.println("¿Cuál fue el primer Lenguaje de Programación Universal ?");
+    System.out.println(" a) C \n b) COBOL \n c) Fortran ");
     String ans10;
       System.out.print(" Selecciona la respuesta: ");
       ans10 = System.console().readLine();
       switch (ans10){
-        case "a":
-        System.out.printf("¡Respuesta correcta! \n \n");
+        case "c":
+        System.out.printf("¡Respuesta correcta! \nEl FORTRAN (FORmula TRANslator) fue el primer lenguaje de programación utilizado universalmente en el mundo de la programación. \n Fue creado en 1957 por John Backus de IBM. \n");
         result++;
         System.out.println(" Puntuación: " + result);
         break;
         default: 
         System.out.println(" Oh, no, has fallado...");
         System.out.println(" Puntuación: " + result);
+        if ((result >= 9)&&(result < 10)){
+          System.out.printf("¡Casi perfecto! Buen trabajo, se nota que estas estudiando mucho,\n con un poco más de esfuerzo llegarás al máximo.");
+          }
+        else if((result>=7)&&(result<9)) {
+          System.out.printf("Una puntuación notable, no esta nada mal, sigue esforzandote para llegar al máximo");
+          }
+        else if((result>=5)&&(result<7)) {
+          System.out.printf("Vas muy justo, deberías estar más atento en clase.");
+          }
+        else if(result>=10) {
+          System.out.printf("¡Puntuación perfecta! Muy buen trabajo, se nota que te esfuerzas y estás atent@ en clase.");
+          }
+        else {
+          System.out.printf("No estas dando tu máximo, sabes que puedes hacerlo mejor,\n por lo menos, para rozar el suficiente.");
+        }
       }
     }
  }
