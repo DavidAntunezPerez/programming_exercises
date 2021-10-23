@@ -202,7 +202,7 @@ public class Ex12 {
           System.out.printf("¡Puntuación perfecta! Muy buen trabajo, se nota que te esfuerzas y estás atent@ en clase.");
           }
         else {
-          System.out.printf("No estas dando tu máximo, sabes que puedes hacerlo mejor,\n por lo menos, para rozar el suficiente.");
+          System.out.printf("No estas dando tu máximo, sabes que puedes hacerlo mejor,\npor lo menos, para rozar el suficiente.");
         }
       }
     }
