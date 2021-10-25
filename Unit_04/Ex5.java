@@ -22,6 +22,9 @@ public class Ex5 {
       b = Integer.parseInt(line2);
       double result = -b / a;
       System.out.println(" x = " + result);
+      if((a==0)&&(b==0)) {
+        System.out.println(" La ecuación no tiene solución");        
+        }
+      }
   }
-}
 
