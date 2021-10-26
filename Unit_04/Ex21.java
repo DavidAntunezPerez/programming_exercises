@@ -1,7 +1,7 @@
 /**
  * Sentencia if
  *
- * @author Sergio Morales García Y David Antúnez Pérez
+ * @author Sergio Morales García Y David Antúnez Pérez 1ºDAM
  */
 public class Ex21 {
     public static void main(String[] args) {
