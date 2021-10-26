@@ -27,16 +27,16 @@ public class Ex19 {
       else if ((num >= 10000)&&(num < 100000)){
         cif = 5;
         }
-      else if((num >= -10)&&(num <-100)) {
+      else if((num <= -10)&&(num >-100)) {
         cif = 2;
         }
-      else if((num >= -100)&&(num <-1000)) {
+      else if((num <= -100)&&(num >-1000)) {
         cif = 3;
         }
-      else if((num >= -1000)&&(num <-10000)) {
+      else if((num <= -1000)&&(num >-10000)) {
         cif = 4;
         }
-      else if((num >= -10000)&&(num <-100000)) {
+      else if((num <= -10000)&&(num >-100000)) {
         cif = 5;
         }
       System.out.println("El número dígitos del número es "+ cif);
