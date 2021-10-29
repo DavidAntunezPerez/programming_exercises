@@ -26,7 +26,8 @@ public class Ex21 {
           System.out.println("Tu media de la asignatura es: 5");
           break;
           case "no apto" :
-          case "No apto":       case "NO APTO":
+          case "No apto":
+          case "NO APTO":
           case "No Apto":
             System.out.println("Tu media de la asignatura es: " + notaFinal);
           break;

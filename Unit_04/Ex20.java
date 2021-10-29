@@ -6,23 +6,39 @@
 
 
 public class Ex20 {
-  
-  public static void main (String[] args) {
-     String line;
-      System.out.print(" Escribe un número entero positivo: ");
-      line = System.console().readLine();
-      int num, inv = 0, cifra;
-      int aux = 0;
-      num = Integer.parseInt(line);
-      //invertir número
-      num = aux;
-      cifra = aux % 10; 
-      inv = inv * 10 + cifra;
-      aux = aux / 10;
-      if(num == inv){
-            System.out.println(" El número es capicua");
-        }else{
-            System.out.println(" El número no es capicua");
+  public static void main(String[] args) {
+    int n;
+    boolean capicua = false;
+    System.out.print("Introduzca un número entero (de 5 cifras como máximo): ");
+    n = Integer.parseInt(System.console().readLine());
+    if (n < 10) {
+    capicua = true;
+    }
+    if ((n >= 10) && (n < 100)) {
+      if ((n / 10) == (n % 10)) {
+        capicua = true;
+    }
+   }
+   if ((n >= 1000) && (n < 10000)){
+      if(((n / 1000) == (n % 10)) && ((( n / 100 ) % 10)== (( n / 10) % 10))){
+        capicua=true;
+    }
+   }
+   if ((n >= 1000) && (n < 10000)){
+    if(((n / 1000) == (n % 10)) && ((( n / 100 ) % 10)== (( n / 10) % 10))){
+      capicua=true;
+   }
+  }
+  if (((n / 10000) == (n % 10) ) && ((((n / 1000) % 10)) == ((n / 10) % 10))){
+    if((n/10000) == (n%10)){
+      capicua=true;
+   }
+  if(capicua){
+    System.out.println("El número es capicua.");
+  }
+  else{
+    System.out.println("El número no es capicua.");
+  }
   }
  }
 }
