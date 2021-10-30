@@ -14,25 +14,35 @@ public class Ex22 {
         int hour = Integer.parseInt(System.console().readLine());
         System.out.print("Introduzca los minutos: ");
         int min = Integer.parseInt(System.console().readLine());
-        int numDay;
+        int dayNum = 0;
         switch(day){
             case "Lunes" ,"LUNES","lunes":
-                 numDay = 1;
+                 dayNum = 0;
             break;
             case "Martes", "martes", "MARTES":
-                numDay = 2;
+                 dayNum = 1;
             break;
             case "Miercoles", "Miércoles", "MIERCOLES", "MIÉRCOLES", "miercoles", "miércoles":
-                numDay = 3;
+                dayNum = 2;
             break;
             case "Jueves", "jueves", "JUEVES":
-                numDay = 4;
+                dayNum = 3;
             break;
             case "viernes", "Viernes", "VIERNES":
-                numDay = 5;
+                dayNum = 4;
             break;
             default:
             System.out.println("Por favor, introduzca los datos correctamente.");
         }
+        int hourSec = hour * 3600;
+        int minSec= min * 60;
+        int result = 399600- (86400 * dayNum + (hourSec + minSec));
+        if(result>=0){
+            System.out.println("Quedan "+ result + " segundos para que sea Viernes a las 15:00.");
+        }
+        else{
+            System.out.println("Por favor, introduzca un valor válido anterior al Viernes a las 15:00.");
+        }
+        
  }
 }
