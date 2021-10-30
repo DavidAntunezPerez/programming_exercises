@@ -9,6 +9,7 @@
  *se descuentan 5 euros o se descuenta el 5%. El ejercicio se da por bueno si se
  *muestran los valores correctos, aunque los números no estén tabulados.
  */
+
 public class Ex23 {
     public static void main(String[] args) {
         System.out.print("Introduzca la base imponible: ");
