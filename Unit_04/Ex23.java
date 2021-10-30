@@ -13,14 +13,16 @@ public class Ex23 {
     public static void main(String[] args) {
         System.out.print("Introduzca la base imponible: ");
         double base = Integer.parseInt(System.console().readLine());
-        System.out.print("Introduzca el tipo de IVA (general, reducido o superreducido)");
+        System.out.print("Introduzca el tipo de IVA (general, reducido o superreducido): ");
         String iva = System.console().readLine();
         System.out.print("Introduzca el código promocional (nopro, mitad, meno5 o 5porc): ");
         String prom = System.console().readLine();
-        double cantProm = 0; // cantidad descontada por promoción.
+        double cantProm = 0; // cantidad que descuenta la promoción.
         double cantIva = 0; // cantidad de iva que se agregará.
         int nomIva = 0; // número marcado en el ticket como IVA.
-        double nomProm = 0;
+        double desProm = 0; // descuento de la promoción
+        
+        
         switch(prom){
             case "nopro":
             //no se aplica promoción
@@ -37,10 +39,12 @@ public class Ex23 {
             default:
             System.out.println("'"+prom+"' no es un código promocional válido. Por favor, ingrese uno válido.");
         }
+        
         switch (iva){
             case "general":
                 cantIva = 1.21;
                 nomIva = 21;
+
             break;
             case "reducido":
                 cantIva = 1.1;
@@ -51,10 +55,20 @@ public class Ex23 {
                 nomIva = 4;
             break;
         }
-        System.out.println("Base imponible     "+base);
-        System.out.println("IVA("+nomIva+"%)         "+base);
-        System.out.println("Precio con IVA     "+base);
-        System.out.println("Cód. promo.("+prom+")    "+base);
-        System.out.println("TOTAL              "+base);
+        double resIva = (cantIva * base) - base; // iva agregado a la base
+        double masIva = resIva + base; // base  + iva
+        
+        if(prom != "meno5"){
+            desProm = cantProm * base;
+        }
+        else if (prom == "meno5"){
+            desProm = (base+resIva) - cantProm;
+        }
+        double result = base + resIva - desProm; // resultado final (total)
+        System.out.println("Base imponible             "+ base);
+        System.out.println("IVA("+nomIva+"%)         "+ resIva);
+        System.out.println("Precio con IVA            "+masIva);
+        System.out.println("Cód. promo.("+prom+")   -"+desProm);
+        System.out.println("TOTAL                     "+result);
     }
 }
