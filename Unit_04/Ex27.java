@@ -21,7 +21,7 @@ public class Ex27 {
 
         System.out.print("¿Quiere nata? (si o no): ");
             String cream = System.console().readLine();
-        System.out.println("¿Quiere ponerle un nombre? (si o no): ");
+        System.out.print("¿Quiere ponerle un nombre? (si o no): ");
             String name = System.console().readLine();
             double price = 0; // precio de la tarta sin adiciones
             String cake = "???"; // nombre de la tarta en el ticket
