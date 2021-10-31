@@ -14,9 +14,12 @@ public class Ex27 {
         System.out.print("Elija un sabor (manzana, fresa o chocolate): ");
             String flavor = System.console().readLine();
             String type = ""; 
-            if (flavor == "chocolate"){
+            switch (flavor){
+                case "chocolate":
                 System.out.print("¿Qué tipo de chocolate quiere? (negro o blanco): ");
                     type = System.console().readLine();
+                    break;
+                default:
             }
 
         System.out.print("¿Quiere nata? (si o no): ");
@@ -52,13 +55,19 @@ public class Ex27 {
             System.out.println("Por favor, seleccione un sabor válido.");
         }
         System.out.println("Tarta de "+cake+": "+price);
-        if (cream == "si"){
+        switch(cream){
+            case "si":
             System.out.println("Con nata: 2.50 €");
             price = price + 2.50;
+            break;
+            default:
         }
-        if (name == "si"){
+        switch (name){
+            case "si":
             System.out.println("Con nombre: 2.75 €");
             price = price + 2.75;
+            break;
+            default:
         }
         System.out.println("Total: "+price);
     }
