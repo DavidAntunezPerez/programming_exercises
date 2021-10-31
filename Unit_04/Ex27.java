@@ -13,29 +13,54 @@ public class Ex27 {
     public static void main(String[] args) {
         System.out.print("Elija un sabor (manzana, fresa o chocolate): ");
             String flavor = System.console().readLine();
+            String type = ""; 
             if (flavor == "chocolate"){
                 System.out.print("¿Qué tipo de chocolate quiere? (negro o blanco): ");
-                    String type = System.console().readLine();
+                    type = System.console().readLine();
             }
-        
+            
         System.out.print("¿Quiere nata? (si o no): ");
             String cream = System.console().readLine();
         System.out.println("¿Quiere ponerle un nombre? (si o no): ");
             String name = System.console().readLine();
             double price = 0; // precio de la tarta sin adiciones
+            String cake = "???"; // nombre de la tarta en el ticket
         switch (flavor){
             case "manzana":
             price = 18;
+            cake = "manzana";
             break;
             case "fresa":
             price = 16;
+            cake = "fresa";
             break;
             case "chocolate":
-                
+                switch (type){
+                    case "negro":
+                    cake = "chocolate negro";
+                    price = 14;
+                    break;
+                    case "blanco":
+                    price = 15;
+                    cake = "chocolate blanco";
+                    break;
+                    default:
+                    System.out.println("Seleccione un sabor válido.");
+                }
             break;
             default:
             System.out.println("Por favor, seleccione un sabor válido.");
         }
-    }
+        System.out.println("Tarta de "+cake+": "+price);
+        if (cream == "si"){
+            System.out.println("Con nata: 2.50 €");
+            price = price + 2.50;
+        }
+        if (name == "si"){
+            System.out.println("Con nombre: 2.75 €");
+            price = price + 2.75;
+        }
+        System.out.println("Total: "+price);
+
     
 }
