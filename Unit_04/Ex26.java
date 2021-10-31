@@ -43,6 +43,9 @@ public class Ex26 {
             break;
         }
         double total = num * indticketPric;
+        if (individualTicket <= 0){
+            total = 0;
+        }
         total = total + (11 *coupleTicket);
         switch (ticket){
             case "s":
