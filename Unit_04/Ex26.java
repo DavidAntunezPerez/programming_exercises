@@ -24,6 +24,8 @@ public class Ex26 {
         double ticketPric = 8;
         String nomDis = "No";
         double dis = 0;
+        int coupleTicket = 0;
+        int individualTicket = num;
         switch(day){
             case "miercoles":
             case "Miercoles":
@@ -36,7 +38,8 @@ public class Ex26 {
             case "Jueves":
             case "jueves":
             case "JUEVES":
-                
+                coupleTicket = num / 2;
+                individualTicket = num % 2;
             break;
         }
         double total = num * ticketPric;
@@ -50,8 +53,14 @@ public class Ex26 {
         }
         
         double toPay = total - dis;
-        System.out.println("Nº entradas: "+num);
-        System.out.println("Precio por entrada: "+ticketPric+" €");
+        if (individualTicket > 0) {
+            System.out.println("Nº entradas individuales: "+individualTicket);
+            System.out.println("Precio por entrada individual: "+ticketPric+" €");
+        }
+        if (coupleTicket > 0){
+            System.out.println("Nº entradas individuales: "+coupleTicket);
+            System.out.println("Precio por entrada individual: "+ticketPric+" €");
+        }
         System.out.println("Total: "+total+" €");
         System.out.println("Descuento("+nomDis+"): "+dis+" €");
         System.out.println("A pagar: "+toPay+" €");
