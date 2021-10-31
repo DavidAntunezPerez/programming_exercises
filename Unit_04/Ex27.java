@@ -18,7 +18,7 @@ public class Ex27 {
                 System.out.print("¿Qué tipo de chocolate quiere? (negro o blanco): ");
                     type = System.console().readLine();
             }
-            
+
         System.out.print("¿Quiere nata? (si o no): ");
             String cream = System.console().readLine();
         System.out.println("¿Quiere ponerle un nombre? (si o no): ");
@@ -61,6 +61,5 @@ public class Ex27 {
             price = price + 2.75;
         }
         System.out.println("Total: "+price);
-
-    
+    }
 }
