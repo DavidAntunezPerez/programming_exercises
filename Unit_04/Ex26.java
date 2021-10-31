@@ -21,7 +21,7 @@ public class Ex26 {
         System.out.print("¿Tiene tarjeta CineCampa? (s/n): ");
         String ticket = System.console().readLine();
         System.out.println("Aquí tiene sus entradas. Gracias por su compra.");
-        double ticketPric = 8;
+        double indticketPric = 8;
         String nomDis = "No";
         double dis = 0;
         int coupleTicket = 0;
@@ -33,7 +33,7 @@ public class Ex26 {
             case "miércoles":
             case "MIÉRCOLES":
             case "Miércoles":
-            ticketPric = 5;
+            indticketPric = 5;
             break;
             case "Jueves":
             case "jueves":
@@ -42,7 +42,8 @@ public class Ex26 {
                 individualTicket = num % 2;
             break;
         }
-        double total = num * ticketPric;
+        double total = num * indticketPric;
+        total = total + (11 *coupleTicket);
         switch (ticket){
             case "s":
             dis = total * 0.1;
@@ -55,11 +56,11 @@ public class Ex26 {
         double toPay = total - dis;
         if (individualTicket > 0) {
             System.out.println("Nº entradas individuales: "+individualTicket);
-            System.out.println("Precio por entrada individual: "+ticketPric+" €");
+            System.out.println("Precio por entrada individual: "+indticketPric+" €");
         }
         if (coupleTicket > 0){
-            System.out.println("Nº entradas individuales: "+coupleTicket);
-            System.out.println("Precio por entrada individual: "+ticketPric+" €");
+            System.out.println("Nº entradas pareja: "+coupleTicket);
+            System.out.println("Precio por entrada pareja: 11.0 €");
         }
         System.out.println("Total: "+total+" €");
         System.out.println("Descuento("+nomDis+"): "+dis+" €");
