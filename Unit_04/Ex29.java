@@ -9,21 +9,14 @@
  */
 public class Ex29 {
     public static void main(String[] args) {
-        
-        System.out.print("¿Qué ha tomado de comer? (palmera, donut o pitufo): ");
-            String eat = System.console().readLine();
-            String ing = "";
-        if (eat == "pitufo"){
-            System.out.println("¿Con qué se ha tomado el pitufo (aceite o tortilla)?: ");
-            ing = System.console().readLine();
-        }
-        System.out.print("¿Qué ha tomado de beber? (zumo o cafe): ");
-            String drink = System.console().readLine();
         double eatPric = 0; // valor comida
         double drnkPric = 0; // valor bebida
         String eatNm = ""; // Nombre de la comida tomada
         String drinkNm = ""; // Nombre de la bebida tomada
         double total = 0; // Total a pagar
+        System.out.print("¿Qué ha tomado de comer? (palmera, donut o pitufo): ");
+            String eat = System.console().readLine();
+            String ing = "";
             switch (eat){
                 case "palmera":
                 eatNm = "Palmera: ";
@@ -34,6 +27,8 @@ public class Ex29 {
                 eatNm = "Donut: ";
                 break;
                 case "pitufo":
+                System.out.print("¿Con qué se ha tomado el pitufo (aceite o tortilla)?: ");
+                ing = System.console().readLine();
                     switch (ing){
                         case "aceite":
                         eatNm = "Pitufo con aceite: ";
@@ -48,6 +43,8 @@ public class Ex29 {
                 default:
                 System.out.println("Por favor, seleccione una comida válida");
             }
+        System.out.print("¿Qué ha tomado de beber? (zumo o cafe): ");
+            String drink = System.console().readLine();
             switch (drink){
                 case "zumo":
                 drinkNm = "Zumo: ";
