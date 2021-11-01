@@ -39,6 +39,7 @@ public class Ex29 {
                         eatPric = 1.60;
                         break;
                         default:
+                        System.out.println("Por favor, seleccione una comida válida");
                     }
                 default:
                 System.out.println("Por favor, seleccione una comida válida");
