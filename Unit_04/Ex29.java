@@ -23,23 +23,24 @@ public class Ex29 {
         double drnkPric = 0; // valor bebida
         String eatNm = ""; // Nombre de la comida tomada
         String drinkNm = ""; // Nombre de la bebida tomada
+        double total = 0; // Total a pagar
             switch (eat){
                 case "palmera":
-                eatNm = "palmera";
+                eatNm = "Palmera: ";
                 eatPric = 1.40;
                 break;
                 case "donut":
                 eatPric = 1.00;
-                eatNm = "donut";
+                eatNm = "Donut: ";
                 break;
                 case "pitufo":
                     switch (ing){
                         case "aceite":
-                        eatNm = "pitufo con aceite";
+                        eatNm = "Pitufo con aceite: ";
                         eatPric = 1.20;
                         break;
                         case "tortilla":
-                        eatNm = "pitufo con tortilla";
+                        eatNm = "Pitufo con tortilla: ";
                         eatPric = 1.60;
                         break;
                         default:
@@ -49,15 +50,19 @@ public class Ex29 {
             }
             switch (drink){
                 case "zumo":
-                drinkNm = "zumo";
+                drinkNm = "Zumo: ";
                 drnkPric = 1.50;
                 break;
                 case "cafe":
-                drinkNm = "cafe";
+                drinkNm = "Cafe: ";
                 drnkPric =1.20;
                 break;
                 default:
                 System.out.println("Por favor, seleccione una bebida válida");
             }
+            total = eatPric + drnkPric;
+            System.out.println(eatNm+eatPric);
+            System.out.println(drinkNm+drnkPric);
+            System.out.println("Total: "+ total);
   }  
 }
