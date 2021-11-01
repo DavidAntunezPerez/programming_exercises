@@ -58,8 +58,8 @@ public class Ex29 {
                 System.out.println("Por favor, seleccione una bebida válida");
             }
             total = eatPric + drnkPric;
-            System.out.println(eatNm+eatPric);
-            System.out.println(drinkNm+drnkPric);
-            System.out.println("Total: "+ total);
+            System.out.println(eatNm+eatPric+" €");
+            System.out.println(drinkNm+drnkPric+" €");
+            System.out.println("Total: "+ total+" €");
   }  
 }
