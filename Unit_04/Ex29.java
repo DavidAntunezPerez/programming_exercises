@@ -15,7 +15,7 @@ public class Ex29 {
             String ing = "";
         if (eat == "pitufo"){
             System.out.println("¿Con qué se ha tomado el pitufo (aceite o tortilla)?: ");
-            String ing = System.console().readLine();
+            ing = System.console().readLine();
         }
         System.out.print("¿Qué ha tomado de beber? (zumo o cafe): ");
             String drink = System.console().readLine();
@@ -47,7 +47,17 @@ public class Ex29 {
                 default:
                 System.out.println("Por favor, seleccione una comida válida");
             }
-        
-
+            switch (drink){
+                case "zumo":
+                drinkNm = "zumo";
+                drnkPric = 1.50;
+                break;
+                case "cafe":
+                drinkNm = "cafe";
+                drnkPric =1.20;
+                break;
+                default:
+                System.out.println("Por favor, seleccione una bebida válida");
+            }
   }  
 }
