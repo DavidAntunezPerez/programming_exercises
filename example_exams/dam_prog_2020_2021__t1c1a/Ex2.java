@@ -22,30 +22,29 @@
  */
 public class Ex2 {
     public static void main(String[] args) {
-        int numPack = 0; // cantidad de paquetes pedidos
         int color = 0; // nº de colores de la taza
         int keyring = 0; // tipo de llavero (1 o 2)
         double keyringPric = 0; // precio por llavero
         double cupPric = 0; // precio por taza
-        System.out.println("Introduzca la cantidad de paquetes que desea: ");
-          int cant = Integer.parseInt(System.console().readLine());
-        System.out.println("Número de colores de la impresión de la taza: ");
+        int cant = 0; // cantidad de paquetes
+        System.out.print("Introduzca la cantidad de paquetes que desea: ");
+          cant = Integer.parseInt(System.console().readLine());
+        System.out.print("Número de colores de la impresión de la taza: ");
           color = Integer.parseInt(System.console().readLine());
-        System.out.printf("1) Llavero de plástico.\n2) Llavero metálico.");
+        System.out.printf("1) Llavero de plástico.\n2) Llavero metálico\n");
           keyring = Integer.parseInt(System.console().readLine()); 
         System.out.println("PRESUPUESTO: ");
         System.out.println("--------------");
-        
-        if (numPack <= 19){
-          System.out.println("ERROR. No se permiten encargos de menos de 20 ud.");
+        if (cant < 20){
+          System.out.println("ERROR. No es posible hacer un pedido de menos de 20 ud.");
         }
-        if ((numPack >= 20)&&(numPack < 40)){
+        else if ((cant >= 20)&&(cant < 40)){
           cupPric = 4.90;
         }
-        else if ((numPack >= 40)&&(numPack < 100)){
+        else if ((cant >= 40)&&(cant < 100)){
           cupPric = 3.90;
         }
-        else if (numPack >= 100) {
+        else if (cant >= 100) {
           cupPric = 3.20;
         }
 
