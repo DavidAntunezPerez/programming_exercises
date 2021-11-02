@@ -36,7 +36,7 @@ public class Ex2 {
         System.out.println("PRESUPUESTO: ");
         System.out.println("--------------");
         
-        if (numPack < 20){
+        if (numPack <= 19){
           System.out.println("ERROR. No se permiten encargos de menos de 20 ud.");
         }
         if ((numPack >= 20)&&(numPack < 40)){
@@ -52,6 +52,26 @@ public class Ex2 {
         if (color > 3){ 
           cupPric = 1.20 * cupPric; // para agregar el 20% más si hay más de 3 colores
         }
+        switch (keyring){
+            case 1:
+              if ( cant < 50){
+                keyringPric = 2;
+              }
+              else{
+                keyringPric = 1.50;
+              }
+            break;
+            case 2:
+              if ( cant < 50){
+                keyringPric = 3;
+              }
+              else{
+                keyringPric = 2.50;
+              }
+            break;
+            default:
+            System.out.println("Por favor, selecciona un tipo de llavero válido.");
+        }
         
         double cupTotal = cupPric * cant; // total de tazas en euros
         double keyringTotal = keyringPric * cant; // total de llaveros en euros
@@ -62,6 +82,7 @@ public class Ex2 {
         System.out.println("Precio unitario: "+cupPric+" €");
         System.out.println("Total tazas: "+cupTotal+" €");
         System.out.println("Llaveros (c.u.): "+keyringPric+" €");
+        System.out.println("Total llaveros :"+keyringTotal+" €");
         System.out.println("Tazas + llaveros: "+noIva+" €");
         System.out.println("IVA: "+iva+" €");
         System.out.println("TOTAL: "+total+" €");
