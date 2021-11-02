@@ -37,7 +37,7 @@ public class Ex20 {
   }
   else{
     System.out.println("El número no es capicua.");
-  }
+   }
   }
  }
 }
