@@ -25,6 +25,8 @@ public class Ex2 {
         int numPack = 0; // cantidad de paquetes pedidos
         int color = 0; // nº de colores de la taza
         int keyring = 0; // tipo de llavero (1 o 2)
+        double keyringPric = 0; // precio por llavero
+        double cupPric = 0; // precio por taza
         System.out.println("Introduzca la cantidad de paquetes que desea: ");
           int cant = Integer.parseInt(System.console().readLine());
         System.out.println("Número de colores de la impresión de la taza: ");
@@ -34,14 +36,33 @@ public class Ex2 {
         System.out.println("PRESUPUESTO: ");
         System.out.println("--------------");
         
-        
+        if (numPack < 20){
+          System.out.println("ERROR. No se permiten encargos de menos de 20 ud.");
+        }
+        if ((numPack >= 20)&&(numPack < 40)){
+          cupPric = 4.90;
+        }
+        else if ((numPack >= 40)&&(numPack < 100)){
+          cupPric = 3.90;
+        }
+        else if (numPack >= 100) {
+          cupPric = 3.20;
+        }
 
-        System.out.println("Taza ("+color+" col.): "++" ud.");
-        System.out.println("Precio unitario: "++" €");
-        System.out.println("Total tazas: "++" €");
-        System.out.println("Llaveros (c.u.): "++" €");
+        if (color > 3){ 
+          cupPric = 1.20 * cupPric; // para agregar el 20% más si hay más de 3 colores
+        }
+        
+        double cupTotal = cupPric * cant; // total de tazas en euros
+        double keyringTotal = keyringPric * cant; // total de llaveros en euros
+        double noIva = keyringTotal + cupTotal; // total de tazas y llaveros
+        System.out.println("Taza ("+color+" col.): "+cant+" ud.");
+        System.out.println("Precio unitario: "+cupPric+" €");
+        System.out.println("Total tazas: "+cupTotal+" €");
+        System.out.println("Llaveros (c.u.): "+keyringPric+" €");
         System.out.println("Tazas + llaveros: "++" €");
         System.out.println("IVA: "++" €");
         System.out.println("TOTAL: "++" €");
   }
 }
+
