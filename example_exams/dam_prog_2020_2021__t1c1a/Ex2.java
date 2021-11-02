@@ -22,6 +22,10 @@
  */
 public class Ex2 {
     public static void main(String[] args) {
-        System.out.println("Helo world");
+        System.out.println("Introduzca la cantidad de paquetes que desea: ");
+
+        System.out.println("Número de colores de la impresión de la taza: ");
+
+        System.out.printf("1) Llavero de plástico.\n2) Llavero metálico.");
   }  
 }
