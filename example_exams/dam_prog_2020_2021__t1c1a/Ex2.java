@@ -31,14 +31,14 @@ public class Ex2 {
         System.out.println("PRESUPUESTO: ");
         System.out.println("--------------");
         
-        
 
-        System.out.println("Taza ("+color+" col.): "+);
-        System.out.println("Precio unitario: "+);
-        System.out.println("Total tazas: "+);
-        System.out.println("Llaveros (c.u.): "+);
-        System.out.println("Tazas + llaveros: "+);
-        System.out.println("IVA: "+);
-        System.out.println("TOTAL: "+);
+
+        System.out.println("Taza ("+color+" col.): "++" ud.");
+        System.out.println("Precio unitario: "++" €");
+        System.out.println("Total tazas: "++" €");
+        System.out.println("Llaveros (c.u.): "++" €");
+        System.out.println("Tazas + llaveros: "++" €");
+        System.out.println("IVA: "++" €");
+        System.out.println("TOTAL: "++" €");
   }
 }
