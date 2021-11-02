@@ -7,10 +7,9 @@
 
 public class Ex20 {
   public static void main(String[] args) {
-    int n;
     boolean capicua = false;
     System.out.print("Introduzca un número entero (de 5 cifras como máximo): ");
-    n = Integer.parseInt(System.console().readLine());
+    int n = Integer.parseInt(System.console().readLine());
     if (n < 10) {
     capicua = true;
     }
