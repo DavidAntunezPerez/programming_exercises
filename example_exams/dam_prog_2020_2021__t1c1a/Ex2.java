@@ -23,9 +23,22 @@
 public class Ex2 {
     public static void main(String[] args) {
         System.out.println("Introduzca la cantidad de paquetes que desea: ");
-
+          int cant = Integer.parseInt(System.console().readLine());
         System.out.println("Número de colores de la impresión de la taza: ");
-
+          int color = Integer.parseInt(System.console().readLine());
         System.out.printf("1) Llavero de plástico.\n2) Llavero metálico.");
-  }  
+          int keyring = Integer.parseInt(System.console().readLine()); 
+        System.out.println("PRESUPUESTO: ");
+        System.out.println("--------------");
+        
+        
+
+        System.out.println("Taza ("+color+" col.): "+);
+        System.out.println("Precio unitario: "+);
+        System.out.println("Total tazas: "+);
+        System.out.println("Llaveros (c.u.): "+);
+        System.out.println("Tazas + llaveros: "+);
+        System.out.println("IVA: "+);
+        System.out.println("TOTAL: "+);
+  }
 }
