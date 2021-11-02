@@ -56,13 +56,15 @@ public class Ex2 {
         double cupTotal = cupPric * cant; // total de tazas en euros
         double keyringTotal = keyringPric * cant; // total de llaveros en euros
         double noIva = keyringTotal + cupTotal; // total de tazas y llaveros
+        double iva = noIva * 0.21;
+        double total = noIva * 1.21;
         System.out.println("Taza ("+color+" col.): "+cant+" ud.");
         System.out.println("Precio unitario: "+cupPric+" €");
         System.out.println("Total tazas: "+cupTotal+" €");
         System.out.println("Llaveros (c.u.): "+keyringPric+" €");
-        System.out.println("Tazas + llaveros: "++" €");
-        System.out.println("IVA: "++" €");
-        System.out.println("TOTAL: "++" €");
+        System.out.println("Tazas + llaveros: "+noIva+" €");
+        System.out.println("IVA: "+iva+" €");
+        System.out.println("TOTAL: "+total+" €");
   }
 }
 
