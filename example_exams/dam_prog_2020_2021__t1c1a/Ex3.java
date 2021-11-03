@@ -37,7 +37,11 @@ public class Ex3 {
         if (color > 3){ 
           cupPric = 1.20 * cupPric; // para agregar el 20% más si hay más de 3 colores
         }
-        
+        if (color <= 0){
+          System.out.println("ERRROR, Por favor, introduzca un valor válido de color.");
+          System.out.print("Número de colores de la impresión de la taza: ");
+          color = Integer.parseInt(System.console().readLine());
+        }
         switch (keyring){
             case 1:
               if ( cant < 50){
