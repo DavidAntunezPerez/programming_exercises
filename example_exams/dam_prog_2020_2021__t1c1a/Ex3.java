@@ -21,6 +21,8 @@ public class Ex3 {
         System.out.println("--------------");
         if (cant < 20){
           System.out.println("ERROR. No es posible hacer un pedido de menos de 20 ud.");
+          System.out.print("Introduzca la cantidad de paquetes que desea: ");
+          cant = Integer.parseInt(System.console().readLine());
         }
         else if ((cant >= 20)&&(cant < 40)){
           cupPric = 4.90;
@@ -35,6 +37,7 @@ public class Ex3 {
         if (color > 3){ 
           cupPric = 1.20 * cupPric; // para agregar el 20% más si hay más de 3 colores
         }
+        
         switch (keyring){
             case 1:
               if ( cant < 50){
@@ -54,6 +57,27 @@ public class Ex3 {
             break;
             default:
             System.out.println("Por favor, selecciona un tipo de llavero válido.");
+            System.out.printf("1) Llavero de plástico.\n2) Llavero metálico\n");
+            keyring = Integer.parseInt(System.console().readLine()); 
+              switch (keyring){
+                case 1:
+                  if ( cant < 50){
+                    keyringPric = 2;
+                  }
+                  else{
+                    keyringPric = 1.50;
+                  }
+                break;
+                case 2:
+                  if ( cant < 50){
+                    keyringPric = 3;
+                  }
+                  else{
+                    keyringPric = 2.50;
+                  }
+                  default:
+                  System.out.println("Por favor, selecciona un tipo de llavero válido.");
+                }
         }
         
         double cupTotal = cupPric * cant; // total de tazas en euros
