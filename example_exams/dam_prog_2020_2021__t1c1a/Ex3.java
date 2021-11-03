@@ -13,6 +13,21 @@ public class Ex3 {
         int cant = 0; // cantidad de paquetes
         System.out.print("Introduzca la cantidad de paquetes que desea: ");
           cant = Integer.parseInt(System.console().readLine());
+          if (cant < 20){
+            System.out.println("ERROR. No es posible hacer un pedido de menos de 20 ud.");
+            System.out.print("Introduzca la cantidad de paquetes que desea: ");
+            cant = Integer.parseInt(System.console().readLine());
+          }
+          else if ((cant >= 20)&&(cant < 40)){
+            cupPric = 4.90;
+          }
+          else if ((cant >= 40)&&(cant < 100)){
+            cupPric = 3.90;
+          }
+          else if (cant >= 100) {
+            cupPric = 3.20;
+          }
+  
         System.out.print("Número de colores de la impresión de la taza: ");
           color = Integer.parseInt(System.console().readLine());
           if (color <= 0){
@@ -65,21 +80,7 @@ public class Ex3 {
         }
         System.out.println("PRESUPUESTO: ");
         System.out.println("--------------");
-        if (cant < 20){
-          System.out.println("ERROR. No es posible hacer un pedido de menos de 20 ud.");
-          System.out.print("Introduzca la cantidad de paquetes que desea: ");
-          cant = Integer.parseInt(System.console().readLine());
-        }
-        else if ((cant >= 20)&&(cant < 40)){
-          cupPric = 4.90;
-        }
-        else if ((cant >= 40)&&(cant < 100)){
-          cupPric = 3.90;
-        }
-        else if (cant >= 100) {
-          cupPric = 3.20;
-        }
-
+        
         if (color > 3){ 
           cupPric = 1.20 * cupPric; // para agregar el 20% más si hay más de 3 colores
         }
