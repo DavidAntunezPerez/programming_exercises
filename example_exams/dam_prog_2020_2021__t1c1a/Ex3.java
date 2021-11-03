@@ -15,34 +15,14 @@ public class Ex3 {
           cant = Integer.parseInt(System.console().readLine());
         System.out.print("Número de colores de la impresión de la taza: ");
           color = Integer.parseInt(System.console().readLine());
+          if (color <= 0){
+            System.out.println("ERRROR, Por favor, introduzca un valor válido de color.");
+            System.out.print("Número de colores de la impresión de la taza: ");
+            color = Integer.parseInt(System.console().readLine());
+          }
         System.out.printf("1) Llavero de plástico.\n2) Llavero metálico\n");
           keyring = Integer.parseInt(System.console().readLine()); 
-        System.out.println("PRESUPUESTO: ");
-        System.out.println("--------------");
-        if (cant < 20){
-          System.out.println("ERROR. No es posible hacer un pedido de menos de 20 ud.");
-          System.out.print("Introduzca la cantidad de paquetes que desea: ");
-          cant = Integer.parseInt(System.console().readLine());
-        }
-        else if ((cant >= 20)&&(cant < 40)){
-          cupPric = 4.90;
-        }
-        else if ((cant >= 40)&&(cant < 100)){
-          cupPric = 3.90;
-        }
-        else if (cant >= 100) {
-          cupPric = 3.20;
-        }
-
-        if (color > 3){ 
-          cupPric = 1.20 * cupPric; // para agregar el 20% más si hay más de 3 colores
-        }
-        if (color <= 0){
-          System.out.println("ERRROR, Por favor, introduzca un valor válido de color.");
-          System.out.print("Número de colores de la impresión de la taza: ");
-          color = Integer.parseInt(System.console().readLine());
-        }
-        switch (keyring){
+          switch (keyring){
             case 1:
               if ( cant < 50){
                 keyringPric = 2;
@@ -83,7 +63,26 @@ public class Ex3 {
                   System.out.println("Por favor, selecciona un tipo de llavero válido.");
                 }
         }
-        
+        System.out.println("PRESUPUESTO: ");
+        System.out.println("--------------");
+        if (cant < 20){
+          System.out.println("ERROR. No es posible hacer un pedido de menos de 20 ud.");
+          System.out.print("Introduzca la cantidad de paquetes que desea: ");
+          cant = Integer.parseInt(System.console().readLine());
+        }
+        else if ((cant >= 20)&&(cant < 40)){
+          cupPric = 4.90;
+        }
+        else if ((cant >= 40)&&(cant < 100)){
+          cupPric = 3.90;
+        }
+        else if (cant >= 100) {
+          cupPric = 3.20;
+        }
+
+        if (color > 3){ 
+          cupPric = 1.20 * cupPric; // para agregar el 20% más si hay más de 3 colores
+        }
         double cupTotal = cupPric * cant; // total de tazas en euros
         double keyringTotal = keyringPric * cant; // total de llaveros en euros
         double noIva = keyringTotal + cupTotal; // total de tazas y llaveros
