@@ -15,7 +15,7 @@ public class Ex03dap4 {
             // apartado 2
             // para esto, vamos a sumar las vueltas de los años bisiestos con las de los años no bisiestos.
                 int vueltasSinBis; // vueltas sin años bisiestos, teniendo en cuenta que hay 302 años NO bisiestos.
-                vueltasSinBis = 302 * 365;
+                vueltasSinBis = 303 * 365;
                 int vueltasConBis; // vueltas con años bisiestos, teniendo en cuenta que hay 97 años bisiestos.
                 vueltasConBis = 97 * 366; // porque cada año son 366 días en vez de 365 días.
                 int vueltasTotal; // número total de vueltas dadas entre esos años suponiendo los enunciados.
