@@ -5,7 +5,7 @@
  */
 
 
-public class Ex5 {
+public class Ex5_4 {
   
   public static void main (String[] args) {
       System.out.println(" First degree ecuations calculator.");
