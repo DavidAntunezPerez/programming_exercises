@@ -1,6 +1,9 @@
 /**
  * @author David Antunez Perez
  * Aprender el uso de for
+ * for (expresion1 ; expresion2 ; expresion3) {
+    sentencias
+    }
  */
 public class UseFor {
   
