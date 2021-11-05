@@ -8,7 +8,7 @@
  */
 
 
-public class Ex7 {
+public class Ex7_2 {
   
   public static void main (String[] args) {
     char number = '1';

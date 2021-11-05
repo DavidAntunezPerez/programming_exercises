@@ -8,7 +8,7 @@ el valor de cada variable, la suma, la resta, la división y la multiplicación.
  */
 
 
-public class Ex1 {
+public class Ex1_2 {
   
 	public static void main (String[] args) {
     int x = 144;

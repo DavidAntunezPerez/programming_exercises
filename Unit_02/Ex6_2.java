@@ -8,7 +8,7 @@
  */
 
 
-public class Ex6 {
+public class Ex6_2 {
   
   public static void main (String[] args) {
     double sinIva = 20d;

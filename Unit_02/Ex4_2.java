@@ -6,7 +6,7 @@
  */
 
 
-public class Ex4 {
+public class Ex4_2 {
   
   public static void main (String[] args) {
     double numEuros = 1;

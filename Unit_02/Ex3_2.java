@@ -8,7 +8,7 @@
  */
 
 
-public class Ex3 {
+public class Ex3_2 {
   
   public static void main (String[] args) {
     String name = "David Antúnez Pérez";

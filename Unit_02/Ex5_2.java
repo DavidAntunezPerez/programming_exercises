@@ -6,7 +6,7 @@
  */
 
 
-public class Ex5 {
+public class Ex5_2 {
   
   public static void main (String[] args) {
     double numPesetas = 1;
