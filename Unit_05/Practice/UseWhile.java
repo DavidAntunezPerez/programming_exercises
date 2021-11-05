@@ -8,6 +8,8 @@
 
 public class UseWhile {
     public static void main(String[] args) {
-        
+        while(){
+            
+        }
     }
 }
