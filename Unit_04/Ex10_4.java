@@ -4,7 +4,7 @@
  * 
  */
 
-public class Ex10{
+public class Ex10_4{
   
   public static void main (String[] args) {
     System.out.println(" AVERIGUA TU HORÓSCOPO");

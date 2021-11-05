@@ -7,7 +7,7 @@
     vale 1’20 € y el segundo 1’60 €. Por último se pregunta por la bebida: zumo o
     café a 1’50 y 1’20 respectivamente.
  */
-public class Ex29 {
+public class Ex29_4 {
     public static void main(String[] args) {
         double eatPric = 0; // valor comida
         double drnkPric = 0; // valor bebida

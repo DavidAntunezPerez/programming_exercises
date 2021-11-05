@@ -4,7 +4,7 @@
  */
 
 
-public class Ex12 {
+public class Ex12_4 {
   
   public static void main (String[] args) {
     System.out.println("TEST 1º DAM");

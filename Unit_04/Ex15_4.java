@@ -3,7 +3,7 @@
  */
 
 
-public class Ex15 {
+public class Ex15_4 {
   
   public static void main (String[] args) {
     System.out.println("CREA TU PIRÁMIDE A MEDIDA");

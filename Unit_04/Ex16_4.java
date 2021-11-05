@@ -6,7 +6,7 @@
 
 
 
-public class Ex16 {
+public class Ex16_4 {
   
   public static void main (String[] args) {
     System.out.println(" TEST DE PAREJA INFIEL: ");

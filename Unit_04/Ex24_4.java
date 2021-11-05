@@ -12,7 +12,7 @@
  * concepto de dietas. Al sueldo neto hay que restarle el IRPF, que será de
  * un 25% en caso de estar soltero y un 20% en caso de estar casado.
  */
-public class Ex24 {
+public class Ex24_4 {
     public static void main(String[] args) {
         System.out.println("1 - Prog. Junior");
         System.out.println("2 - Prog. Senior");

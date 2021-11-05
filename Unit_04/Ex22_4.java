@@ -6,7 +6,7 @@
  * por hecho que el usuario introducirá un día y hora correctos, anterior al viernes
  * a las 15:00h.
  */
-public class Ex22 {
+public class Ex22_4 {
     public static void main(String[] args) {
         System.out.print("Introduzca un día de la semana (de Lunes a Viernes) ");
         String day = System.console().readLine();

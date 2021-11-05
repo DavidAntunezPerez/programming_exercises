@@ -4,7 +4,7 @@
  * 
  */
 
-public class Ex9 {
+public class Ex9_4 {
   
   public static void main (String[] args) {
      System.out.println(" CALCULADORA DE ECUACIONES DE SEGUNDO GRADO");

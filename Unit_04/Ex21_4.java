@@ -3,7 +3,7 @@
  *
  * @author Sergio Morales García Y David Antúnez Pérez 1ºDAM
  */
-public class Ex21 {
+public class Ex21_4 {
     public static void main(String[] args) {
     System.out.println("Este programa indica cual es la media de la asignatura Programación.");
     System.out.print("Introduzca la nota del primer examen: ");

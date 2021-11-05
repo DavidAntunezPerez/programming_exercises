@@ -10,7 +10,7 @@
  *   que son 3 parejas; pero si es un grupo de 7, pagarán 3 entradas de pareja más
  *   1 individual que son 41 euros (33 + 8).
  */
-public class Ex26 {
+public class Ex26_4 {
     public static void main(String[] args) {
         System.out.println("COMPRE SU ENTRADA");
         System.out.println("------------------");

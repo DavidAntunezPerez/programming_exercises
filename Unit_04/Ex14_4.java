@@ -4,7 +4,7 @@
  */
 
 
-public class Ex14 {
+public class Ex14_4 {
   
   public static void main (String[] args) {
     System.out.println(" DETECTOR DE PARES E IMPARES");

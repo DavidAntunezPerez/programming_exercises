@@ -3,7 +3,7 @@
  * @author David Antúnez Pérez
  * 
  */
-public class Ex20 {
+public class Ex20_4 {
     public static void main(String[] args) {
       int n;
       boolean capicua = false;

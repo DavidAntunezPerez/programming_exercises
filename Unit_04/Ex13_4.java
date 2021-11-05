@@ -5,7 +5,7 @@
  */
 
 
-public class Ex13 {
+public class Ex13_4 {
   
   public static void main (String[] args) {
     System.out.println(" ORDENADOR DE NÚMEROS ENTEROS");

@@ -9,7 +9,7 @@
     nombre; la nata suma 2.50 y la escritura del nombre 2.75.
 
  */
-public class Ex27 {
+public class Ex27_4 {
     public static void main(String[] args) {
         System.out.print("Elija un sabor (manzana, fresa o chocolate): ");
             String flavor = System.console().readLine();

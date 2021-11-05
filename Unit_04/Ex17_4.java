@@ -5,7 +5,7 @@
  */
 
 
-public class Ex17 {
+public class Ex17_4 {
   
   public static void main (String[] args) {
           System.out.print("INTRODUCE UN NÚMERO: ");

@@ -4,7 +4,7 @@
  */
 
 
-public class Ex11 {
+public class Ex11_4 {
   
   public static void main (String[] args) {
     System.out.println(" ¿CUÁNTOS SEGUNDOS QUEDAN PARA QUE SEA MEDIANOCHE?");

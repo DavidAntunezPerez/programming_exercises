@@ -8,7 +8,7 @@
  *  son 3.25 €. El IVA ya está incluido en todas las tarifas.
 
 */
-public class Ex25 {
+public class Ex25_4 {
     public static void main(String[] args) {
         System.out.print("Introduzca la altura de la bandera en cm: ");
         double height = Integer.parseInt(System.console().readLine());

@@ -1,9 +1,10 @@
 /**
  * @author David Antúnez Pérez
+ * 
  */
 
 
-public class Ex18 {
+public class Ex19_4 {
   
   public static void main (String[] args) {
     int num, cif = 0;
@@ -11,24 +12,37 @@ public class Ex18 {
       String line;
       line = System.console().readLine();
       num = Integer.parseInt(line);
-      if(num < 10) {
-        cif = num;
+      if((num < 10)&&(num > -10)) {
+        cif = 1;
         }
       else if ((num >= 10)&&(num <100)){
-        cif = num / 10;
+        cif = 2;
         }
       else if ((num >= 100)&&(num <1000)){
-        cif = num / 100;
+        cif = 3;
         }
       else if ((num >= 1000)&&(num < 10000)){
-        cif = num / 1000;
+        cif = 4;
         }
       else if ((num >= 10000)&&(num < 100000)){
-        cif = num / 10000;
+        cif = 5;
         }
-      System.out.println("El primer dígito del número es "+ cif);
+      else if((num <= -10)&&(num >-100)) {
+        cif = 2;
+        }
+      else if((num <= -100)&&(num >-1000)) {
+        cif = 3;
+        }
+      else if((num <= -1000)&&(num >-10000)) {
+        cif = 4;
+        }
+      else if((num <= -10000)&&(num >-100000)) {
+        cif = 5;
+        }
+      System.out.println("El número dígitos del número es "+ cif);
     
     
   }
 }
+
 

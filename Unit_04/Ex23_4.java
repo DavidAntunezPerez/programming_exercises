@@ -10,7 +10,7 @@
  *muestran los valores correctos, aunque los números no estén tabulados.
  */
 
-public class Ex23 {
+public class Ex23_4 {
     public static void main(String[] args) {
         System.out.print("Introduzca la base imponible: ");
         double base = Integer.parseInt(System.console().readLine());
