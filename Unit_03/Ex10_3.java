@@ -4,7 +4,7 @@
  */
 
 
-public class Ex10 {
+public class Ex10_3 {
   
   public static void main (String[] args) {
     String line;

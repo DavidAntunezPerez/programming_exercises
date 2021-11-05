@@ -3,7 +3,7 @@
  * @author David Antúnez Pérez
  */
 
-public class Ex1
+public class Ex1_3
  {
    public static void main (String[] args) {
      String line;

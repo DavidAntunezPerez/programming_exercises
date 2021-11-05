@@ -8,7 +8,7 @@
  */
 
 
-public class Ex12 {
+public class Ex12_3 {
   
   public static void main (String[] args) {
      String line;
