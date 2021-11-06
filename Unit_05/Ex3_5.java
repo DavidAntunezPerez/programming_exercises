@@ -3,7 +3,7 @@ public class Ex3_5 {
         int n = 0;
         do{
             System.out.println(n);
-            n++;
+            n= n + 5;
         }while(n <= 100);
     }    
 }
