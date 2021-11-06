@@ -5,6 +5,8 @@
  */
 public class Ex4_5 {
     public static void main(String[] args) {
-        
+        for (int n = 360; n >= 160; n-- ){
+            System.out.println(n);
+        }
     }   
 }
