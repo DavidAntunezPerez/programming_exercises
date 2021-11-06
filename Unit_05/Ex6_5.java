@@ -5,6 +5,10 @@
  */
 public class Ex6_5 {
     public static void main(String[] args) {
-        
+        int n = 320;
+        do {
+            System.out.println(n);
+            n--;
+        }while (n >= 160);
     }
 }
