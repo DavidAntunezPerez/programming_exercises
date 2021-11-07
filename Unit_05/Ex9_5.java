@@ -9,13 +9,16 @@
 */
 public class Ex9_5 {
     public static void main(String[] args) {
+        int numDig = 1;
         int n;
-        int minCif= 0;
-        int maxCif = 0;
-        System.out.println("Introduce un número: ");
-        n = Integer.parseInt(System.console().readLine());
-
-
-
+        int numIntrod;
+        System.out.print("Introduce un número: ");
+        numIntrod = Integer.parseInt(System.console().readLine());
+        n = numIntrod;
+        while (n > 10){
+            n /= 10;
+            numDig++;
+        }
+    System.out.println(numIntrod + " tiene "+ numDig + " dígito/s.");
   }
 }
