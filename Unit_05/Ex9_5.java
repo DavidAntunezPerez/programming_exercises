@@ -9,6 +9,13 @@
 */
 public class Ex9_5 {
     public static void main(String[] args) {
-        
-    }
+        int n;
+        int minCif= 0;
+        int maxCif = 0;
+        System.out.println("Introduce un número: ");
+        n = Integer.parseInt(System.console().readLine());
+
+
+
+  }
 }
