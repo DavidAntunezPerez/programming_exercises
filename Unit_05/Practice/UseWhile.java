@@ -1,3 +1,4 @@
+package Practice;
 /**
  * @author David Antunez Perez
  * Aprender el uso de while
