@@ -13,7 +13,7 @@ public class Ex10_5 {
         
         while(i > 0){
             System.out.print("Escriba un número: ");
-            i = Integer.parseInt(System.console().readLine());
+            i = Double.parseDouble(System.console().readLine());
             if (i > 0){
                     result += i;
                     nIntr++;
