@@ -7,6 +7,12 @@
  */
 public class Ex10_5 {
     public static void main(String[] args) {
-        
+        int i;
+        System.out.println("Escriba un número: ");
+        i = Integer.parseInt(System.console().readLine());
+        while(i > 0){
+            
+        }
+        System.out.println("(Para finalizar el programa escriba un número negativo)");
     }
 }
