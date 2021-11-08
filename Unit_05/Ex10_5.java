@@ -15,7 +15,6 @@ public class Ex10_5 {
             System.out.print("Escriba un número: ");
             i = Integer.parseInt(System.console().readLine());
             if (i > 0){
-                
                     result += i;
                     nIntr++;
                 System.out.println("(Para finalizar la introducción de datos escriba un número negativo)");
