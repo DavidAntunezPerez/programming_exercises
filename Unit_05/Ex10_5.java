@@ -7,21 +7,22 @@
  */
 public class Ex10_5 {
     public static void main(String[] args) {
-        double i;
-        double nIntr = 1; // Número de números introducidos.
+        double i = 1;
+        double nIntr = 0; // Número de números introducidos.
         double result = 0;
         
-        do{
-            
+        while(i > 0){
             System.out.print("Escriba un número: ");
             i = Integer.parseInt(System.console().readLine());
-            
-            System.out.println("La media es " + ((result+i)/nIntr));
-            result = (result+i) * nIntr;
-            nIntr++;
-            
-            System.out.println("(Para finalizar el programa escriba un número negativo)");
-        }while(i > 0);
+            if (i > 0){
+                
+                    result += i;
+                    nIntr++;
+                System.out.println("(Para finalizar la introducción de datos escriba un número negativo)");
+            }
+        }
+
+        System.out.println("La media es " + (result / nIntr));
         System.out.println("Programa finalizado con éxito.");
     }
 }
