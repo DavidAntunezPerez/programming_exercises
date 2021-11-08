@@ -9,14 +9,16 @@ public class Ex10_5 {
     public static void main(String[] args) {
         double i = 0;
         double nIntr = 1; // Número de números introducidos.
+        double result = 0;
         
         do{
-            double i2 = i;
+            
             System.out.println("Escriba un número: ");
             i = Integer.parseInt(System.console().readLine());
-            i = (i2+i) / nIntr;
-            System.out.println("La media es " + i);
+            
+            System.out.println("La media es " + result);
             nIntr++;
+            result = i * nIntr;
             System.out.println("(Para finalizar el programa escriba un número negativo)");
         }while(i > 0);
         System.out.println("Programa finalizado con éxito.");
