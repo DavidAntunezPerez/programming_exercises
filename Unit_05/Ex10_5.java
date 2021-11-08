@@ -7,13 +7,14 @@
  */
 public class Ex10_5 {
     public static void main(String[] args) {
-        double i;
+        double i = 0;
         double nIntr = 1; // Número de números introducidos.
         
         do{
+            double i2 = i;
             System.out.println("Escriba un número: ");
             i = Integer.parseInt(System.console().readLine());
-            i = i / nIntr;
+            i = (i2+i) / nIntr;
             System.out.println("La media es " + i);
             nIntr++;
             System.out.println("(Para finalizar el programa escriba un número negativo)");
