@@ -7,7 +7,7 @@
  */
 public class Ex10_5 {
     public static void main(String[] args) {
-        double i = 0;
+        double i;
         double nIntr = 1; // Número de números introducidos.
         double result = 0;
         
@@ -17,8 +17,9 @@ public class Ex10_5 {
             i = Integer.parseInt(System.console().readLine());
             
             System.out.println("La media es " + ((result+i)/nIntr));
-            nIntr++;
             result = i * nIntr;
+            nIntr++;
+            
             System.out.println("(Para finalizar el programa escriba un número negativo)");
         }while(i > 0);
         System.out.println("Programa finalizado con éxito.");
