@@ -13,10 +13,10 @@ public class Ex10_5 {
         
         do{
             
-            System.out.println("Escriba un número: ");
+            System.out.print("Escriba un número: ");
             i = Integer.parseInt(System.console().readLine());
             
-            System.out.println("La media es " + result);
+            System.out.println("La media es " + ((result+i)/nIntr));
             nIntr++;
             result = i * nIntr;
             System.out.println("(Para finalizar el programa escriba un número negativo)");
