@@ -1,3 +1,5 @@
+package Practice;
+
 public class UseDoWhile2 {
     public static void main(String[] args) {
         int n;
