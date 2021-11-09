@@ -7,6 +7,12 @@
  */
 public class Ex15_5 {
     public static void main(String[] args) {
-        
+        System.out.print("Escribe una base: ");
+        int base = Integer.parseInt(System.console().readLine());
+        System.out.print("Escribe un exponente: ");
+        int exp = Integer.parseInt(System.console().readLine());
+        for (int n = exp;exp > 0; exp-- ){
+
+        }
     }
 }
