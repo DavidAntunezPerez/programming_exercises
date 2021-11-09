@@ -4,7 +4,7 @@
  */
 public class Ex1_5 {
     public static void main(String[] args) {
-       for (int n = 0; n <= 500; n++){
+       for (int n = 0; n <= 100; n++){
            System.out.println(n);
        }
     }
