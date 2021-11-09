@@ -9,17 +9,17 @@ public class Ex16_5 {
         System.out.print("Introduce un número: ");
         int n = Integer.parseInt(System.console().readLine());
         int c= n - 1;
-        boolean primo = false;
+        boolean nprim = false;
         do{
             if (n % c == 0){
-                primo = false;
+                nprim = false;
             }
             else if (n % c != 0){
-                primo = true;
+                nprim = true;
             }
             c--;
         }while (c > 1);
-            if ( primo = true){
+            if ( nprim = true){
                 System.out.println(n + " es un número primo.");
             }
             else{
