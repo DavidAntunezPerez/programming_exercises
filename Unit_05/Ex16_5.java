@@ -12,15 +12,18 @@ public class Ex16_5 {
         boolean primo = false;
         do{
             if (n % c == 0){
+                primo = false;
+            }
+            else if (n % c != 0){
                 primo = true;
             }
             c--;
         }while (c > 1);
-        if ( primo = true){
-            System.out.println(n + " es un número primo.");
-        }
-        else{
-            System.out.println(n + " NO es un número primo.");
-        }
+            if ( primo = true){
+                System.out.println(n + " es un número primo.");
+            }
+            else{
+                System.out.println(n + " NO es un número primo.");
+            }
     }
 }
