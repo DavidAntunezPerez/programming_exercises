@@ -16,15 +16,15 @@ public class Ex12_5 {
 		n = Integer.parseInt(System.console().readLine());
 		switch (n) {
 		case 1:
-			System.out.println(0);
+			System.out.println(f);
 			break;
 		case 2:
-			System.out.println(0);
-			System.out.println(1);
+			System.out.println(f);
+			System.out.println(f2);
 			break;
 		default:
-			System.out.println(0);
-			System.out.println(1);
+			System.out.println(f);
+			System.out.println(f2);
 			int sto;
 			while (n > 2) {
 				sto = f;
