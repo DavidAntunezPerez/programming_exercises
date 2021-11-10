@@ -12,12 +12,12 @@ public class Ex16_5 {
     int c = n - 1;
     boolean nPrim = true;
     do {
-      if (n % c == 0) {
+      if ((n % c) == 0) {
         nPrim = false;
       }
       c--;
-    } while (c >= 2);
-    if (nPrim = true) {
+    } while ((c > 2)&&(nPrim == true));
+    if ((nPrim == true)||(n <= 2)) {
       System.out.println(n + " es un número primo.");
     } else {
       System.out.println(n + " NO es un número primo.");
