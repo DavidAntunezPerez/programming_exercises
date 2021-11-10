@@ -1,4 +1,4 @@
-package Practice;
+package LearnExamples;
 
 /**
  * @author David Antunez Perez

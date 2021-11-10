@@ -1,18 +1,18 @@
-package Practice;
-
+package LearnExamples;
 /**
  * @author David Antunez Perez
- *  do {
+ * Aprender el uso de while
+ * while (expresion) {
     sentencias
-    } while (expresion)
+    }
  */
-public class UseDoWhile {
+
+public class UseWhile {
     public static void main(String[] args) {
         int n = 1;
-        do{
+        while(n < 10){
             System.out.println(n);
             n++;
-        }while (n < 10);
-        
+        }
     }
 }

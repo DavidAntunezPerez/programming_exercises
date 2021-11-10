@@ -1,4 +1,4 @@
-package Practice;
+package LearnExamples;
 
 public class UseDoWhile2 {
     public static void main(String[] args) {
