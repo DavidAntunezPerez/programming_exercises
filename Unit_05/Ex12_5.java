@@ -13,22 +13,22 @@ public class Ex12_5 {
         int f = 0; // primer número de la serie
         int f2 = 1; // segundo número de la serie
         int f3 = 1;
-        int sto = 0;
-        int r = 0;
+        int sto;
         int result = 2;
         System.out.print("Introduce el número de números de la serie de Fibonacci que quieres ver: ");
         n = Integer.parseInt(System.console().readLine());
-        if ( n == 1 ){
-            System.out.println(f);
-        }
-        else if (n == 2){
-            System.out.println(f);
-            System.out.println(f2);
-        }
-        else if (n >= 3){
-            System.out.println(f);
-            System.out.println(f2);
-            System.out.println(f3);
+        switch (n){
+            case 1:
+                System.out.println(f);
+            break;
+            case 2:
+                System.out.println(f);
+                System.out.println(f2);
+            break;
+            default:
+                System.out.println(f);
+                System.out.println(f2);
+                System.out.println(f3);
         }
        while (n >= 4){
         
