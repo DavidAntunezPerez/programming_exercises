@@ -8,6 +8,14 @@
  */
 public class Ex17_5 {
   public static void main(String[] args) {
+    do{
+      System.out.println("Escribe un número entero positivo: ");
+          int n = Integer.parseInt(System.console().readLine());
+      if (n < 0)
+    }while(n < 0);
     
+    for(){
+      
+    }
   }
 }
