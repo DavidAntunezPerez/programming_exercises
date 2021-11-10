@@ -16,7 +16,7 @@ public class Ex17_5 {
         System.out.println("ERROR, número no válido. Asegurese de que el número sea entero y positivo.");
       }
     }while(n < 0);
-    int add = 0;
+    int add = 0; // suma de todos los números
     for(int i = n; i < n + 100; i++){
       add += i;
     }
