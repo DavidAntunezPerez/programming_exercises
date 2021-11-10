@@ -16,7 +16,7 @@ public class Ex16_5 {
         nPrim = false;
       }
       c--;
-    } while (c > 1);
+    } while (c >= 2);
     if (nPrim = true) {
       System.out.println(n + " es un número primo.");
     } else {
