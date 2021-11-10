@@ -16,9 +16,10 @@ public class Ex17_5 {
         System.out.println("ERROR, número no válido. Asegurese de que el número sea entero y positivo.");
       }
     }while(n < 0);
-    
-    for(){
-      
+    int add = 0;
+    for(int i = n; i < n + 100; i++){
+      add += i;
     }
+    System.out.println("La suma de los 100 números posteriores a "+n+" es: "+add);
   }
 }
