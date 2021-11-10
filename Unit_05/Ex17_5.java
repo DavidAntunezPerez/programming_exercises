@@ -8,7 +8,7 @@
  */
 public class Ex17_5 {
   public static void main(String[] args) {
-    int n= 0;
+    int n= 0; // número introducido
     do{
       System.out.print("Escribe un número entero positivo: ");
         n = Integer.parseInt(System.console().readLine());
