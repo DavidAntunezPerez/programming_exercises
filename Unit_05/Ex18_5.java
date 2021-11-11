@@ -12,6 +12,8 @@ public class Ex18_5 {
     int n1 = Integer.parseInt(System.console().readLine());
     System.out.print("Introduce el segundo número: ");
     int n2 = Integer.parseInt(System.console().readLine());
-    
+    for(int i = n2; (i > n1) && (i < n2);i-=7 ){
+      System.out.println(i);
+    }
   }
 }
