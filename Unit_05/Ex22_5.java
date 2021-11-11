@@ -5,10 +5,14 @@
  */
 public class Ex22_5 {
   public static void main(String[] args) {
-    int n = 2;
+    int n = 100;
     System.out.println("Los números primos entre 2 y 100 son: ");
     do {
-
-    } while (n <= 100);
+      int r = n;
+      n--;
+      if (r % 2 == 0) {
+        System.out.print(n + " ");
+      }
+    } while (n >= 2);
   }
 }
