@@ -13,7 +13,7 @@ public class Ex9_5 {
         int n;
         int numIntrod;
         System.out.print("Introduce un número: ");
-        numIntrod = Integer.parseInt(System.console().readLine());
+        numIntrod = Math.abs(Integer.parseInt(System.console().readLine()));
         n = numIntrod;
         while (n > 10){
             n /= 10;
