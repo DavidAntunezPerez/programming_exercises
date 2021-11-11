@@ -13,19 +13,26 @@ public class Ex20_5 {
     int floor = 1;
     // int lenght = 1;
     int spa = h - 1;
+    int midSpa = 0; // espacios del medio
     while (floor <= h) {
       // espacios de la pirámide
       for (int i = 1; i <= spa; i++) {
         System.out.print(" ");
       }
-      // carácteres de la pirámide
-      // for (int i = 1; i <= lenght; i++) {}
       System.out.print(ch);
+      // espacios internos
+      for (int i = 2; i <= midSpa; i++) {
+        System.out.print(" ");
+      }
+      if (floor > 1) {
+        System.out.print(ch);
+      }
 
       System.out.println();
+
       floor++;
       spa--;
-      // lenght += 2;
+      midSpa += 2;
     }
   }
 }
