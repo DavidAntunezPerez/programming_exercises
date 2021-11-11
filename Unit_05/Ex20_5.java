@@ -9,7 +9,7 @@ public class Ex20_5 {
     System.out.print("Indica el carácter que quieres que lleve la pirámide: ");
     String ch = System.console().readLine();
     int floor = 1;
-    int lenght = 1;
+    // int lenght = 1;
     int spa = h - 1;
     while (floor <= h) {
       // espacios de la pirámide
@@ -17,13 +17,13 @@ public class Ex20_5 {
         System.out.print(" ");
       }
       // carácteres de la pirámide
-      for (int i = 1;  i <= lenght; i++) {
-        System.out.print(ch);
-      }
+      // for (int i = 1;  i <= lenght; i++) {}
+      System.out.print(ch);
+      
       System.out.println();
       floor++;
       spa--;
-      lenght += 2;
+    // lenght += 2;
     }
   }
 }
