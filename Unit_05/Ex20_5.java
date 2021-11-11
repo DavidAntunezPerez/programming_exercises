@@ -1,5 +1,7 @@
 /**
- * Igual que el ejercicio anterior pero esta vez se debe pintar una pirámide hueca.
+ * Igual que el ejercicio anterior pero esta vez se debe pintar una pirámide
+ * hueca.
+ * 
  * @author David Antunez Perez
  */
 public class Ex20_5 {
@@ -17,14 +19,13 @@ public class Ex20_5 {
         System.out.print(" ");
       }
       // carácteres de la pirámide
-      // for (int i = 1;  i <= lenght; i++) {}
+      // for (int i = 1; i <= lenght; i++) {}
       System.out.print(ch);
-      
+
       System.out.println();
       floor++;
       spa--;
-    // lenght += 2;
+      // lenght += 2;
     }
   }
 }
-
