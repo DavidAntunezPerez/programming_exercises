@@ -5,6 +5,6 @@
  */
 public class Ex22_5 {
   public static void main(String[] args) {
-  
+  System.out.println("Los números primos entre 2 y 100 son: ");
   }
 }
