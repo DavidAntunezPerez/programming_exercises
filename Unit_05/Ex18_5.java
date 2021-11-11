@@ -8,12 +8,20 @@
  */
 public class Ex18_5 {
   public static void main(String[] args) {
-    System.out.print("Introduce el primer número: ");
-    int n1 = Integer.parseInt(System.console().readLine());
-    System.out.print("Introduce el segundo número: ");
-    int n2 = Integer.parseInt(System.console().readLine());
-    for(int i = n2; (i > n1) && (i < n2);i-=7 ){
-      System.out.println(i);
+    int n1;
+    int n2;
+    do {
+      System.out.print("Introduce el menor número: ");
+      n1 = Integer.parseInt(System.console().readLine());
+      System.out.print("Introduce el mayor número: ");
+      n2 = Integer.parseInt(System.console().readLine());
+      if (n1 >= n2) {
+        System.out.println("ERROR. El primer número debe ser menor que el segundo.");
+      }
+    } while (n1 >= n2);
+
+    for (int i = n2 - 7; (i > n1) && (i < n2); i -= 7) {
+      System.out.print(i + " ");
     }
   }
 }
