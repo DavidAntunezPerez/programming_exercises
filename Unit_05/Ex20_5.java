@@ -27,12 +27,15 @@ public class Ex20_5 {
       if (floor > 1) {
         System.out.print(ch);
       }
-
+      // for (int i = 1; i <= spa; i++) { ((POR FUERA DE LA PIRÁMIDE RELLENAR ALL))
+      //   System.out.print(ch);
+      // }
       System.out.println();
-
       floor++;
       spa--;
       midSpa += 2;
     }
+    
+    
   }
 }
