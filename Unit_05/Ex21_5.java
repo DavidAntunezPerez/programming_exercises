@@ -10,7 +10,8 @@ public class Ex21_5 {
   public static void main(String[] args) {
     int i = 1;
     int cont = 0; // Número de números introducidos.
-    int imp = 0; // Número de números impares
+    int imp = -1; // Número de números impares
+    int par = 0; // Mayor número par
     while (i > 0) {
       System.out.print("Escriba un número: ");
       i = Integer.parseInt(System.console().readLine());
@@ -22,7 +23,7 @@ public class Ex21_5 {
         imp++;
       }
     }
-    System.out.printf("Se han introducido " + cont + " números.\nDe los cuales " + imp + " son impares y " + cont
+    System.out.printf("Se han introducido " + cont + " números.\nDe los cuales " + imp + " son impares y " + par
         + " es el mayor número par.");
   }
 }
