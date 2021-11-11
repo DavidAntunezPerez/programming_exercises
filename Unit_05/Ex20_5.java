@@ -11,10 +11,9 @@ public class Ex20_5 {
     System.out.print("Indica el carácter que quieres que lleve la pirámide: ");
     String ch = System.console().readLine();
     int floor = 1;
-    // int lenght = 1;
     int spa = h - 1;
     int midSpa = 0; // espacios del medio
-    while (floor <= h) {
+    while (floor <= h - 1) {
       // espacios de la pirámide
       for (int i = 1; i <= spa; i++) {
         System.out.print(" ");
@@ -26,16 +25,20 @@ public class Ex20_5 {
       }
       if (floor > 1) {
         System.out.print(ch);
+
       }
       // for (int i = 1; i <= spa; i++) { ((POR FUERA DE LA PIRÁMIDE RELLENAR ALL))
-      //   System.out.print(ch);
+      // System.out.print(ch);
       // }
       System.out.println();
       floor++;
       spa--;
       midSpa += 2;
     }
-    
-    
+    if (h > 1) {
+      for (int i = 2; i <= h * 2; i++) {
+        System.out.print(ch);
+      }
+    }
   }
 }
