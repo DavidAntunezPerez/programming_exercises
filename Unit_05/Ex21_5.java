@@ -11,6 +11,7 @@ public class Ex21_5 {
     int i = 1;
     int cont = 0; // Número de números introducidos.
     int result = 0;
+    int imp = 0;
     while (i > 0) {
       System.out.print("Escriba un número: ");
       i = Integer.parseInt(System.console().readLine());
@@ -19,7 +20,11 @@ public class Ex21_5 {
         cont++;
         System.out.println("(Para finalizar la introducción de datos escriba un número negativo o 0)");
       }
-
+      if (i % 2 != 0) {
+        imp++;
+      }
     }
+    System.out.printf("Se han introducido " + cont + " números.\nDe los cuales " + imp + " son impares y " + cont
+        + " es el mayor número par.");
   }
 }
