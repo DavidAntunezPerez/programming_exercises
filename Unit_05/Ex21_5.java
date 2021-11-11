@@ -10,13 +10,11 @@ public class Ex21_5 {
   public static void main(String[] args) {
     int i = 1;
     int cont = 0; // Número de números introducidos.
-    int result = 0;
-    int imp = 0;
+    int imp = 0; // Número de números impares
     while (i > 0) {
       System.out.print("Escriba un número: ");
       i = Integer.parseInt(System.console().readLine());
       if (i > 0) {
-        result += i;
         cont++;
         System.out.println("(Para finalizar la introducción de datos escriba un número negativo o 0)");
       }
