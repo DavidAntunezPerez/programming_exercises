@@ -8,9 +8,9 @@ public class Ex22_5 {
     boolean primo = true;
     System.out.println("Los números primos entre 2 y 100 son: ");
 
-    for (int n = 100; n >= 2; n--) {
+    for (int n = 2; n <= 100; n++) {
       primo = true;
-      for (int i = 100; n < i; i--) {
+      for (int i = 2; i < n; i++) {
         if (n % i == 0) {
           primo = false;
         }
