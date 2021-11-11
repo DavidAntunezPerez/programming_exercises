@@ -9,8 +9,14 @@ public class Ex19_5 {
   public static void main(String[] args) {
     System.out.print("Indica la altura de la pirámide: ");
       int n = Integer.parseInt(System.console().readLine());
-    System.out.println("Indica el carácter que quieres que lleve la pirámide: ");
-      String s = System.console().readLine();
-    
+    System.out.print("Indica el carácter que quieres que lleve la pirámide: ");
+      String ch = System.console().readLine();
+      
+      // System.out.println("          "+ch);
+      // System.out.println("         "+ch+ch+ch);
+      // System.out.println("        "+ch+ch+ch+ch+ch);
+      // System.out.println("       "+ch+ch+ch+ch+ch+ch+ch);
+      // System.out.println("      "+ch+ch+ch+ch+ch+ch+ch+ch+ch);
+      // System.out.println("     "+ch+ch+ch+ch+ch+ch+ch+ch+ch+ch+ch);
   }
 }
