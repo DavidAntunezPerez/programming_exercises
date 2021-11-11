@@ -19,12 +19,12 @@ public class Ex21_5 {
         cont++;
         System.out.println("(Para finalizar la introducción de datos escriba un número negativo o 0)");
       }
-      //contador de impar
+      // contador de impar
       if (i % 2 != 0) {
         imp++;
       }
-      //detectar mayor número par
-      if( (i > par)&&(i % 2 == 0)){
+      // detectar mayor número par
+      if ((i > par) && (i % 2 == 0)) {
         par = i;
       }
 
