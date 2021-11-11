@@ -11,12 +11,14 @@ public class Ex19_5 {
       int n = Integer.parseInt(System.console().readLine());
     System.out.print("Indica el carácter que quieres que lleve la pirámide: ");
       String ch = System.console().readLine();
-      
-      // System.out.println("          "+ch);
-      // System.out.println("         "+ch+ch+ch);
-      // System.out.println("        "+ch+ch+ch+ch+ch);
-      // System.out.println("       "+ch+ch+ch+ch+ch+ch+ch);
-      // System.out.println("      "+ch+ch+ch+ch+ch+ch+ch+ch+ch);
-      // System.out.println("     "+ch+ch+ch+ch+ch+ch+ch+ch+ch+ch+ch);
+      // espacios de la pirámide
+    for(){
+
+    }
+    // carácteres de la pirámide
+    for(){
+
+    }
+    
   }
 }
