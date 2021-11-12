@@ -24,8 +24,9 @@ public class Ex23_5 {
 
     } while (total <= 10000);
 
-    System.out.printf("Programa finalizado. Has introducido una cantidad de %.2f números. La media de estos es %.2f .",
-        nIntr, total / nIntr);
+    System.out.printf(
+        "Programa finalizado.\nHas introducido una cantidad de %.2f números. Los números suman %.2f . La media de estos es %.2f .",
+        nIntr, total, total / nIntr);
   }
 
 }
