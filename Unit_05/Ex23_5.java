@@ -7,11 +7,17 @@
  */
 public class Ex23_5 {
   public static void main(String[] args) {
-    double total= 0; // total sumado
+    double total= 0; // Total sumado
     double nIntr = 0; // Número de números introducidos.
+    double n = 0; 
     do{
-      
-    }while(total <= 10000)
     System.out.print("Introduce un número: ");
+      n = Double.parseDouble(System.console().readLine());
+      total += n;
+      nIntr++;
+    }while(total <= 10000)
+    
+    System.out.println("Programa finalizado. Has introducido una cantidad de "+nIntr+" números. La media de estos");
   }
+  
 }
