@@ -1,6 +1,6 @@
 /**
  * Escribe un programa que lea un número n e imprima una pirámide de números con
- * n filas como en la siguiente figura:
+ * n filas.
  * 
  * @author David Antunez Perez
  */
