@@ -6,6 +6,6 @@
  */
 public class Ex24_5 {
   public static void main(String[] args) {
-    System.out.print("Selecciona la altu");
+    System.out.print("Selecciona la altura de la pirámide: ");
   }
 }
