@@ -21,7 +21,7 @@ public class Ex29_5 {
     } while (n < 0);
     boolean div = false;
     for (int i = n; i > 0; i--) {
-      for (int j = i - 1; j > 0; j--) {
+      for (int j = i - 1; j > 1; j--) {
         if (i % j != 0) {
           div = true;
           j = 0;
