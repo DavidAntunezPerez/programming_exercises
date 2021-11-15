@@ -9,7 +9,9 @@ public class Ex28_5 {
     System.out.print("Introduzca un número entero: ");
     int n = Integer.parseInt(System.console().readLine());
     int result = 0;
-    
-    System.out.print(n+"! = "+ result);
+    for (int i = n; i > 0; i--) {
+      
+    }
+    System.out.print(n + "! = " + result);
   }
 }
