@@ -10,6 +10,10 @@ public class Ex27_5 {
     System.out.print("Introduce un número mayor de 1: ");
     int nInt = Integer.parseInt(System.console().readLine());
     System.out.println("Los múltiplos de 3 entre 1 y " + nInt + " son ");
-    
+    for (int i = nInt; i >= 1; i--) {
+      if (i % 3 == 0) {
+        System.out.print(i + " ");
+      }
+    }
   }
 }
