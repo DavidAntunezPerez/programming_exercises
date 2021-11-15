@@ -9,7 +9,7 @@ public class Ex27_5 {
   public static void main(String[] args) {
     System.out.print("Introduce un número mayor de 1: ");
     int nInt = Integer.parseInt(System.console().readLine());
-    System.out.print("Los múltiplos de 3 entre 1 y " + nInt + " son ");
-
+    System.out.println("Los múltiplos de 3 entre 1 y " + nInt + " son ");
+    
   }
 }
