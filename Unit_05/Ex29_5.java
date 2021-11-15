@@ -16,9 +16,12 @@ public class Ex29_5 {
         System.out.println("ERROR. El número debe ser positivo.");
       }
     } while (n < 0);
-    boolean div = false;
-    for (int i = n; i > 0 ; i--){
-
+    for (int i = n; i > 0; i--) {
+      for (int j = i; j > 0; j--) {
+        if (i % j != 0) {
+          System.out.print(i + " ");
+        }
+      }
     }
   }
 }
