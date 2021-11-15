@@ -1,3 +1,6 @@
+import javax.swing.text.StyledEditorKit.BoldAction;
+import javax.swing.text.html.HTMLDocument.BlockElement;
+
 /**
  * 
  * @author David Antunez Perez
@@ -17,7 +20,7 @@ public class Ex29_5 {
       }
     } while (n < 0);
     for (int i = n; i > 0; i--) {
-      for (int j = i; j > 0; j--) {
+      for (int j = i - 1; j > 0; j--) {
         if (i % j != 0) {
           System.out.print(i + " ");
         }
