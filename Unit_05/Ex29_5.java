@@ -12,9 +12,13 @@ public class Ex29_5 {
     do {
       System.out.print("Introduce un número positivo: ");
       n = Integer.parseInt(System.console().readLine());
-      if ( n < 0){
+      if (n < 0) {
         System.out.println("ERROR. El número debe ser positivo.");
       }
     } while (n < 0);
+    boolean div = false;
+    for (int i = n; i > 0 ; i--){
+
+    }
   }
 }
