@@ -147,6 +147,8 @@ public class Ex30_5 {
         System.out.print("ERROR. El primer día tiene que ser anterior al segundo día.\n");
       }
     } while ((dayNum > dayNum2) || ((dayNum == dayNum2) && (hour1 > hour2)));
-
+    // código medio
+    System.out
+        .printf("Entre las " + hour1 + ":00h y del " + day1 + " y las " + hour2 + ":00 del " + day2 + " hay hora/s.");
   }
 }
