@@ -17,61 +17,64 @@ public class Ex30_5 {
     do {
       System.out.print("Dia: ");
       day1 = System.console().readLine();
-      switch(day1){
-        case "Lunes":
-        case "lunes":
-        case "LUNES":
-        case "1":
+      switch (day1) {
+      case "Lunes":
+      case "lunes":
+      case "LUNES":
+      case "1":
         dayNum = 1;
         break;
-        case"martes":
-        case "MARTES":
-        case "Martes":
-        case "2":
+      case "martes":
+      case "MARTES":
+      case "Martes":
+      case "2":
         dayNum = 2;
         break;
-        case "miercoles":
-        case "Miercoles":
-        case "MIERCOLES":
-        case "Miércoles":
-        case "MIÉRCOLES":
-        case "miércoles":
-        case "3":
+      case "miercoles":
+      case "Miercoles":
+      case "MIERCOLES":
+      case "Miércoles":
+      case "MIÉRCOLES":
+      case "miércoles":
+      case "3":
         dayNum = 3;
         break;
-        case "Jueves":
-        case "jueves" :
-        case "JUEVES":
-        case "4":
+      case "Jueves":
+      case "jueves":
+      case "JUEVES":
+      case "4":
         dayNum = 4;
         break;
-        case "Viernes":
-        case "viernes":
-        case "VIERNES":
-        case "5":
+      case "Viernes":
+      case "viernes":
+      case "VIERNES":
+      case "5":
         dayNum = 5;
-        case "Sabado":
-        case "sabado":
-        case "SABADO":
-        case "Sábado":
-        case "sábado":
-        case "SÁBADO":
-        case "6":
+      case "Sabado":
+      case "sabado":
+      case "SABADO":
+      case "Sábado":
+      case "sábado":
+      case "SÁBADO":
+      case "6":
         dayNum = 6;
         break;
-        case "Domingo":
-        case "domingo":
-        case "DOMINGO":
-        case "7":
+      case "Domingo":
+      case "domingo":
+      case "DOMINGO":
+      case "7":
         dayNum = 7;
         break;
-        default:
+      default:
         System.out.println("Por favor, introduce un día de la semana válido.");
 
       }
       System.out.print("Hora: ");
       hour1 = Integer.parseInt(System.console().readLine());
-    } while ((hour1 < 0)||(dayNum == 0));
+      if ((hour1 < 0) || (hour > 24)) {
+        System.out.printf("ERROR. Introduzca una hora válida entre 0 y 24.\n");
+      }
+    } while ((hour1 < 0) || (dayNum == 0) || (hour1 > 24));
 
   }
 }
