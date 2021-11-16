@@ -23,7 +23,7 @@ public class Ex37_5 {
       for (int p = cogNum; p > 0; p--) {
         System.out.print("|");
         if (p == 1) {
-          System.out.print("-");
+          System.out.print(" - ");
         }
       }
       cifra = cifra - (cogNum * potencia10);
