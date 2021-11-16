@@ -16,19 +16,17 @@ public class Ex34_5 {
     int numInt = Integer.parseInt(System.console().readLine());
     System.out.printf("Introduzca otro número entero positivo: ");
     int numInt2 = Integer.parseInt(System.console().readLine());
+    int contDigit = 0;
     //numInt
     int cifraPar = numInt;
     int cifraImpar = numInt;
     int cogNumimp = 0;
     int cogNumpar = 0;
-    int contDigit = 0;
     //numInt2
     int cifraPar2 = numInt2;
     int cifraImpar2 = numInt2;
     int cogNumimp2 = 0;
     int cogNumpar2 = 0;
-    int contDigit2 = 0;
-
 
     for (int h = 1; h <= numInt; h *= 10) {
       contDigit++;
@@ -62,6 +60,5 @@ public class Ex34_5 {
       cifraPar2 = cifraPar2 - (cogNumpar2 * potencia10);
       cifraPar = cifraPar - (cogNumpar * potencia10);
     }
-
   }
 }
