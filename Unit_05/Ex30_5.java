@@ -12,7 +12,7 @@ public class Ex30_5 {
   public static void main(String[] args) {
     System.out.printf("Por favor, introduzca la primera hora.\n");
     String day1; // día en letras
-    int dayNum; // día en numérico
+    int dayNum = 0; // día en numérico
     int hour1;
     do {
       System.out.print("Dia: ");
@@ -24,7 +24,7 @@ public class Ex30_5 {
         case "1":
         dayNum = 1;
         break;
-        case:"martes":
+        case"martes":
         case "MARTES":
         case "Martes":
         case "2":
@@ -39,10 +39,39 @@ public class Ex30_5 {
         case "3":
         dayNum = 3;
         break;
+        case "Jueves":
+        case "jueves" :
+        case "JUEVES":
+        case "4":
+        dayNum = 4;
+        break;
+        case "Viernes":
+        case "viernes":
+        case "VIERNES":
+        case "5":
+        dayNum = 5;
+        case "Sabado":
+        case "sabado":
+        case "SABADO":
+        case "Sábado":
+        case "sábado":
+        case "SÁBADO":
+        case "6":
+        dayNum = 6;
+        break;
+        case "Domingo":
+        case "domingo":
+        case "DOMINGO":
+        case "7":
+        dayNum = 7;
+        break;
+        default:
+        System.out.println("Por favor, introduce un día de la semana válido.");
+
       }
       System.out.print("Hora: ");
       hour1 = Integer.parseInt(System.console().readLine());
-    } while (hour1 > 0);
+    } while ((hour1 < 0)||(dayNum == 0));
 
   }
 }
