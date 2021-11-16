@@ -17,7 +17,8 @@ public class Ex30_5 {
     int dayNum2 = 0; // dia2 en numérico
     String day2; // dia2
     int hour2; // hora2
-    //recoger los datos de horas y días
+    int result; // resultado final
+    // recoger los datos de horas y días
     do {
       System.out.printf("Por favor, introduzca la primera hora.\n");
       do {
@@ -148,10 +149,10 @@ public class Ex30_5 {
         System.out.print("ERROR. El primer día tiene que ser anterior al segundo día.\n");
       }
     } while ((dayNum > dayNum2) || ((dayNum == dayNum2) && (hour1 > hour2)));
-    //calcular horas transcurridas
-    
+    // calcular horas transcurridas
+    result = ((24 * dayNum) + hour1) - ((24 * dayNum2) + hour2);
     // mostrar resultado en pantalla
-    System.out
-        .printf("Entre las " + hour1 + ":00h y del " + day1 + " y las " + hour2 + ":00 del " + day2 + " hay hora/s.");
+    System.out.printf("Entre las " + hour1 + ":00h y del " + day1 + " y las " + hour2 + ":00 del " + day2 + " hay "
+        + result + " hora/s.");
   }
 }
