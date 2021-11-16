@@ -10,8 +10,9 @@ public class Ex33_5 {
   public static void main(String[] args) {
     System.out.print("Introduzca la altura de la U: ");
     int h = Integer.parseInt(System.console().readLine());
-    for (;;) {
-
+    for (int i = h; i > 1; i--) {
+      System.out.print("*\n");
     }
+    
   }
 }
