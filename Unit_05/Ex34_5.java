@@ -27,7 +27,7 @@ public class Ex34_5 {
     System.out.print("Dígitos impares: ");
     for (int i = 1; i <= contDigit; i++) {
       int potencia10 = (int) (Math.pow(10, (contDigit - i)));
-        cogNumimp = cifraImpar / potencia10;
+      cogNumimp = cifraImpar / potencia10;
       if (cogNumimp % 2 != 0) {
         System.out.print(cogNumimp + " ");
       }
@@ -42,6 +42,6 @@ public class Ex34_5 {
       }
       cifraPar = cifraPar - (cogNumpar * potencia10);
     }
-    
+
   }
 }
