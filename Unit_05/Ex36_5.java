@@ -23,7 +23,7 @@ public class Ex36_5 {
     if (numIngre == numVuelta) { // si el número introducido y su volteado son iguales es capidua
       System.out.print(numIngre + " es Capicua");
     } else {
-      System.out.print(numIngre + " no es Capicua");
+      System.out.print(numIngre + " NO es Capicua");
     }
   }
 }
