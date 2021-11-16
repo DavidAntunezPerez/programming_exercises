@@ -16,12 +16,18 @@ public class Ex37_5 {
     for (int h = 1; h <= numInt; h *= 10) {
       contDigit++;
     }
-
+    System.out.print("El "+numInt+" es el ");
     for (int i = 1; i <= contDigit; i++) {
       int potencia10 = (int) (Math.pow(10, (contDigit - i)));
       cogNum = cifra / potencia10;
-      System.out.print(cogNum + "\n");
+      for (int p = cogNum; p > 0; p--) {
+        System.out.print("|");
+        if (p == 1) {
+          System.out.print("-");
+        }
+      }
       cifra = cifra - (cogNum * potencia10);
     }
+    System.out.print(" en el sistema de palotes.");
   }
 }
