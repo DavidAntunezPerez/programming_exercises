@@ -28,7 +28,8 @@ public class Ex32_5 {
     }
       cifra = cifra - (cogNum * potencia10);
     }
-    System.out.printf("Suma de dígitos pares: " + add);
+    System.out.printf("\nSuma de dígitos pares: " + add);
+
 
   }
 }
