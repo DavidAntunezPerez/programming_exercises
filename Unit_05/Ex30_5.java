@@ -17,9 +17,8 @@ public class Ex30_5 {
     int dayNum2 = 0; // dia2 en numérico
     String day2; // dia2
     int hour2; // hora2
-    
-      System.out.printf("Por favor, introduzca la primera hora.\n");
     do {
+      System.out.printf("Por favor, introduzca la primera hora.\n");
       do {
         System.out.print("Dia: ");
         day1 = System.console().readLine();
@@ -73,6 +72,7 @@ public class Ex30_5 {
           break;
         default:
           System.out.println("Por favor, introduce un día de la semana válido.");
+          dayNum = 0;
 
         }
         System.out.print("Hora: ");
@@ -135,7 +135,7 @@ public class Ex30_5 {
           break;
         default:
           System.out.println("Por favor, introduce un día de la semana válido.");
-
+          dayNum = 0;
         }
         System.out.print("Hora: ");
         hour2 = Integer.parseInt(System.console().readLine());
@@ -143,11 +143,10 @@ public class Ex30_5 {
           System.out.printf("ERROR. Introduzca una hora válida entre 0 y 24.\n");
         }
       } while ((hour2 < 0) || (dayNum2 == 0) || (hour2 > 24));
-      if((dayNum > dayNum2) || ((dayNum == dayNum2) && (hour1 > hour2))){
-        System.out.print("ERROR. El primer día tiene que ser anterior al segundo día.");
+      if ((dayNum > dayNum2) || ((dayNum == dayNum2) && (hour1 > hour2))) {
+        System.out.print("ERROR. El primer día tiene que ser anterior al segundo día.\n");
       }
     } while ((dayNum > dayNum2) || ((dayNum == dayNum2) && (hour1 > hour2)));
-
 
   }
 }
