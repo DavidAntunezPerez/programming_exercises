@@ -16,7 +16,7 @@ public class Ex37_5 {
     for (int h = 1; h <= numInt; h *= 10) {
       contDigit++;
     }
-    System.out.print("El "+numInt+" es el ");
+    System.out.print("El " + numInt + " es el ");
     for (int i = 1; i <= contDigit; i++) {
       int potencia10 = (int) (Math.pow(10, (contDigit - i)));
       cogNum = cifra / potencia10;
