@@ -14,7 +14,6 @@ public class Ex34_5 {
   public static void main(String[] args) {
     System.out.printf("Introduzca un número entero positivo: ");
     int numInt = Integer.parseInt(System.console().readLine());
-    int add = 0; // Suma de todos los números
     int cifra = numInt;
     int cogNum = 0;
     int contDigit = 0;
@@ -26,13 +25,19 @@ public class Ex34_5 {
     for (int i = 1; i <= contDigit; i++) {
       int potencia10 = (int) (Math.pow(10, (contDigit - i)));
       cogNum = cifra / potencia10;
-      if(cogNum % 2 == 0){
-      System.out.print(cogNum + " ");
-      add += cogNum;
-    }
+      if (cogNum % 2 == 0) {
+        System.out.print(cogNum + " ");
+      }
       cifra = cifra - (cogNum * potencia10);
     }
-    System.out.printf("Suma de dígitos pares: " + add);
-
+    System.out.print("Dígitos impares: ");
+    for (int i = 1; i <= contDigit; i++) {
+      int potencia11 = (int) (Math.pow(10, (contDigit - i)));
+        cogNum = cifra / potencia11;
+      if (cogNum % 2 != 0) {
+        System.out.print(cogNum + " ");
+      }
+      cifra = cifra - (cogNum * potencia11);
+    }
   }
 }
