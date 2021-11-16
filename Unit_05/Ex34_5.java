@@ -14,30 +14,34 @@ public class Ex34_5 {
   public static void main(String[] args) {
     System.out.printf("Introduzca un número entero positivo: ");
     int numInt = Integer.parseInt(System.console().readLine());
-    int cifra = numInt;
-    int cogNum = 0;
+    int cifraPar = numInt;
+    int cifraImpar = numInt;
+    int cogNumimp = 0;
+    int cogNumpar = 0;
     int contDigit = 0;
 
     for (int h = 1; h <= numInt; h *= 10) {
       contDigit++;
     }
+
+    System.out.print("Dígitos impares: ");
+    for (int i = 1; i <= contDigit; i++) {
+      int potencia10 = (int) (Math.pow(10, (contDigit - i)));
+        cogNumimp = cifraImpar / potencia10;
+      if (cogNumimp % 2 != 0) {
+        System.out.print(cogNumimp + " ");
+      }
+      cifraImpar = cifraImpar - (cogNumimp * potencia10);
+    }
     System.out.print("Dígitos pares: ");
     for (int i = 1; i <= contDigit; i++) {
       int potencia10 = (int) (Math.pow(10, (contDigit - i)));
-      cogNum = cifra / potencia10;
-      if (cogNum % 2 == 0) {
-        System.out.print(cogNum + " ");
+      cogNumpar = cifraPar / potencia10;
+      if (cogNumpar % 2 == 0) {
+        System.out.print(cogNumpar + " ");
       }
-      cifra = cifra - (cogNum * potencia10);
+      cifraPar = cifraPar - (cogNumpar * potencia10);
     }
-    System.out.print("Dígitos impares: ");
-    for (int i = 1; i <= contDigit; i++) {
-      int potencia11 = (int) (Math.pow(10, (contDigit - i)));
-        cogNum = cifra / potencia11;
-      if (cogNum % 2 != 0) {
-        System.out.print(cogNum + " ");
-      }
-      cifra = cifra - (cogNum * potencia11);
-    }
+    
   }
 }
