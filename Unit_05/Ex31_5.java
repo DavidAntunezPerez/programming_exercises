@@ -9,6 +9,12 @@ public class Ex31_5 {
   public static void main(String[] args) {
     System.out.print("Introduzca la altura de la L: ");
     int h = Integer.parseInt(System.console().readLine());
-    
+    String c = "*";
+    for(int i = h; i > 1; i--){
+      System.out.printf(c+ " \n");
+    }
+    for(int i = (h/2)+1;i > 0;i--){
+    System.out.printf(c);
+  }
   }
 }
