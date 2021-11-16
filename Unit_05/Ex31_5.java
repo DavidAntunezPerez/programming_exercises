@@ -7,6 +7,8 @@
  */
 public class Ex31_5 {
   public static void main(String[] args) {
-
+    System.out.print("Introduzca la altura de la L: ");
+    int h = Integer.parseInt(System.console().readLine());
+    
   }
 }
