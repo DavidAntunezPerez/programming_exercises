@@ -150,7 +150,7 @@ public class Ex30_5 {
       }
     } while ((dayNum > dayNum2) || ((dayNum == dayNum2) && (hour1 > hour2)));
     // calcular horas transcurridas
-    result = ((24 * dayNum) + hour1) - ((24 * dayNum2) + hour2);
+    result = ((24 * dayNum2) + hour2) - ((24 * dayNum) + hour1);
     // mostrar resultado en pantalla
     System.out.printf("Entre las " + hour1 + ":00h y del " + day1 + " y las " + hour2 + ":00 del " + day2 + " hay "
         + result + " hora/s.");
