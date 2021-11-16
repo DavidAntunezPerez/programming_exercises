@@ -8,6 +8,10 @@
  */
 public class Ex32_5 {
   public static void main(String[] args) {
+    System.out.printf("Introduzca un número entero positivo: \n");
+    int n = Integer.parseInt(System.console().readLine());
+    System.out.printf("Dígitos pares: \n");
+    System.out.printf("Suma de dígitos pares: \n");
 
   }
 }
