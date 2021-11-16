@@ -71,7 +71,7 @@ public class Ex30_5 {
       }
       System.out.print("Hora: ");
       hour1 = Integer.parseInt(System.console().readLine());
-      if ((hour1 < 0) || (hour > 24)) {
+      if ((hour1 < 0) || (hour1 > 24)) {
         System.out.printf("ERROR. Introduzca una hora válida entre 0 y 24.\n");
       }
     } while ((hour1 < 0) || (dayNum == 0) || (hour1 > 24));
