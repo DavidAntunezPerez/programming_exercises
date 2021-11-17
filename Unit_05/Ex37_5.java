@@ -22,7 +22,7 @@ public class Ex37_5 {
       cogNum = cifra / potencia10;
       for (int p = cogNum; p > 0; p--) {
         System.out.print("|");
-        if ((p == 1)&&(i < contDigit)) {
+        if ((p == 1)&&(i < contDigit)) { // ponemos la condición de
           System.out.print(" - ");
         }
       }
