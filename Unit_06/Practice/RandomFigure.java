@@ -2,10 +2,10 @@ public class RandomFigure {
   public static void main(String[] args) {
     int figNum;
     for (int i = 0; i <= 20; i++) {
-      figNum = (int) (Math.random() * 4 + 1);
+      figNum = (int) (Math.random() * 7 + 1);
       switch (figNum) {
       case 1:
-        System.out.print("_");
+        System.out.print("👺");
         break;
       case 2:
         System.out.print("💩");
@@ -17,7 +17,7 @@ public class RandomFigure {
         System.out.print("🤟");
         break;
       default:
-        System.out.print("Introduce un valor válido.");
+        System.out.print("_");
       }
     }
   }
