@@ -25,6 +25,6 @@ public class Ex41_5 {
       }
       cifra = (cifra - cogNum)/10;
     }
-    System.out.printf("En el número "+numInt+" , hay "+contPos+" números positivos y "+contNeg+" números negativos.");
+    System.out.printf("En el número "+numInt+" , hay "+contPos+" números pares y "+contNeg+" números impares.");
   }
 }
