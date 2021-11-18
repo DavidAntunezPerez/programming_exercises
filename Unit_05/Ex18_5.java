@@ -20,7 +20,7 @@ public class Ex18_5 {
       }
     } while (n1 >= n2);
 
-    for (int i = n2 - 7; (i > n1) && (i < n2); i -= 7) {
+    for (int i = n1 + 7; (i > n1) && (i < n2); i += 7) {
       System.out.print(i + " ");
     }
   }
