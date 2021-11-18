@@ -14,17 +14,18 @@ public class Ex41_5 {
     int cogNum = 0;
     int contPos = 0;
     int contNeg = 0;
-    for ( int i = 1; i <= numInt; i *= 10 ) {
+    for (int i = 1; i <= numInt; i *= 10) {
       cogNum = cifra % 10;
-      System.out.print(cogNum+"\n");
-      if(cogNum % 2 == 0){
+      System.out.print(cogNum + "\n");
+      if (cogNum % 2 == 0) {
         contPos++;
       }
-      if(cogNum % 2 != 0){
+      if (cogNum % 2 != 0) {
         contNeg++;
       }
-      cifra = (cifra - cogNum)/10;
+      cifra = (cifra - cogNum) / 10;
     }
-    System.out.printf("En el número "+numInt+" , hay "+contPos+" números pares y "+contNeg+" números impares.");
+    System.out
+        .printf("En el número " + numInt + " , hay " + contPos + " números pares y " + contNeg + " números impares.");
   }
 }
