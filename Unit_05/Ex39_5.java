@@ -19,10 +19,10 @@ public class Ex39_5 {
     System.out.print("Del 1 al " + n + " , los factoriales son: ");
     int result = 1;
     int add;
-    for (int i = n; i > 0; i--) {
-      System.out.print(i + "! = " + result+ ", ");
+    for (int i = 1; i <= n; i++) {
       add = i;
       result *= add;
+      System.out.print(i + "! = " + result + ", ");
     }
   }
 }
