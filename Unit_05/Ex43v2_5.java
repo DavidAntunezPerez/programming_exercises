@@ -7,10 +7,19 @@ public class Ex43v2_5 {
     int pos = Integer.parseInt(System.console().readLine());
     int cifra = numInt;
     int cogNum = 0;
-    for (int i = 1; i <= numInt; i *= 10) {
-      cogNum = cifra % 10;
-      System.out.print(cogNum + "\n");
+    // primera mitad
+    System.out.print("Los números partidos son el ");
+    for (int i = 1; i <= numInt*(int)(Math.pow(10, pos)); i *= 10) {
+      cogNum = cifra / 10;
+      System.out.print(cogNum + " ");
       cifra = (cifra - cogNum) / 10;
+      i = 1+(numInt*(int)(Math.pow(10, pos)));
+    }
+    for (int i = 1; i <= numInt*(int)(Math.pow(10, pos)); i *= 10) {
+      cogNum = cifra % 10;
+      System.out.print(cogNum + " ");
+      // cifra = (cifra - cogNum) / 10;
+      i = 1+(numInt*(int)(Math.pow(10, pos)));
     }
   }
 }
