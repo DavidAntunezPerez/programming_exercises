@@ -25,7 +25,7 @@ public class Ex43_5 {
       int p1 = (int) (Math.pow(10, pos));
       cogNum = cifra / p1;
       System.out.print(cogNum + " ");
-      cifra = cifra - (cogNum * p1);
+      // cifra = cifra - (cogNum * p1);
     System.out.print("y el ");
     int p2 = (int) (Math.pow(10, pos));
       cogNum = cifra % p2;
