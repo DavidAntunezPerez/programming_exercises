@@ -20,18 +20,15 @@ public class Ex43_5 {
 
     int cifra = numInt;
     int cogNum = 0;
-    int contDigit = 0;
 
-    for (int h = 1; h <= numInt; h *= 10) {
-      contDigit++;
-    }
     System.out.print("Los números partidos son el ");
-    for (int i = 1; i <= contDigit; i++) {
-      int potencia10 = (int) (Math.pow(10, (contDigit - i)));
-      cogNum = cifra / potencia10;
+      int p1 = (int) (Math.pow(10, pos));
+      cogNum = cifra / p1;
       System.out.print(cogNum + " ");
-      cifra = cifra - (cogNum * potencia10);
-    }
+      cifra = cifra - (cogNum * p1);
     System.out.print("y el ");
+    int p2 = (int) (Math.pow(10, pos));
+      cogNum = cifra % p2;
+      System.out.print(cogNum + " ");
   }
 }
