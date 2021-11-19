@@ -25,7 +25,7 @@ public class Ex43_5 {
     for (int h = 1; h <= numInt; h *= 10) {
       contDigit++;
     }
-
+    
     for (int i = 1; i <= contDigit; i++) {
       int potencia10 = (int) (Math.pow(10, (contDigit - i)));
       cogNum = cifra / potencia10;
