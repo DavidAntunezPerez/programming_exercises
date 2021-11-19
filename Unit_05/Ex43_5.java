@@ -13,5 +13,6 @@
 public class Ex43_5 {
   public static void main(String[] args) {
     System.out.print("Introduce un número");
+    int n = Integer.parseInt(System.console().readLine());
   }
 }
