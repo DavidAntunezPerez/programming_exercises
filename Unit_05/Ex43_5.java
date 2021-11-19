@@ -29,7 +29,7 @@ public class Ex43_5 {
     for (int i = 1; i <= contDigit; i++) {
       int potencia10 = (int) (Math.pow(10, (contDigit - i)));
       cogNum = cifra / potencia10;
-      System.out.print((cogNum/(int)(Math.pow(10, pos))) + " ");
+      System.out.print(cogNum + " ");
       cifra = cifra - (cogNum * potencia10);
     }
     System.out.print("y el ");
