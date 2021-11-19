@@ -21,13 +21,14 @@ public class Ex43_5 {
     int cifra = numInt;
     int cogNum = 0;
 
+    // primera mitad
     System.out.print("Los números partidos son el ");
-      int p1 = (int) (Math.pow(10, pos));
+      int p1 = (int) (Math.pow(10, pos/(pos-1)));
       cogNum = cifra / p1;
       System.out.print(cogNum + " ");
-      // cifra = cifra - (cogNum * p1);
+    // segunda mitad
     System.out.print("y el ");
-    int p2 = (int) (Math.pow(10, pos));
+    int p2 = (int) (Math.pow(10, pos/(pos-1)));
       cogNum = cifra % p2;
       System.out.print(cogNum + " ");
   }
