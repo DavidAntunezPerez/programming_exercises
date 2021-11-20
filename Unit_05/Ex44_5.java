@@ -14,7 +14,7 @@ public class Ex44_5 {
   public static void main(String[] args) {
     System.out.print("Introduzca un número entero positivo: ");
     int nIntr = Integer.parseInt(System.console().readLine());
-    System.out.print("Introduzca el dígito que quieres isnertar: ");
+    System.out.print("Introduzca el dígito que quieres insertar: ");
     int digit = Integer.parseInt(System.console().readLine());
     System.out.print("Introduzca la posicion donde quieres insertar: ");
     int pos = Integer.parseInt(System.console().readLine());
@@ -26,10 +26,10 @@ public class Ex44_5 {
       contDig++;
     } while (n > 0);
     // num a la izquierda del dígito
-    int left = nIntr / (int) (Math.pow(10, contDig - pos + 1));
+    int left = nIntr / (int) (Math.pow(10, contDig - pos));
     // num a la derecha del dígito
 
     // mostramos resultado:
-    System.out.print(left + digit);
+    System.out.print(left +""+digit+"");
   }
 }
