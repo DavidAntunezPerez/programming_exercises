@@ -25,6 +25,11 @@ public class Ex44_5 {
       n /= 10;
       contDig++;
     }while(n > 0);
+    // num a la izquierda del dígito
+    int left = nIntr / (int)(Math.pow(10, (contDig - pos)-1));
+    // num a la derecha del dígito
 
+    // mostramos resultado:
+    System.out.print(left+digit);
   }
 }
