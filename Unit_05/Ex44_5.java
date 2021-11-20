@@ -19,12 +19,12 @@ public class Ex44_5 {
     System.out.print("Introduzca la posicion donde quieres insertar: ");
     int pos = Integer.parseInt(System.console().readLine());
     int n = nIntr;
-    // contar cifras
+    // contar digitos
     int contDig = 0;
     do{
       n /= 10;
       contDig++;
     }while(n > 0);
-    
+
   }
 }
