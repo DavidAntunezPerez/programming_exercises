@@ -12,6 +12,11 @@
  */
 public class Ex44_5 {
   public static void main(String[] args) {
-
+    System.out.print("Introduzca un número entero positivo: ");
+    int n = Integer.parseInt(System.console().readLine());
+    System.out.print("Introduzca el dígito que quieres isnertar: ");
+    int digit = Integer.parseInt(System.console().readLine());
+    System.out.print("Introduzca la posicion donde quieres insertar: ");
+    int pos = Integer.parseInt(System.console().readLine());
   }
 }
