@@ -5,7 +5,7 @@
  * el resto de dígitos se desplazará hacia la derecha. Las posiciones se cuentan
  * de izquierda a derecha empezando por el 1. Suponemos que el usuario introduce
  * correctamente los datos. Se recomienda usar long en lugar de int ya que el
- * primero admite números más largos.
+ * primero admite números más largos. 
  * 
  * @author David Antunez Perez
  * 
