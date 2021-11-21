@@ -30,6 +30,6 @@ public class Ex44_5 {
     // num a la derecha del dígito
     int right = nIntr % (int) (Math.pow(10, contDig - pos));
     // mostramos resultado:
-    System.out.print(left +""+digit+""+right+""); a
+    System.out.print(left +""+digit+""+right+"");
   }
 }
