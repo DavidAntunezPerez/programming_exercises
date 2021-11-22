@@ -24,7 +24,7 @@ public class Ex45 {
       contDig++;
     } while (n > 0);
     // num a la izquierda del dígito
-    int left = nIntr / (int) (Math.pow(10, contDig - pos));
+    int left = nIntr / (int) (Math.pow(10, contDig - pos+1));
     // num a la derecha del dígito
     int right = nIntr % (int) (Math.pow(10, contDig - pos));
     // mostramos resultado:
