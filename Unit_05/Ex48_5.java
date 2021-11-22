@@ -8,6 +8,9 @@
  */
 public class Ex48_5 {
   public static void main(String[] args) {
-
+    System.out.print("Introduzca un número entero: ");
+    int n = Integer.parseInt(System.console().readLine());
+    System.out.print("Dígitos que aparecen en el número: ");
+    System.out.print("Dígitos que no aparecen: ");
   }
 }
