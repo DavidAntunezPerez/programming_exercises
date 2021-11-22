@@ -28,6 +28,11 @@ public class Ex45 {
     // num a la derecha del dígito
     int right = nIntr % (int) (Math.pow(10, contDig - pos));
     // mostramos resultado:
+    if(left > 0){
     System.out.print("El número resultante es:" + left + "" + digit + "" + right + "");
+    }
+    else if (left == 0){
+      System.out.print("El número resultante es:" + digit + "" + right + "");
+      }
   }
 }
