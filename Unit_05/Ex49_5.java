@@ -1,3 +1,4 @@
+import java.util.Scanner;
 /**
  * Realiza un programa que calcule el máximo, el mínimo y la media de una serie
  * de números enteros positivos introducidos por teclado. El programa terminará
@@ -9,20 +10,44 @@
  */
 public class Ex49_5 {
   public static void main(String[] args) {
-    System.out.print("Por favor, introduzca varios números enteros, para terminar, introduzca un número primo: ");
-    int contDivisores = 2; // No puede ser 1
-    boolean pregPrimo = true; // Presupone que el número es primo
+    System.out.println("Por favor, vaya introduciendo números enteros positivos. ");
+    System.out.println("Para terminar, introduzca un número primo:");
+
+    Scanner s = new Scanner(System.in);
+
+    int numero;
+    int suma = 0;
+    int cuentaNumeros = 0;
+    int maximo = Integer.MIN_VALUE;
+    int minimo = Integer.MAX_VALUE;
+    boolean esPrimo;
+
     do {
-      int numInt = Integer.parseInt(System.console().readLine());
-      //comprobación de número primo
-      pregPrimo = true;
-      do {
-        pregPrimo = true;
-        if (numInt % contDivisores == 0 && numInt != contDivisores) {
-          pregPrimo = false; // Si encuentra un divisor: Ya no es primo
+      numero = Integer.parseInt(s.nextLine());
+
+      // comprueba si el número introducido es primo
+      esPrimo = true;
+      for (int i = 2; i < numero; i++) {
+        if ((numero % i) == 0) {
+          esPrimo = false;
         }
-        contDivisores++;
-      } while (contDivisores < numInt && pregPrimo == true);
-    } while (pregPrimo == false);
+      }
+      
+      // si no es primo, se contabiliza
+      if (!esPrimo) {
+        suma += numero;
+        cuentaNumeros++;
+        
+        maximo = numero > maximo ? numero : maximo;
+        minimo = numero < minimo ? numero : minimo;
+      }
+      
+    } while (!esPrimo);
+    
+    System.out.println("Ha introducido " + cuentaNumeros + " números no primos.");
+    System.out.println("Máximo: " + maximo);
+    System.out.println("Mínimo: " + minimo);
+    System.out.println("Media: " + (double)suma / cuentaNumeros);
+    s.close();
   }
 }
