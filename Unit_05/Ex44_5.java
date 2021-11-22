@@ -5,7 +5,7 @@
  * el resto de dígitos se desplazará hacia la derecha. Las posiciones se cuentan
  * de izquierda a derecha empezando por el 1. Suponemos que el usuario introduce
  * correctamente los datos. Se recomienda usar long en lugar de int ya que el
- * primero admite números más largos. 
+ * primero admite números más largos.
  * 
  * @author David Antunez Perez
  * 
@@ -30,6 +30,10 @@ public class Ex44_5 {
     // num a la derecha del dígito
     int right = nIntr % (int) (Math.pow(10, contDig - pos));
     // mostramos resultado:
-    System.out.print(left + "" + digit + "" + right + "");
-  }
+    if(left > 0){
+      System.out.print("El número resultante es:" + left + "" + digit + "" + right + "");
+      }
+      else if (left == 0){
+        System.out.print("El número resultante es:" + digit + "" + right + "");
+        }
 }
