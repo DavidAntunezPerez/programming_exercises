@@ -14,6 +14,16 @@ public class Ex48_5 {
     int contDig = 1;
     int cifra = numInt;
     int cogNum = 0;
+    boolean one = false;
+    boolean two = false;
+    boolean three = false;
+    boolean four = false;
+    boolean five = false;
+    boolean six = false;
+    boolean seven = false;
+    boolean eight = false;
+    boolean nine = false;
+    boolean cero = false;
     // contamos los dígitos
     do {
       n /= 10;
@@ -32,39 +42,69 @@ public class Ex48_5 {
     for (int i = 2; i <= contDig; i++) {
       int potencia11 = (int) (Math.pow(10, (contDig - i)));
       cogNum = cifra / potencia11;
-      switch (cogNum) {
-        case 0:
-          System.out.print(0 + " ");
-          break;
-        case 1:
-          System.out.print(1 + " ");
-          break;
-        case 2:
-          System.out.print(2 + " ");
-          break;
-        case 3:
-          System.out.print(3 + " ");
-          break;
-        case 4:
-          System.out.print(4 + " ");
-          break;
-        case 5:
-          System.out.print(5 + " ");
-          break;
-        case 6:
-          System.out.print(6 + " ");
-          break;
-        case 7:
-          System.out.print(7 + " ");
-          break;
-        case 8:
-          System.out.print(8 + " ");
-          break;
-        case 9:
-          System.out.print(9 + " ");
-          break;
-        }
       cifra = cifra - (cogNum * potencia11);
+      switch (cogNum) {
+      case 0:
+        cero = true;
+        break;
+      case 1:
+        one = true;
+        break;
+      case 2:
+        two = true;
+        break;
+      case 3:
+        three = true;
+        break;
+      case 4:
+        four = true;
+        break;
+      case 5:
+        five = true;
+        break;
+      case 6:
+        six = true;
+        break;
+      case 7:
+        seven = true;
+        break;
+      case 8:
+        eight = true;
+        break;
+      case 9:
+        nine = true;
+        break;
+      }
+    }
+    if (cero == false) {
+      System.out.print(0 + " ");
+    }
+    if (one == false) {
+      System.out.print(1 + " ");
+    }
+    if (two == false) {
+      System.out.print(2 + " ");
+    }
+    if (three == false) {
+      System.out.print(3 + " ");
+    }
+    if (four == false) {
+      System.out.print(4 + " ");
+    }
+    if (five == false) {
+      System.out.print(5 + " ");
+    }
+    if (six == false) {
+      System.out.print(6 + " ");
+    }
+    if (seven == false) {
+      System.out.print(7 + " ");
+    }
+    if (eight == false) {
+      System.out.print(8 + " ");
+    }
+    if (nine == false) {
+      System.out.print(9 + " ");
     }
   }
 }
