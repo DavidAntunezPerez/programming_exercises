@@ -14,6 +14,16 @@ public class Ex48_5 {
     int contDig = 1;
     int cifra = numInt;
     int cogNum = 0;
+    boolean one = false;
+    boolean two = false;
+    boolean three = false;
+    boolean four = false;
+    boolean five = false;
+    boolean six = false;
+    boolean seven = false;
+    boolean eight = false;
+    boolean nine = false;
+    boolean cero = false;
     // contamos los dígitos
     do {
       n /= 10;
@@ -21,12 +31,13 @@ public class Ex48_5 {
     } while (n > 0);
 
     System.out.print("Dígitos que aparecen en el número: ");
-    for ( int i = 1; i <= contDig; i++ ) {
-      int potencia10 = (int)(Math.pow(10,(contDig-i)));
+    for (int i = 2; i <= contDig; i++) {
+      int potencia10 = (int) (Math.pow(10, (contDig - i)));
       cogNum = cifra / potencia10;
-      System.out.print(cogNum+"\n");
-      cifra = cifra - (cogNum*potencia10);
+      System.out.print(cogNum + " ");
+      cifra = cifra - (cogNum * potencia10);
     }
-    System.out.print("Dígitos que no aparecen: ");
+    System.out.print("\nDígitos que no aparecen: ");
+
   }
 }
