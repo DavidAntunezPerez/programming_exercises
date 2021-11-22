@@ -15,39 +15,39 @@ public class Ex49_5 {
 
     Scanner s = new Scanner(System.in);
 
-    int numero;
+    int n;
     int suma = 0;
-    int cuentaNumeros = 0;
-    int maximo = Integer.MIN_VALUE;
-    int minimo = Integer.MAX_VALUE;
+    int count = 0;
+    int max = Integer.MIN_VALUE;
+    int min = Integer.MAX_VALUE;
     boolean esPrimo;
 
     do {
-      numero = Integer.parseInt(s.nextLine());
+      n = Integer.parseInt(s.nextLine());
 
       // comprueba si el número introducido es primo
       esPrimo = true;
-      for (int i = 2; i < numero; i++) {
-        if ((numero % i) == 0) {
+      for (int i = 2; i < n; i++) {
+        if ((n % i) == 0) {
           esPrimo = false;
         }
       }
       
       // si no es primo, se contabiliza
       if (!esPrimo) {
-        suma += numero;
-        cuentaNumeros++;
+        suma += n;
+        count++;
         
-        maximo = numero > maximo ? numero : maximo;
-        minimo = numero < minimo ? numero : minimo;
+        max = n > max ? n : max;
+        min = n < min ? n : min;
       }
       
     } while (!esPrimo);
     
-    System.out.println("Ha introducido " + cuentaNumeros + " números no primos.");
-    System.out.println("Máximo: " + maximo);
-    System.out.println("Mínimo: " + minimo);
-    System.out.println("Media: " + (double)suma / cuentaNumeros);
+    System.out.println("Ha introducido " + count + " números no primos.");
+    System.out.println("Máximo: " + max);
+    System.out.println("Mínimo: " + min);
+    System.out.println("Media: " + (double)suma / count);
     s.close();
   }
 }
