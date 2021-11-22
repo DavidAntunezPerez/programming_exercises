@@ -10,16 +10,23 @@ public class Ex48_5 {
   public static void main(String[] args) {
     System.out.print("Introduzca un número entero: ");
     int numInt = Integer.parseInt(System.console().readLine());
-    // contamos los dígitos
     int n = numInt;
     int contDig = 1;
+    int cifra = numInt;
+    int cogNum = 0;
+    // contamos los dígitos
     do {
       n /= 10;
       contDig++;
     } while (n > 0);
-    
-    System.out.print("Dígitos que aparecen en el número: ");
 
+    System.out.print("Dígitos que aparecen en el número: ");
+    for ( int i = 1; i <= contDig; i++ ) {
+      int potencia10 = (int)(Math.pow(10,(contDig-i)));
+      cogNum = cifra / potencia10;
+      System.out.print(cogNum+"\n");
+      cifra = cifra - (cogNum*potencia10);
+    }
     System.out.print("Dígitos que no aparecen: ");
   }
 }
