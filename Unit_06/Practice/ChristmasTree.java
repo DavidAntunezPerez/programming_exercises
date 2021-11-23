@@ -5,7 +5,6 @@ public class ChristmasTree {
     int h = Integer.parseInt(System.console().readLine());
     int spa = h - 1;
     int floor = 1;
-    int starSpa = h - 1;
     // colocar la estrella
     for (int i = h - 1; i > 0; i--) {
       System.out.print(" ");
@@ -18,7 +17,8 @@ public class ChristmasTree {
         System.out.print(" ");
       }
       // hojas del árbol
-      System.out.print("/\n");
+      System.out.print("/");
+      System.out.println("/");
       floor++;
       spa--;
     }
