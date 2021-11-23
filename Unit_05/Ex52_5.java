@@ -8,6 +8,6 @@
  */
 public class Ex52_5 {
   public static void main(String[] args) {
-
+    
   }
 }
