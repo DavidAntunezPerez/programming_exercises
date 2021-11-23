@@ -18,8 +18,9 @@ public class Ex49_5 {
     int n;
     int suma = 0;
     int count = 0;
-    int max = Integer.MIN_VALUE;
+    // int max = Integer.MIN_VALUE;
     int min = Integer.MAX_VALUE;
+    int max = 0;
     boolean esPrimo;
 
     do {
@@ -37,8 +38,10 @@ public class Ex49_5 {
       if (!esPrimo) {
         suma += n;
         count++;
-        
-        max = n > max ? n : max;
+        if (n > max){
+          max = n;
+        }
+        // max = n > max ? n : max;
         min = n < min ? n : min;
       }
       
