@@ -5,19 +5,32 @@ public class ChristmasTree {
     int h = Integer.parseInt(System.console().readLine());
     int spa = h - 1;
     int floor = 1;
-    System.out.print("✵\n");
-    while(floor <= h - 1){
-    // espacios externos
-    for (int i = 1; i <= spa; i++) {
+    int starSpa = h - 1;
+    // colocar la estrella
+    for (int i = h - 1; i > 0; i--) {
       System.out.print(" ");
     }
-    // hojas del árbol
-    for (int i = h - 3; i > 0; i--) {
+    System.out.print("✵\n");
+    while (floor <= h - 3) {
+
+      // espacios externos
+      for (int i = 1; i <= spa; i++) {
+        System.out.print(" ");
+      }
+      // hojas del árbol
       System.out.print("/\n");
+      floor++;
+      spa--;
     }
-    floor++;
-    spa--;
-  }
-    System.out.print("#\n#");
+    // colocar tronco
+    for (int i = h; i > 0; i--) {
+      System.out.print(" ");
+    }
+    System.out.print("#\n");
+    for (int i = h; i > 0; i--) {
+      System.out.print(" ");
+    }
+    System.out.print("#");
+
   }
 }
