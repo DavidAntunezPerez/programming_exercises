@@ -36,7 +36,7 @@ public class ChristmasTree {
           System.out.print(" ");
         }
         for (int i = 7; i <= h * 2; i++) {
-          System.out.print("/");
+          System.out.print("-");
         }
         System.out.print("\n");
       }
