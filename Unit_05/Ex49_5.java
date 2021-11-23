@@ -33,7 +33,7 @@ public class Ex49_5 {
         }
       }
       
-      // si no es primo, se contabiliza
+      // si no es primo, cuenta
       if (!esPrimo) {
         suma += n;
         count++;
