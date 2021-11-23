@@ -1,3 +1,5 @@
+import javax.swing.plaf.metal.MetalBorders.Flush3DBorder;
+
 public class ChristmasTree {
   public static void main(String[] args) {
     System.out.print("Este programa pinta un árbol de Navidad.");
@@ -30,10 +32,16 @@ public class ChristmasTree {
         spa--;
         midSpa += 2;
       }
-      for (int i = 2; i <= h; i++) {
-        System.out.print("/");
+
+      if (h >= 5) {
+        for (int i = 0; i <= h * 2; i+=9) {
+          System.out.print(" ");
+        }
+        for (int i = 6; i <= h * 2; i++) {
+          System.out.print("/");
+        }
+        System.out.print("\n");
       }
-      System.out.print("\n");
     }
     // colocar tronco
     for (int i = h; i > 0; i--) {
