@@ -17,11 +17,13 @@ public class ChristmasTree {
       for (int i = 1; i <= spa; i++) {
         System.out.print(" ");
       }
-      // hojas del árbol
+      // hojas del árbol derecha
       System.out.print("/");
+      // espacios internos
       for (int i = 1; i <= midSpa; i++) {
         System.out.print(" ");
       }
+      // hojas del árbol izquierda
       System.out.println("/");
       floor++;
       spa--;
