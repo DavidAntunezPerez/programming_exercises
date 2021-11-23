@@ -11,7 +11,7 @@ import java.util.Scanner;
 public class Ex49_5 {
   public static void main(String[] args) {
     System.out.println("Por favor, vaya introduciendo números enteros positivos. ");
-    System.out.println("Para terminar, introduzca un número primo:");
+    System.out.print("Para terminar, introduzca un número primo: ");
 
     Scanner s = new Scanner(System.in);
 
