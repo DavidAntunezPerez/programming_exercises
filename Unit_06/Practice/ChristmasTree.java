@@ -1,5 +1,3 @@
-import javax.swing.plaf.metal.MetalBorders.Flush3DBorder;
-
 public class ChristmasTree {
   public static void main(String[] args) {
     System.out.print("Este programa pinta un árbol de Navidad.");
