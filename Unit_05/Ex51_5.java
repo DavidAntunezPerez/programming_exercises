@@ -37,9 +37,9 @@ public class Ex51_5 {
         cogNum = cifra / potencia10;
         if ((cogNum != 8) && (cogNum != 0)) {
           System.out.print(cogNum + "");
-          cifra = cifra - (cogNum * potencia10);
         } else {
         }
+        cifra = cifra - (cogNum * potencia10);
       }
     } else if (!eat) {
       System.out.print("La serpiente no se ha comido ningún número.");
