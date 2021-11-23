@@ -34,10 +34,10 @@ public class ChristmasTree {
       }
 
       if (h >= 5) {
-        for (int i = 0; i <= h * 2; i+=9) {
+        for (int i = h - 2; i <= h; i++) {
           System.out.print(" ");
         }
-        for (int i = 6; i <= h * 2; i++) {
+        for (int i = 7; i <= h * 2; i++) {
           System.out.print("/");
         }
         System.out.print("\n");
