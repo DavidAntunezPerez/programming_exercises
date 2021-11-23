@@ -11,23 +11,29 @@ public class ChristmasTree {
       System.out.print(" ");
     }
     System.out.print("✵\n");
-    while (floor <= h - 3) {
+    if (h > 3) {
+      while (floor <= h - 4) {
 
-      // espacios externos
-      for (int i = 1; i <= spa; i++) {
-        System.out.print(" ");
+        // espacios externos
+        for (int i = 1; i <= spa; i++) {
+          System.out.print(" ");
+        }
+        // hojas del árbol derecha
+        System.out.print("/");
+        // espacios internos
+        for (int i = 1; i <= midSpa; i++) {
+          System.out.print(" ");
+        }
+        // hojas del árbol izquierda
+        System.out.println("/");
+        floor++;
+        spa--;
+        midSpa += 2;
       }
-      // hojas del árbol derecha
-      System.out.print("/");
-      // espacios internos
-      for (int i = 1; i <= midSpa; i++) {
-        System.out.print(" ");
+      for (int i = 2; i <= h; i++) {
+        System.out.print("/");
       }
-      // hojas del árbol izquierda
-      System.out.println("/");
-      floor++;
-      spa--;
-      midSpa += 2;
+      System.out.print("\n");
     }
     // colocar tronco
     for (int i = h; i > 0; i--) {
