@@ -8,6 +8,7 @@
  */
 public class Ex52_5 {
   public static void main(String[] args) {
-    
+    System.out.print("Escribe un número ");
+    int n = Integer.parseInt(System.console().readLine());
   }
 }
