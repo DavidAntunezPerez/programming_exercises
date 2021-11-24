@@ -1,4 +1,5 @@
 /**
+ * Christmas Tree program made as an exercise in class 
  * @author David Antunez Perez
  */
 public class ChristmasTree {
