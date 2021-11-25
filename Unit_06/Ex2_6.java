@@ -9,6 +9,7 @@
  * 
  * @author David Antunez Perez
  */
+
 public class Ex2_6 {
   public static void main(String[] args) {
     String number = "?";
@@ -26,7 +27,7 @@ public class Ex2_6 {
     case 14:
       number = "A";
     }
-    
+
     if (n < 11) {
       System.out.print("La carta obtenida es el " + n + "\n");
     } else if (n >= 11) {
