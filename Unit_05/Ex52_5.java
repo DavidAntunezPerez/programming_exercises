@@ -18,8 +18,8 @@ public class Ex52_5 {
       n /= 10;
       cif++;
     } while (n > 0);
-    numDiv %=(int) (Math.pow(10,cif - 1 ));
-    ultDig /=(int) (Math.pow(10,cif - 1 ));
-    System.out.print("El resultado es "+ numDiv + ultDig);
+    numDiv %= (int) (Math.pow(10, cif - 1));
+    ultDig /= (int) (Math.pow(10, cif - 1));
+    System.out.print("El resultado es " + numDiv + ultDig);
   }
 }
