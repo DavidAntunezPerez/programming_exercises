@@ -14,39 +14,48 @@ public class Ex8_6 {
     int n2;
     int n3;
     for (int i = 0; i < 14; i++) {
-      n1 = (int) (Math.random() * 3);
+      n1 = (int) (Math.random() * 6);
       switch (n1) {
       case 0:
+      case 1:
+      case 2:
         result1 = "1  ";
         break;
-      case 1:
+      case 3:
+      case 4:
         result1 = " X ";
         break;
-      case 2:
+      case 5:
         result1 = "  2";
         break;
       }
-      n2 = (int) (Math.random() * 3);
+      n2 = (int) (Math.random() * 6);
       switch (n2) {
       case 0:
+      case 1:
+      case 2:
         result2 = "1  ";
         break;
-      case 1:
+      case 3:
+      case 4:
         result2 = " X ";
         break;
-      case 2:
+      case 5:
         result2 = "  2";
         break;
       }
-      n3 = (int) (Math.random() * 3);
+      n3 = (int) (Math.random() * 6);
       switch (n3) {
       case 0:
+      case 1:
+      case 2:
         result3 = "1  ";
         break;
-      case 1:
+      case 3:
+      case 4:
         result3 = " X ";
         break;
-      case 2:
+      case 5:
         result3 = "  2";
         break;
       }
