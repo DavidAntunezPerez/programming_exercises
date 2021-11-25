@@ -7,9 +7,9 @@
  */
 public class Ex12_6 {
   public static void main(String[] args) {
-    for(int i = 0;true;i++){
-      char l = (char)(Math.random()*95 + 32);
-      System.out.print("\033[32m"+l);
+    for (int i = 0; true; i++) {
+      char l = (char) (Math.random() * 95 + 32);
+      System.out.print("\033[32m" + l);
     }
   }
 }
