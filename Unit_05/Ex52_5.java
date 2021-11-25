@@ -11,11 +11,14 @@ public class Ex52_5 {
     System.out.print("Escribe un número ");
     int numInt = Integer.parseInt(System.console().readLine());
     int n = numInt;
+    int numDiv = numInt; // numero movido a la izquierda
+    int ultDig = numInt; // primer número movido a la derecha
     int cif = 0; // contador de cifras
     do {
       n /= 10;
       cif++;
     } while (n > 0);
-    System.out.print("El resultado es ");
+    numDiv %=(int) (Math.pow(10,cif - 1 ));
+    System.out.print("El resultado es "+ numDiv);
   }
 }
