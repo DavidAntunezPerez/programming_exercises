@@ -9,28 +9,34 @@
 public class Ex10_6 {
   public static void main(String[] args) {
     int figNum;
-    for (int i = 0; i <= 10; i++) {
-      figNum = (int) (Math.random() * 6 + 1);
-      switch (figNum) {
-      case 1:
-        System.out.print("*");
-        break;
-      case 2:
-        System.out.print("-");
-        break;
-      case 3:
-        System.out.print("=");
-        break;
-      case 4:
-        System.out.print(".");
-        break;
+    String fig = "?";
+    for (int f = 0; f < 10; f++) {
+      int lon = (int) (Math.random() * 40 + 1);
+      for (int i = 0; i <= lon; i++) {
+        figNum = (int) (Math.random() * 6 + 1);
+        switch (figNum) {
+        case 1:
+          fig = "*";
+          break;
+        case 2:
+          fig = "-";
+          break;
+        case 3:
+          fig = "=";
+          break;
+        case 4:
+          fig = ".";
+          break;
         case 5:
-        System.out.print("|");
-        break;
+          fig = "|";
+          break;
         case 6:
-        System.out.print("@");
-        break;
+          fig = "@";
+          break;
+        }
+        System.out.print(fig);
       }
+      System.out.print("\n");
     }
   }
 }
