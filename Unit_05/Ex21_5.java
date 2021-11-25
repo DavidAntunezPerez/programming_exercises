@@ -29,7 +29,6 @@ public class Ex21_5 {
       if ((i > par) && (i % 2 == 0)) {
         par = i;
       }
-
     }
     int avImp = add / (imp + 1); // media de los impares
     System.out.printf("Se han introducido " + cont + " números.\nDe los cuales " + imp + " son impares y " + par
