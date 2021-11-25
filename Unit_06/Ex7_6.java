@@ -51,5 +51,32 @@ public class Ex7_6 {
       }
       System.out.println("|" + result1 + "|" + result2 + "|" + result3 + "|");
     }
+    String local = "?";
+    String vis = "?";
+    int plen15loc = (int) (Math.random() * 3);
+    switch (plen15loc) {
+    case 0:
+      local = "1";
+      break;
+    case 1:
+      local = "2";
+      break;
+    case 2:
+      local = "M";
+      break;
+    }
+    int plen15vis = (int) (Math.random() * 3);
+    switch (plen15vis) {
+    case 0:
+      vis = "1";
+      break;
+    case 1:
+      vis = "2";
+      break;
+    case 2:
+      vis = "M";
+      break;
+    }
+    System.out.print("PLENO AL 15: \nLocal: " + local + " Visitante: " + vis);
   }
 }
