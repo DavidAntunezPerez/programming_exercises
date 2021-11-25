@@ -11,8 +11,11 @@ public class Ex52_5 {
     System.out.print("Escribe un número ");
     int numInt = Integer.parseInt(System.console().readLine());
     int n = numInt;
-    do{
-      
-    }while(n > 0);
+    int cif = 0; // contador de cifras
+    do {
+      n /= 10;
+      cif++;
+    } while (n > 0);
+    System.out.print("El resultado es ");
   }
 }
