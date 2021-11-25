@@ -27,11 +27,26 @@ public class Ex2_6 {
     case 14:
       number = "A";
     }
-
+    String palo = "?";
+    int p = (int) (Math.random() * 4 + 1);
+    switch (p) {
+    case 1:
+      palo = "picas";
+      break;
+    case 2:
+      palo = "corazones";
+      break;
+    case 3:
+      palo = "diamantes";
+      break;
+    case 4:
+      palo = "tréboles";
+      break;
+    }
     if (n < 11) {
-      System.out.print("La carta obtenida es el " + n + "\n");
+      System.out.print("La carta obtenida es el " + n + " de " + palo);
     } else if (n >= 11) {
-      System.out.print("La carta obtenida es el " + number + "\n");
+      System.out.print("La carta obtenida es el " + number + " de " + palo);
     }
   }
 }
