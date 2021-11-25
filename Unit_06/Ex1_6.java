@@ -6,7 +6,6 @@
  */
 public class Ex1_6 {
   public static void main(String[] args) {
-    int add = 0;
     for (int i = 0; i < 3; i++) {
       System.out.print((int) (Math.random() * 6) + " ");
     }
