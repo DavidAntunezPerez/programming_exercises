@@ -16,6 +16,7 @@ public class Unit3Try2
      total = (2 * number1) + number2;
      System.out.print( " First number is: " + number1 );
      System.out.print( " Second number is: " + number2 );
+     System.out.print(" Total is "+total);
      
   }
 }
