@@ -19,6 +19,7 @@ public class Ex52_5 {
       cif++;
     } while (n > 0);
     numDiv %=(int) (Math.pow(10,cif - 1 ));
-    System.out.print("El resultado es "+ numDiv);
+    ultDig /=(int) (Math.pow(10,cif - 1 ));
+    System.out.print("El resultado es "+ numDiv + ultDig);
   }
 }
