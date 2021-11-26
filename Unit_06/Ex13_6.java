@@ -7,8 +7,14 @@
  */
 public class Ex13_6 {
   public static void main(String[] args) {
-    do{
-      
-    }while(  );
+    int d1;
+    int d2;
+    do {
+      d1 = (int) (Math.random() * 6 + 1);
+      System.out.println("La tirada del primer dado ha dado como resultado: " + d1);
+      d2 = (int) (Math.random() * 6 + 1);
+      System.out.println("La tirada del primer dado ha dado como resultado: " + d2);
+    } while (d1 != d2);
+    System.out.println("Los dados han coincidido.");
   }
 }
