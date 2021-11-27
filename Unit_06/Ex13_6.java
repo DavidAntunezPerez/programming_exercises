@@ -11,9 +11,9 @@ public class Ex13_6 {
     int d2;
     do {
       d1 = (int) (Math.random() * 6 + 1);
-      System.out.println("La tirada del primer dado ha dado como resultado: " + d1);
+      System.out.println("La tirada del 1º dado ha dado como resultado: " + d1);
       d2 = (int) (Math.random() * 6 + 1);
-      System.out.println("La tirada del segundo dado ha dado como resultado: " + d2);
+      System.out.println("La tirada del 2º dado ha dado como resultado: " + d2);
     } while (d1 != d2);
     System.out.println("Los dados han coincidido.");
   }
