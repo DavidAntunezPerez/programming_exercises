@@ -10,6 +10,7 @@
  */
 public class Ex14_6 {
   public static void main(String[] args) {
-
+    System.out.print("PIENSA UN NÚMERO\n");
+    System.out.print("Una vez pensado, este programa intentará adivar el número\n");
   }
 }
