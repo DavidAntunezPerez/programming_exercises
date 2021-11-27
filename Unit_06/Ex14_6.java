@@ -31,12 +31,18 @@ public class Ex14_6 {
           String ans2 = System.console().readLine();
           if ("mayor".equals(ans2)) {
             range = 100 - n;
-            add = n;
+            add = n + 1;
           } else if ("menor".equals(ans2)) {
             range = (100 + n) - 101;
+            add = 0;
           }
         }
       }
     } while ((!correct) && (cont > 0));
+    if (correct) {
+      System.out.print("\nPrograma finalizado. El número ha sido adivinado correctamente.");
+    } else {
+      System.out.print("\nPrograma finalizado. El número no ha sido adivinado.");
+    }
   }
 }
