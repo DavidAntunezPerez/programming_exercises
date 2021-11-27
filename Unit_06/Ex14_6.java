@@ -27,7 +27,7 @@ public class Ex14_6 {
         cont--;
         if (cont > 0) {
           System.out.print("\nQuedan " + cont + " intentos.\n");
-          System.out.print("¿Es el número mayor o menor que" + n + "? (mayor/menor) ");
+          System.out.print("¿Es el número mayor o menor que " + n + "? (mayor/menor) ");
           String ans2 = System.console().readLine();
           if ("mayor".equals(ans2)) {
             range = 100 - n;
