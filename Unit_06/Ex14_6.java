@@ -14,8 +14,12 @@ public class Ex14_6 {
     System.out.print("Una vez pensado, este programa intentará adivar el número\n");
     int cont = 5;
     boolean correct = false;
+    int range = 100;
+    int n = (int) (Math.random());
     do {
-
+      n = (int) (Math.random() * range);
+      System.out.print("¿Es tu número el " + n + "? (s/n)\n");
+      
     } while ((!correct) && (cont > 0));
   }
 }
