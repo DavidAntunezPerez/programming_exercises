@@ -16,10 +16,27 @@ public class Ex14_6 {
     boolean correct = false;
     int range = 100;
     int n = (int) (Math.random());
+    int add = 0;
     do {
-      n = (int) (Math.random() * range);
-      System.out.print("¿Es tu número el " + n + "? (s/n)\n");
-      
+      n = (int) (Math.random() * range + add);
+      System.out.print("¿Es tu número el " + n + "? (s/n) ");
+      String ans = System.console().readLine();
+      if ("s".equals(ans)) {
+        correct = true;
+      } else {
+        cont--;
+        if (cont > 0) {
+          System.out.print("\nQuedan " + cont + " intentos.\n");
+          System.out.print("¿Es el número mayor o menor que" + n + "? (mayor/menor) ");
+          String ans2 = System.console().readLine();
+          if ("mayor".equals(ans2)) {
+            range = 100 - n;
+            add = n;
+          } else if ("menor".equals(ans2)) {
+            range = (100 + n) - 101;
+          }
+        }
+      }
     } while ((!correct) && (cont > 0));
   }
 }
