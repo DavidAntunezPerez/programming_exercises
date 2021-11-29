@@ -8,6 +8,8 @@ public class RandomClassmate {
         "Rodríguez Barcos, Diego", "Servia Morales, David", "San Juan Thomnmpson, Joseph Luca",
         "Sicilia Pérez, Francisco Javier" };
     // Hacemos que se muestre en pantalla el alumno de forma aleatoria
-    System.out.print("El alumno seleccionado es " + classmates[(int) (Math.random() * classmates.length; 
+    System.out.print("El alumno seleccionado es ");
+    Thread.sleep(1000);
+    System.out.print(classmates[(int) (Math.random() * classmates.length)]);
   }
 }
