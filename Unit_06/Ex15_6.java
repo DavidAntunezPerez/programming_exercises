@@ -24,7 +24,50 @@ public class Ex15_6 {
     String not5 = "sol";
     String not6 = "la";
     String not7 = "si";
-    // 
-
+    // Creamos variables para cada nota escrita por grupo
+    int randomNot = (int) (Math.random() * 7 + 1);
+    // Creamos un bucle aleatorio para que repita cada grupo de notas
+    int n = (int) (Math.random() * 5); // El rango son los 5 primeros múltiplos de 4 (más de esto sería demasiado)
+    for (int i = n * 4; i > 0; i--) {
+      for (int j = 4; j > 0; j--) {
+        if (j < 4) {
+          System.out.print(" ");
+        }
+        switch (randomNot) {
+          case 1:
+            System.out.print(not1 + " ");
+            randomNot = (int) (Math.random() * 7 + 1);
+            break;
+          case 2:
+            System.out.print(not2 + " ");
+            randomNot = (int) (Math.random() * 7 + 1);
+            break;
+          case 3:
+            System.out.print(not3 + " ");
+            randomNot = (int) (Math.random() * 7 + 1);
+            break;
+          case 4:
+            System.out.print(not4 + " ");
+            randomNot = (int) (Math.random() * 7 + 1);
+            break;
+          case 5:
+            System.out.print(not5 + " ");
+            randomNot = (int) (Math.random() * 7 + 1);
+            break;
+          case 6:
+            System.out.print(not6 + " ");
+            randomNot = (int) (Math.random() * 7 + 1);
+            break;
+          case 7:
+            System.out.print(not7 + " ");
+            randomNot = (int) (Math.random() * 7 + 1);
+            break;
+        }
+      }
+      if (i > 1) {
+        System.out.print(" | ");
+      }
+    }
+    System.out.print("||");
   }
 }
