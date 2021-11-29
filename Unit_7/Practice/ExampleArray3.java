@@ -6,9 +6,9 @@ public class ExampleArray3 {
       fruits[i] = System.console().readLine();
     }
     for (int i = 0; i < fruits.length; i++) {
-      System.out.println("---------------");
+      System.out.println(" -------------- ");
       System.out.printf("| %1d | %-10s |\n",i,fruits[i]);
-      System.out.println("---------------");
+      System.out.println(" -------------- ");
     }
   }
 }
