@@ -8,6 +8,6 @@ public class RandomClassmate {
         "Rodríguez Barcos, Diego", "Servia Morales, David", "San Juan Thomnmpson, Joseph Luca",
         "Sicilia Pérez, Francisco Javier" };
     // Hacemos que se muestre en pantalla el alumno de forma aleatoria
-    System.out.print("El chaval mas subnormal es " + classmates[(int) (Math.random() * classmates.length)]);
+    System.out.print("El alumno seleccionado es " + classmates[(int) (Math.random() * classmates.length; 
   }
 }
