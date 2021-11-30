@@ -24,7 +24,7 @@ public class Ex17_6 {
     for (int i = h - 2; i > 0; i--) {
       System.out.print("\n*");
       if(a > h){  
-        for (int j = h; j > 0; j--) {
+        for (int j = h; j > 0; j+=2) {
           System.out.print("  ");
         }
       }
