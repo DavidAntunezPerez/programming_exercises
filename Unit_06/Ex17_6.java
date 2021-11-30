@@ -17,7 +17,7 @@ public class Ex17_6 {
     System.out.print("Introduzca la anchura (min 4): ");
     int a = Integer.parseInt(System.console().readLine());
     // Parte superior
-    for (int i = a; i > 0; i--) {
+    for (int i = 0; i < a; i++) {
       System.out.print("* ");
     }
     // Parte media
@@ -31,7 +31,7 @@ public class Ex17_6 {
 
     // Parte inferior
     System.out.println();
-    for (int i = a; i > 0; i--) {
+    for (int i = 0; i < a; i++) {
       System.out.print("* ");
     }
 
