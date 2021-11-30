@@ -29,6 +29,7 @@ public class Ex16_6 {
     String f1 = "";
     String f2 = "";
     String f3 = "";
+    // He decidido utilizar emoticonos porque queda más visual
     switch (fig1) {
       case 1:
         f1 = "corazón";
@@ -82,6 +83,12 @@ public class Ex16_6 {
     }
     System.out.print("\nEl resultado obtenido es: ");
     System.out.print(f1 + " " + f2 + " " + f3);
-
+    if ((f1 == f2) && (f1 == f3) && (f2 == f3)) {
+      System.out.print("\nENHORABUENA, has ganado 10 monedas.");
+    } else if ((f1 == f2) || (f1 == f3) || (f2 == f3)) {
+      System.out.print("\nBien, ha recuperado su moneda.");
+    } else if ((f1 != f2) && (f1 != f3) && (f2 != f3)) {
+      System.out.println("\nLo siento, ha perdido.");
+    }
   }
 }
