@@ -11,6 +11,24 @@
  */
 public class Ex17_6 {
   public static void main(String[] args) {
+    System.out.print("Introduzca la altura del pez (min 4): ");
+    int h = Integer.parseInt(System.console().readLine());
+    System.out.println();
+    System.out.print("Introduzca la anchura (min 4): ");
+    int a = Integer.parseInt(System.console().readLine());
+    // Parte superior
+    for (int i = a - 1; i > 0; i--) {
+      System.out.print("* ");
+    }
+    // Parte media
+    for (int i = h - 2; i > 0; i--) {
+      System.out.println("*");
+    }
+
+    // Parte inferior
+    for (int i = a; i > 0; i--) {
+      System.out.print("* ");
+    }
 
   }
 }
