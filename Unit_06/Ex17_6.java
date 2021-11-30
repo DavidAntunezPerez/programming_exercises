@@ -1,3 +1,4 @@
+
 /**
  * Realiza un programa que pinte por pantalla una pecera con un pececito dentro.
  * Se debe pedir al usuario el ancho y el alto de la pecera, que como mínimo
@@ -9,31 +10,37 @@
  * 
  * @author David Antunez Perez
  */
+import java.util.Scanner;
+
 public class Ex17_6 {
   public static void main(String[] args) {
-    System.out.print("Introduzca la altura del pez (min 4): ");
-    int h = Integer.parseInt(System.console().readLine());
-    System.out.println();
-    System.out.print("Introduzca la anchura (min 4): ");
-    int a = Integer.parseInt(System.console().readLine());
-    // Parte superior
-    for (int i = 0; i < a; i++) {
-      System.out.print("* ");
-    }
-    // Parte media
-    for (int i = h - 2; i > 0; i--) {
-      System.out.print("\n*");
-        for (int j = a; j > 0; j -= 2) {
-          System.out.print("  ");
+    try (Scanner sc = new Scanner(System.in)) {
+      System.out.print("Introduce la altura: ");
+      int altura = sc.nextInt();
+      System.out.print("Introduce la anchura: ");
+      int anchura = sc.nextInt();
+      String aux = "";
+      // Imprimir
+      for (int alto = 0; alto < altura; alto++) {
+        for (int largo = 0; largo < anchura; largo++) {
+          // Primera y Ultima Linea (Todo con *)
+          if (alto == 0 | alto == altura - 1) {
+            aux = "*";
+          } else {
+            // Zona media (* o blanco)
+            if (largo == 0 | largo == anchura - 1)
+              aux = "*";
+            if (largo != 0 & largo != anchura - 1)
+              aux = " ";
+          }
+          // Pintamos caracter que corresponda
+          System.out.print(aux);
+          System.out.print(" ");
+          // Si es final de linea un salto
+          if (largo == anchura - 1)
+            System.out.print("\n");
         }
-      System.out.print(" *");
+      }
     }
-
-    // Parte inferior
-    System.out.println();
-    for (int i = 0; i < a; i++) {
-      System.out.print("* ");
-    }
-
   }
 }
