@@ -17,30 +17,30 @@ public class Ex21_6 {
       c = (int) (Math.random() * 2 + 1);
       switch (c) {
         case 1:
-          coinResult = "cara";
+          coinName = "cara";
           break;
         case 2:
-          coinResult = "cruz";
+          coinName = "cruz";
           break;
       }
-      switch(i){  
+      switch (i) {
         case 1:
-        coinResult = "2 cent";
-        break;
+          coinResult = "2 cent";
+          break;
         case 2:
-        coinResult = "20 cent";
-        break;
+          coinResult = "20 cent";
+          break;
         case 3:
-        coinResult = "50 cent";
-        break;
+          coinResult = "50 cent";
+          break;
         case 4:
-        coinResult = "1 eur";
-        break;
+          coinResult = "1 eur";
+          break;
         case 5:
-        coinResult = "2 eur";
-        break;
+          coinResult = "2 eur";
+          break;
       }
-      System.out.println(coinName + " - " + coinResult);
+      System.out.println(coinResult + " - " + coinName);
     }
   }
 }
