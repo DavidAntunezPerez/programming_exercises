@@ -17,15 +17,20 @@ public class Ex17_6 {
     System.out.print("Introduzca la anchura (min 4): ");
     int a = Integer.parseInt(System.console().readLine());
     // Parte superior
-    for (int i = a - 1; i > 0; i--) {
+    for (int i = a; i > 0; i--) {
       System.out.print("* ");
     }
     // Parte media
     for (int i = h - 2; i > 0; i--) {
-      System.out.println("*");
+      System.out.print("\n*");
+      for (int j = a + 4; j > 0; j--) {
+      System.out.print(" ");
     }
-
+    System.out.print("*");
+    }
+    
     // Parte inferior
+    System.out.println();
     for (int i = a; i > 0; i--) {
       System.out.print("* ");
     }
