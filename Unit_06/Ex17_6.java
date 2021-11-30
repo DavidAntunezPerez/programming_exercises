@@ -20,6 +20,8 @@ public class Ex17_6 {
       System.out.print("Introduce la anchura: ");
       int anchura = sc.nextInt();
       String aux = "";
+      int posicion = 0;
+      int posicionPez = (int) (Math.random() * (altura - 2) * (anchura - 2));
       // Imprimir
       for (int alto = 0; alto < altura; alto++) {
         for (int largo = 0; largo < anchura; largo++) {
@@ -28,10 +30,16 @@ public class Ex17_6 {
             aux = "*";
           } else {
             // Zona media (* o blanco)
-            if (largo == 0 | largo == anchura - 1)
+            if (largo == 0 | largo == anchura - 1) {
               aux = "*";
-            if (largo != 0 & largo != anchura - 1)
+            }
+            if (largo != 0 & largo != anchura - 1) {
               aux = " ";
+              if (posicionPez == posicion) {
+                aux = "&";
+              }
+              posicion++;
+            }
           }
           // Pintamos caracter que corresponda
           System.out.print(aux);
