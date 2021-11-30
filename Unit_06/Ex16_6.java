@@ -29,7 +29,6 @@ public class Ex16_6 {
     String f1 = "";
     String f2 = "";
     String f3 = "";
-    // He decidido utilizar emoticonos porque queda más visual
     switch (fig1) {
       case 1:
         f1 = "corazón";
