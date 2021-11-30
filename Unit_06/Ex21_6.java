@@ -10,13 +10,37 @@ public class Ex21_6 {
   public static void main(String[] args) {
     // inicializamos las variables
     int c = 0;
-    String coin = "";
+    String coinResult = "";
+    String coinName = "";
     // mostramos resultado por pantalla
-    c = (int) (Math.random() * 2 + 1);
-    System.out.println("2 cents - " + coin);
-    System.out.print("20 cents - " + coin);
-    System.out.println("50 cents - " + coin);
-    System.out.println("1 eur - " + coin);
-    System.out.println(" 2 eur - " + coin);
+    for (int i = 1; i <= 5; i++) {
+      c = (int) (Math.random() * 2 + 1);
+      switch (c) {
+        case 1:
+          coinResult = "cara";
+          break;
+        case 2:
+          coinResult = "cruz";
+          break;
+      }
+      switch(i){  
+        case 1:
+        coinResult = "2 cent";
+        break;
+        case 2:
+        coinResult = "20 cent";
+        break;
+        case 3:
+        coinResult = "50 cent";
+        break;
+        case 4:
+        coinResult = "1 eur";
+        break;
+        case 5:
+        coinResult = "2 eur";
+        break;
+      }
+      System.out.println(coinName + " - " + coinResult);
+    }
   }
 }
