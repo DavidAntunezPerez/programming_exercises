@@ -8,14 +8,15 @@
  */
 public class Ex21_6 {
   public static void main(String[] args) {
-    // inicializamos las variables aleatorias
+    // inicializamos las variables
     int c = 0;
+    String coin = "";
     // mostramos resultado por pantalla
     c = (int) (Math.random() * 2 + 1);
-    System.out.println("2 cents - " + c);
-    System.out.print("20 cents - " + c);
-    System.out.println("50 cents - " + c);
-    System.out.println("1 eur - " + c);
-    System.out.println(" 2 eur - " + c);
+    System.out.println("2 cents - " + coin);
+    System.out.print("20 cents - " + coin);
+    System.out.println("50 cents - " + coin);
+    System.out.println("1 eur - " + coin);
+    System.out.println(" 2 eur - " + coin);
   }
 }
