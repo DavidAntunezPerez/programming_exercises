@@ -10,20 +10,20 @@ public class Ex24_6 {
     System.out.print("Por favor, introduzca un número entero positivo: ");
     long numIntr = Long.parseLong(System.console().readLine());
 
-    long numero = numIntr;
+    long num = numIntr;
 
     // calcula la longitud del número
-    int longitud = 0;
+    int lenght = 0;
 
     do {
-      numero /= 10;
-      longitud++;
-    } while (numero > 0);
+      num /= 10;
+      lenght++;
+    } while (num > 0);
 
     // elige una posición al azar dentro del número
-    int posicion = (int) (Math.random() * longitud) + 1;
+    int position = (int) (Math.random() * lenght) + 1;
 
     // extrae el dígito de esa posición
-    System.out.println((numIntr / (long) (Math.pow(10, longitud - posicion))) % 10);
+    System.out.println((numIntr / (long) (Math.pow(10, lenght - position))) % 10);
   }
 }
