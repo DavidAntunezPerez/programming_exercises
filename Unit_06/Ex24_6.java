@@ -8,9 +8,9 @@
 public class Ex24_6 {
   public static void main(String[] args) {
     System.out.print("Por favor, introduzca un número entero positivo: ");
-    long numeroIntroducido = Long.parseLong(System.console().readLine());
+    long numIntr = Long.parseLong(System.console().readLine());
 
-    long numero = numeroIntroducido;
+    long numero = numIntr;
 
     // calcula la longitud del número
     int longitud = 0;
@@ -24,6 +24,6 @@ public class Ex24_6 {
     int posicion = (int) (Math.random() * longitud) + 1;
 
     // extrae el dígito de esa posición
-    System.out.println((numeroIntroducido / (long) (Math.pow(10, longitud - posicion))) % 10);
+    System.out.println((numIntr / (long) (Math.pow(10, longitud - posicion))) % 10);
   }
 }
