@@ -30,8 +30,9 @@ public class Ex29_6 {
     String weather = "";
     // definimos las condiciones de que ocurra cada cosas
     if (n == 1) {
-      tempMax = (int) (Math.random() * 11 + 15);
       tempMin = (int) (Math.random() * 11 + 15);
+      tempMax = (int) (Math.random() * (30 - tempMin) + tempMin);
+      
       if (weatherProb <= 60) {
         weather = "Soleado";
       }
@@ -39,8 +40,8 @@ public class Ex29_6 {
         weather = "Nublado";
       }
     } else if (n == 2) {
-      tempMax = (int) (Math.random() * 21 + 25);
       tempMin = (int) (Math.random() * 21 + 25);
+      tempMax = (int) (Math.random() * (45 - tempMin) + tempMin);
       if (weatherProb <= 80) {
         weather = "Soleado";
       }
@@ -48,8 +49,8 @@ public class Ex29_6 {
         weather = "Nublado";
       }
     } else if (n == 3) {
-      tempMax = (int) (Math.random() * 11 + 20);
-      tempMin = (int) (Math.random() * 21 + 25);
+      tempMin = (int) (Math.random() * 11 + 20);
+      tempMax = (int) (Math.random() * (30 - tempMin) + tempMin);
       if (weatherProb <= 60) {
         weather = "Nublado";
       }
@@ -57,8 +58,8 @@ public class Ex29_6 {
         weather = "Soleado";
       }
     } else {
-      tempMax = (int) (Math.random() * 26);
-      tempMin = (int) (Math.random() * 21 + 25);
+      tempMin = (int) (Math.random() * 26);
+      tempMax = (int) (Math.random() * (25 - tempMin) + tempMin);
       if (weatherProb <= 60) {
         weather = "Soleado";
       }
@@ -68,6 +69,7 @@ public class Ex29_6 {
     }
 
     // mostramos los datos por pantalla
+    System.out.println();
     System.out.println("Previsión para el tiempo de mañana");
     System.out.println("----------------------------------");
     System.out.println("Temperatura mínima: " + tempMin + "ºC");
