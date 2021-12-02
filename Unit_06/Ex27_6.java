@@ -63,7 +63,7 @@ public class Ex27_6 {
           System.out.println("El resultado es GANA EL JUGADOR. ");
           }
           else {  
-            System.out.println("El resultado es GANA ELA MÁQUINA. ");
+            System.out.println("El resultado es GANA LA MÁQUINA. ");
           }
         break;
       case 2: // caso de que salga papel
@@ -73,6 +73,12 @@ public class Ex27_6 {
         if (machNum == ansNum){
           System.out.println("El resultado es EMPATE. ");
           }
+          else if (ansNum == 3){
+            System.out.println("El resultado es GANA EL JUGADOR. ");
+            }
+            else {  
+              System.out.println("El resultado es GANA LA MÁQUINA. ");
+            }
         break;
       case 3: // caso de que salga tijeras
         machName = "tijeras";
@@ -82,6 +88,12 @@ public class Ex27_6 {
           
           System.out.println("El resultado es EMPATE. ");
           }
+          else if (ansNum == 1){
+            System.out.println("El resultado es GANA EL JUGADOR. ");
+            }
+            else {  
+              System.out.println("El resultado es GANA LA MÁQUINA. ");
+            }
         break;
     }
   }
