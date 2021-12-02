@@ -21,6 +21,7 @@ public class Ex31_6 {
   public static void main(String[] args) throws Exception {
     System.out.print("Introduce la cantidad de dinero a apostar: ");
     int n = Integer.parseInt(System.console().readLine());
+    boolean endGame = false;
     int dice1 = (int) (Math.random() * 6 + 1);
     int dice2 = (int) (Math.random() * 6 + 1);
     System.out.println();
@@ -35,11 +36,19 @@ public class Ex31_6 {
       System.out.println();
       System.out.println("El resultado de los dados han sido " + dice1 + " y " + dice2);
       System.out.print("En total, suman " + (dice1 + dice2));
+      if (((dice1 + dice2) == 7) || ((dice1 + dice2) == 11)) {
+        System.out.print("\nEnhorabuena, has duplicado el dinero apostado.");
+        n *= 2;
+        endGame = true;
+      }
       if (((dice1 + dice2) == 2) || ((dice1 + dice2) == 3) || ((dice1 + dice2) == 12)) {
         System.out.print("\nLo siento, has perdido todo el dinero.");
         n = 0;
+        endGame = true;
       }
-      System.out.println("");
-    } while (n != 0);
+      System.out.println();
+    } while (!endGame);
+    System.out.println();
+    System.out.println("El juego ha terminado, el dinero restante es " + n);
   }
 }
