@@ -28,7 +28,7 @@ public class Ex31_6 {
     do {
       dice1 = (int) (Math.random() * 6 + 1);
       dice2 = (int) (Math.random() * 6 + 1);
-      System.out.print("Tirando dados");
+      System.out.print("\nTirando dados");
       for (int i = 0; i < 7; i++) {
         System.out.printf(".");
         Thread.sleep(200 * i);
@@ -53,7 +53,7 @@ public class Ex31_6 {
         do {
           dice1 = (int) (Math.random() * 6 + 1);
           dice2 = (int) (Math.random() * 6 + 1);
-          System.out.print("Tirando dados");
+          System.out.print("\nTirando dados");
           for (int i = 0; i < 7; i++) {
             System.out.printf(".");
             Thread.sleep(200 * i);
