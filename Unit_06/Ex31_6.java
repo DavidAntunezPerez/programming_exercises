@@ -24,14 +24,22 @@ public class Ex31_6 {
     int dice1 = (int) (Math.random() * 6 + 1);
     int dice2 = (int) (Math.random() * 6 + 1);
     System.out.println();
-    System.out.print("Tirando dados");
-    for (int i = 0; i < 7; i++) {
-      System.out.printf(".");
-      Thread.sleep(200 * i);
-    }
-    System.out.println();
-    System.out.println("El resultado de los dados han sido " + dice1 + " y " + dice2);
-    System.out.print("En total, suman " + (dice1 + dice2));
-
+    do {
+      dice1 = (int) (Math.random() * 6 + 1);
+      dice2 = (int) (Math.random() * 6 + 1);
+      System.out.print("Tirando dados");
+      for (int i = 0; i < 7; i++) {
+        System.out.printf(".");
+        Thread.sleep(200 * i);
+      }
+      System.out.println();
+      System.out.println("El resultado de los dados han sido " + dice1 + " y " + dice2);
+      System.out.print("En total, suman " + (dice1 + dice2));
+      if (((dice1 + dice2) == 2) || ((dice1 + dice2) == 3) || ((dice1 + dice2) == 12)) {
+        System.out.print("\nLo siento, has perdido todo el dinero.");
+        n = 0;
+      }
+      System.out.println("");
+    } while (n != 0);
   }
 }
