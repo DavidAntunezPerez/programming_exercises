@@ -45,6 +45,34 @@ public class Ex31_6 {
         System.out.print("\nLo siento, has perdido todo el dinero.");
         n = 0;
         endGame = true;
+      } else {
+        System.out.println(
+            "\nEntrando en la segunda fase, si la suma de los dados da el mismo resultado, ganarás, si sale 7, perderás todo tu dinero, si no, se repite la tirada.");
+        boolean endPhase2 = false;
+        int dices = (dice1 + dice2);
+        do {
+          dice1 = (int) (Math.random() * 6 + 1);
+          dice2 = (int) (Math.random() * 6 + 1);
+          System.out.print("Tirando dados");
+          for (int i = 0; i < 7; i++) {
+            System.out.printf(".");
+            Thread.sleep(200 * i);
+          }
+          System.out.println();
+          System.out.println("El resultado de los dados han sido " + dice1 + " y " + dice2);
+          System.out.print("En total, suman " + (dice1 + dice2));
+          if ((dice1 + dice2) == 7) {
+            System.out.print("\nLo siento, has perdido todo el dinero.");
+            n = 0;
+            endPhase2 = true;
+            endGame = true;
+          } else if ((dice1 + dice2) == dices) {
+            System.out.print("\nEnhorabuena, duplicado el dinero apostado.");
+            n *= 2;
+            endPhase2 = true;
+            endGame = true;
+          }
+        } while (!endPhase2);
       }
       System.out.println();
     } while (!endGame);
