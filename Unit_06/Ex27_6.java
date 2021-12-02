@@ -8,8 +8,9 @@
  */
 
 public class Ex27_6 {
-  public static void main(String[] args) {
-    int ansnum = 0;
+  public static void main(String[] args) throws Exception {
+    int ansNum = 0;
+    String ansName = "";
     System.out.println("PIEDRA PAPEL TIJERA");
     System.out.println("-------------------");
     do {
@@ -19,12 +20,14 @@ public class Ex27_6 {
         case "Piedra":
         case "piedra":
         case "PIEDRA":
-          ansnum = 1;
+          ansNum = 1;
+          ansName = "piedra";
           break;
         case "Papel":
         case "papel":
         case "PAPEL":
-          ansnum = 2;
+          ansNum = 2;
+          ansName = "papel";
           break;
         case "Tijeras":
         case "tijeras":
@@ -32,12 +35,54 @@ public class Ex27_6 {
         case "tijera":
         case "Tijera":
         case "TIJERA":
-          ansnum = 3;
+          ansNum = 3;
+          ansName = "tijeras";
           break;
         default:
           System.out.print("ERROR. Por favor, ingrese un valor válido.\n");
       }
-    } while (ansnum == 0);
-
+    } while (ansNum == 0);
+    System.out.println();
+    System.out.print("Cargando respuesta de la máquina");
+    for (int i = 0; i < 7; i++) {
+      System.out.printf(".");
+      Thread.sleep(200 * i);
+    }
+    System.out.println();
+    int machNum = (int) (Math.random() * 3 + 1);
+    String machName = "";
+    switch (machNum) {
+      case 1: // caso de que le salga piedra
+        machName = "piedra";
+        System.out.println("Has escogido "+ ansName + " y la máquina ha escogido "+ machName);
+        // planteamos las posibilidades
+        if (machNum == ansNum){
+          System.out.println("El resultado es EMPATE. ");
+          }
+        else if (ansNum == 2){
+          System.out.println("El resultado es GANA EL JUGADOR. ");
+          }
+          else {  
+            System.out.println("El resultado es GANA ELA MÁQUINA. ");
+          }
+        break;
+      case 2: // caso de que salga papel
+        machName = "papel";
+        System.out.println("Has escogido "+ ansName + " y la máquina ha escogido "+ machName);
+        // planteamos las posibilidades
+        if (machNum == ansNum){
+          System.out.println("El resultado es EMPATE. ");
+          }
+        break;
+      case 3: // caso de que salga tijeras
+        machName = "tijeras";
+        System.out.println("Has escogido "+ ansName + " y la máquina ha escogido "+ machName);
+        // planteamos las posibilidades
+        if (machNum == ansNum){
+          
+          System.out.println("El resultado es EMPATE. ");
+          }
+        break;
+    }
   }
 }
