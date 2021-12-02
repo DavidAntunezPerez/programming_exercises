@@ -18,9 +18,20 @@
  * @author David Antúnez Pérez
  */
 public class Ex31_6 {
-  public static void main(String[] args) {
+  public static void main(String[] args) throws Exception {
     System.out.print("Introduce la cantidad de dinero a apostar: ");
     int n = Integer.parseInt(System.console().readLine());
-    
+    int dice1 = (int) (Math.random() * 6 + 1);
+    int dice2 = (int) (Math.random() * 6 + 1);
+    System.out.println();
+    System.out.print("Tirando dados");
+    for (int i = 0; i < 7; i++) {
+      System.out.printf(".");
+      Thread.sleep(200 * i);
+    }
+    System.out.println();
+    System.out.println("El resultado de los dados han sido " + dice1 + " y " + dice2);
+    System.out.print("En total, suman " + (dice1 + dice2));
+
   }
 }
