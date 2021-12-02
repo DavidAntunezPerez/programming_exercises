@@ -25,18 +25,41 @@ public class Ex29_6 {
     } while ((n != 1) && (n != 2) && (n != 3) && (n != 4));
     // declaramos las variables que nos harán falta
     int temp = 0;
-    int weatherProb = (int)(Math.random()*100 + 1);
+    int weatherProb = (int) (Math.random() * 100);
     String weather = "";
     // definimos las condiciones de que ocurra cada cosas
     if (n == 1) {
       temp = (int) (Math.random() * 11 + 15);
-      
+      if (weatherProb <= 60) {
+        weather = "Soleado";
+      }
+      if (weatherProb > 60) {
+        weather = "Nublado";
+      }
     } else if (n == 2) {
       temp = (int) (Math.random() * 21 + 25);
+      if (weatherProb <= 80) {
+        weather = "Soleado";
+      }
+      if (weatherProb > 80) {
+        weather = "Nublado";
+      }
     } else if (n == 3) {
       temp = (int) (Math.random() * 11 + 20);
+      if (weatherProb <= 60) {
+        weather = "Nublado";
+      }
+      if (weatherProb > 60) {
+        weather = "Soleado";
+      }
     } else {
       temp = (int) (Math.random() * 26);
+      if (weatherProb <= 60) {
+        weather = "Soleado";
+      }
+      if (weatherProb > 60) {
+        weather = "Nublado";
+      }
     }
 
     // mostramos los datos por pantalla
