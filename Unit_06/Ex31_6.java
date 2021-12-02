@@ -19,6 +19,8 @@
  */
 public class Ex31_6 {
   public static void main(String[] args) {
+    System.out.print("Introduce la cantidad de dinero a apostar: ");
+    int n = Integer.parseInt(System.console().readLine());
     
   }
 }
