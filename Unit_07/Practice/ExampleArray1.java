@@ -1,3 +1,4 @@
+package Practice;
 public class ExampleArray1 {
   public static void main(String[] args) {
     // Definimos un Array

@@ -1,3 +1,4 @@
+package Practice;
 public class ExampleArray2 {
   public static void main(String[] args) {
     String[] fruits = { "manzana", "pera", "piña", "chirimoya" };

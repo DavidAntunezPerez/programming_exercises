@@ -1,3 +1,4 @@
+package Practice;
 public class ExampleArray3 {
   public static void main(String[] args) {
     String[] fruits = new String[6];

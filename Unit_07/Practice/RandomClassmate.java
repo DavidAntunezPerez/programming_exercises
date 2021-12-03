@@ -1,3 +1,4 @@
+package Practice;
 public class RandomClassmate {
   public static void main(String[] args) throws Exception {
     // Hacemos un Array con la lista de la clase
