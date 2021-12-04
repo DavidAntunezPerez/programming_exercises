@@ -15,9 +15,9 @@ public class Ex1_7 {
     num[6] = 14;
     num[8] = 5;
     num[9] = 120;
-    for (int i = 0; i > 12; i++) {
+    for (int i = 0; i < 12; i++) {
       System.out.printf(num[i] + " ");
     }
-    // El programa como resultado no muestra nada
+    // Como resultado el programa mostrará el valor como 0 si no le asignamos ninguno
   }
 }
