@@ -16,7 +16,7 @@ public class Ex1_7 {
     num[8] = 5;
     num[9] = 120;
     for (int i = 0; i > 12; i++) {
-      System.out.print(num[i] + " ");
+      System.out.printf(num[i] + " ");
     }
     // El programa como resultado no muestra nada
   }
