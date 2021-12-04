@@ -18,5 +18,6 @@ public class Ex1_7 {
     for (int i = 0; i > 12; i++) {
       System.out.print(num[i] + " ");
     }
+    //
   }
 }
