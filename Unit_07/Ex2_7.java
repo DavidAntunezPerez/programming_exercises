@@ -16,7 +16,7 @@ public class Ex2_7 {
     simbolo[6] = "''";
     simbolo[7] = "'+'";
     simbolo[8] = "'Q'";
-    for (int i = 0; i > 9; i++) {
+    for (int i = 0; i < 9; i++) {
       System.out.print(simbolo[i] + " ");
     }
   }
