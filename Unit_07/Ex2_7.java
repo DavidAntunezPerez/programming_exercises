@@ -19,5 +19,7 @@ public class Ex2_7 {
     for (int i = 0; i < 9; i++) {
       System.out.print(simbolo[i] + " ");
     }
+    // vemos que en el array de String al hacer un print de algo muestra "null"
+    // cuando el valor no esta inicializado.
   }
 }
