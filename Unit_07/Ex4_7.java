@@ -22,7 +22,7 @@ public class Ex4_7 {
       numero[i] = (int)(Math.random()*101);
       cuadrado[i] = numero[i] * numero[i];
       cubo[i] = numero[i] * numero[i] * numero[i];
-      System.out.printf("%4d │ %5d │%8d\n", numero[i], cuadrado[i], cubo[i]);
+      System.out.printf("%4d │ %5d │%7d\n", numero[i], cuadrado[i], cubo[i]);
     }
 
   }
