@@ -24,8 +24,16 @@ public class Ex5_7 {
         min = n[i];
       }
     }
+    System.out.println();
+    System.out.println("LOS NÚMEROS INTRODUCIDOS SON: ");
     for (int i = 0; i < 10; i++) {
-
+      System.out.print(n[i]+" ");
+      if (n[i] == max) {
+        System.out.print("(máximo) ");
+      }
+      if (n[i] == min) {
+        System.out.print("(mínimo) ");
+      }
     }
   }
 }
