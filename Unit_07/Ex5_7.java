@@ -14,8 +14,18 @@ public class Ex5_7 {
     n[0] = Integer.parseInt(System.console().readLine());
     max = n[0];
     min = n[0];
-    for(int i = 0; i < 10; i++){
+    for (int i = 0; i < 10; i++) {
       System.out.print("Introduce otro número por teclado: ");
+      n[i] = Integer.parseInt(System.console().readLine());
+      if (n[i] > max) {
+        max = n[i];
+      }
+      if (n[i] < min) {
+        min = n[i];
+      }
+    }
+    for (int i = 0; i < 10; i++) {
+
     }
   }
 }
