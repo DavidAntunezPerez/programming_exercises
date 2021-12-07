@@ -7,6 +7,8 @@
  */
 public class Ex5_7 {
   public static void main(String[] args) {
+    int max;
+    int min;
     
     for(int i = 0; i < 10; i++){
       int n;
