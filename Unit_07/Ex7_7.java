@@ -11,8 +11,13 @@
 public class Ex7_7 {
   public static void main(String[] args) {
     int[] n = new int[100];
-    for(int i = 0; i < 100; i++ ){
-      
+    for (int i = 0; i < 100; i++) {
+      n[i] = (int) (Math.random() * 20);
+      System.out.printf("%4d", n[i]);
     }
+    System.out.println();
+    System.out.print("Escribe un número que haya sido mostrado: ");
+    int numChosen = Integer.parseInt(System.console().readLine());
+    
   }
 }
