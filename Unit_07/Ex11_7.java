@@ -17,5 +17,13 @@ public class Ex11_7 {
       System.out.print("Introduce un número: ");
       n[i] = Integer.parseInt(System.console().readLine());
     }
+    System.out.println("ARRAY ORIGINAL: ");
+    for (int i = 0; i < n.length; i++) {
+      System.out.printf(" %4d", i);
+    }
+    System.out.println();
+    for (int i = 0; i < n.length; i++) {
+      System.out.printf(" %4d", n[i]);
+    }
   }
 }
