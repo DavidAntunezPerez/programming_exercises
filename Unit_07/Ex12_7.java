@@ -28,5 +28,10 @@ public class Ex12_7 {
       System.out.printf(" %4d", n[i]);
     }
     System.out.println();
+    System.out.print("Escribe el número inicial: ");
+    int pInicial = Integer.parseInt(System.console().readLine());
+    System.out.print("Escribe el número final: ");
+    int pFinal = Integer.parseInt(System.console().readLine());
+
   }
 }
