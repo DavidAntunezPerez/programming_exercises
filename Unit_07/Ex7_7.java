@@ -20,6 +20,15 @@ public class Ex7_7 {
     int numChosen = Integer.parseInt(System.console().readLine());
     System.out.print("Escribe el número por el que quieras cambiarlo: ");
     int character = Integer.parseInt(System.console().readLine());
-    
+    for (int i = 0; i < 100; i++) {
+      if (n[i] == numChosen) {
+        n[i] = character;
+      }
+      if (n[i] == character) {
+        System.out.printf(" \033[92m %4d", n[i]);
+      } else {
+        System.out.printf("\033[37m %4d", n[i]);
+      }
+    }
   }
 }
