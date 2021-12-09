@@ -53,6 +53,8 @@ public class Ex8_7 {
       m[i] = Integer.parseInt(System.console().readLine());
     }
     System.out.println();
+    System.out.println("GRÁFICO ILUSTRATIVO");
+    System.out.println("-------------------");
     for(int i = 0; i < m.length; i++) {
       System.out.print("| ");
       for(int j = 0; j < m[i]; j++) {
