@@ -25,7 +25,7 @@ public class Ex7_7 {
         n[i] = character;
       }
       if (n[i] == character) {
-        System.out.printf(" \033[92m %4d", n[i]);
+        System.out.printf("\033[92m \"%3d \"", n[i]);
       } else {
         System.out.printf("\033[37m %4d", n[i]);
       }
