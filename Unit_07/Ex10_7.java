@@ -17,6 +17,7 @@ public class Ex10_7 {
     for (int i = 0; i < n.length; i++) {
       System.out.print(n[i] + " ");
     }
+    System.out.println();
     System.out.println("ARRAY CON PARES PRIMERO: ");
     for (int i = 0; i < n.length; i++) {
       if (n[i] % 2 == 0) {
