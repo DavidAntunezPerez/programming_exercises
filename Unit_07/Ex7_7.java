@@ -18,6 +18,8 @@ public class Ex7_7 {
     System.out.println();
     System.out.print("Escribe un número que haya sido mostrado: ");
     int numChosen = Integer.parseInt(System.console().readLine());
+    System.out.print("Escribe el número por el que quieras cambiarlo: ");
+    int character = Integer.parseInt(System.console().readLine());
     
   }
 }
