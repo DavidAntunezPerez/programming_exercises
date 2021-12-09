@@ -35,6 +35,9 @@ public class Ex12_7 {
       pInicial = Integer.parseInt(System.console().readLine());
       System.out.print("Escribe el número final: ");
       pFinal = Integer.parseInt(System.console().readLine());
+      if (pFinal < pInicial) {
+        System.out.print("El valor inicial no puede ser mayor que el final.");
+      }
     } while (pFinal < pInicial);
 
   }
