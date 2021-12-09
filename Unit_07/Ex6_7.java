@@ -20,19 +20,19 @@ public class Ex6_7 {
     }
     System.out.print("Array en orden inicial: ");
     for (int i = 0; i < n.length; i++) {
-      System.out.print(n[i] + " ");
+      System.out.printf("%3d ", n[i]);
     }
     System.out.println();
-    for (int i = 0; i < n.length; i++) {
-      if (i != 0) {
-        n[i] = n[i - 1];
-      } else if (i == 0) {
-        n[0] = n[14];
-      }
+
+    int aux = n[14];
+    for (int i = 14; i > 0; i--) {
+      n[i] = n[i - 1];
     }
+    n[0] = aux;
+
     System.out.print("Array movido una posición: ");
     for (int i = 0; i < n.length; i++) {
-      System.out.print(n[i] + " ");
+      System.out.printf("%3d ", n[i]);
     }
   }
 }
