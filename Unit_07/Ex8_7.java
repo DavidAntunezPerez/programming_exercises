@@ -56,7 +56,7 @@ public class Ex8_7 {
     System.out.println("GRÁFICO ILUSTRATIVO");
     System.out.println("-------------------");
     for(int i = 0; i < m.length; i++) {
-      System.out.print("| ");
+      System.out.print("|");
       for(int j = 0; j < m[i]; j++) {
         System.out.print("-");
       }
