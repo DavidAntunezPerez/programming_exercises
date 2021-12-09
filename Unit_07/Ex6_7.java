@@ -25,9 +25,9 @@ public class Ex6_7 {
     System.out.println();
     for (int i = 0; i < n.length; i++) {
       if (i != 0) {
-        n[i] = n[i - 1]; 
+        n[i] = n[i - 1];
       } else if (i == 0) {
-       n[0] =  n[14];
+        n[0] = n[14];
       }
     }
     System.out.print("Array movido una posición: ");
