@@ -36,9 +36,24 @@ public class Ex12_7 {
       System.out.print("Escribe el número final: ");
       pFinal = Integer.parseInt(System.console().readLine());
       if (pFinal < pInicial) {
-        System.out.print("El valor inicial no puede ser mayor que el final.");
+        System.out.print("El valor inicial no puede ser mayor que el final.\n");
       }
     } while (pFinal < pInicial);
+    int aux = n[pFinal];
+    n[pFinal] = n[pInicial];
+    int aux2 = n[9];
+    for (int i = 9; i > 0; i--) {
+      n[i] = n[i - 1];
+    }
+    n[0] = aux2;
 
+    // resultado final
+    for (int i = 0; i < n.length; i++) {
+      System.out.printf(" %4d", i);
+    }
+    System.out.println();
+    for (int i = 0; i < n.length; i++) {
+      System.out.printf(" %4d", n[i]);
+    }
   }
 }
