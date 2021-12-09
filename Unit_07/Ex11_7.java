@@ -25,5 +25,42 @@ public class Ex11_7 {
     for (int i = 0; i < n.length; i++) {
       System.out.printf(" %4d", n[i]);
     }
+    System.out.println();
+    System.out.println("ARRAY CON PRIMOS PRIMERO:");
+    for (int i = 0; i < n.length; i++) {
+      System.out.printf(" %4d", i);
+    }
+    System.out.println();
+    // Comrpueba Primo
+    for (int i = 0; i < n.length; i++) {
+      int numInt = n[i]; // Número Introducido
+      // Primo
+      int contDivisores = 2; // No puede ser 1
+      boolean pregPrimo = true; // Presupone que el número es primo
+      do {
+        if (numInt % contDivisores == 0 && numInt != contDivisores) {
+          pregPrimo = false; // Si encuentra un divisor: Ya no es primo
+        }
+        contDivisores++;
+      } while (contDivisores < numInt && pregPrimo == true);
+      if (pregPrimo == true) {
+        System.out.printf(" %4d", n[i]);
+      }
+    }
+    for (int i = 0; i < n.length; i++) {
+      int numInt = n[i]; // Número Introducido
+      // Primo
+      int contDivisores = 2; // No puede ser 1
+      boolean pregPrimo = true; // Presupone que el número es primo
+      do {
+        if (numInt % contDivisores == 0 && numInt != contDivisores) {
+          pregPrimo = false; // Si encuentra un divisor: Ya no es primo
+        }
+        contDivisores++;
+      } while (contDivisores < numInt && pregPrimo == true);
+      if (pregPrimo == false) {
+        System.out.printf(" %4d", n[i]);
+      }
+    }
   }
 }
