@@ -13,10 +13,14 @@
 public class Ex14_7 {
   public static void main(String[] args) {
     String[] words = new String[8];
+    String[] color = {
+        "verde", "rojo", "azul", "amarillo", "naranja", "rosa", "negro ", "blanco", "morado"
+    };
     System.out.print("Introduce 8 palabras seguidas cada una de ENTER: \n");
     for (int i = 0; i < words.length; i++) {
       words[i] = System.console().readLine();
     }
+    System.out.println("ARRAY ORIGINAL");
     for (int i = 0; i < words.length; i++) {
       System.out.printf("%-8d", i);
     }
