@@ -22,6 +22,7 @@ public class Ex18_7 {
     for (int i = 0; i < n.length; i++) {
       System.out.print(n[i] + " ");
     }
+    System.out.println();
     boolean valid = false;
     do {
       // Pedir número a usuario
@@ -33,6 +34,10 @@ public class Ex18_7 {
         if (n[i] == nIntr) {
           valid = true;
         }
+      }
+      if (!valid) {
+        System.out.print("Su número no se encuentra entre los números dados, inténtelo de nuevo.");
+        System.out.println();
       }
     } while (!valid);
   }
