@@ -20,6 +20,18 @@
 public class Ex15_7 {
   public static void main(String[] args) {
     int people;
+    int[] n = new int[10];
+    // print del número de mesas
+    System.out.print("Nº Mesa : ");
+    for (int i = 0; i < n.length; i++) {
+      System.out.print(i + "  ");
+    }
+    System.out.println();
+    System.out.print("Ocupación : ");
+    for (int i = 0; i < n.length; i++) {
+      n[i] = (int) (Math.random() * 4);
+      System.out.print(n[i] + "  ");
+    }
     do {
       System.out.println();
       System.out.print("¿Cuántos son? : ");
@@ -30,6 +42,12 @@ public class Ex15_7 {
             .print("Lo siento, no admitimos grupos de 6, haga grupos de 4 personas como máximo e intente de nuevo.");
       }
     } while (people > 4);
+    for (int i = 0; i < n.length; i++) {
+      if (n[i] == 0) {
+        n[i] = people;
+        System.out.println("Tu grupo ha sido agregado a la mesa " + i + ", disfrute la comida.");
+      }
 
+    }
   }
 }
