@@ -23,6 +23,7 @@ public class Ex15_7 {
     int[] n = new int[10];
     int cont = 0;
     do {
+      System.out.println();
       // print del número de mesas
       System.out.print("Nº Mesa   : ");
       for (int i = 0; i < n.length; i++) {
@@ -31,7 +32,7 @@ public class Ex15_7 {
       System.out.println();
       System.out.print("Ocupación : ");
       for (int i = 0; i < n.length; i++) {
-        if (cont > 0) {
+        if (cont == 0) {
           n[i] = (int) (Math.random() * 4);
         }
         System.out.print(n[i] + "  ");
@@ -44,7 +45,7 @@ public class Ex15_7 {
           System.out.println();
           System.out
               .print("Lo siento, no admitimos grupos de " + people
-                  + " , haga grupos de 4 personas como máximo e intente de nuevo.\nPara salir del programa, introduzca un valor por debajo de 1.");
+                  + " , haga grupos de 4 personas como máximo e intente de nuevo.\nPara salir del programa, introduzca un valor por debajo de 1.\n");
         }
         cont++;
       } while ((people > 4));
@@ -53,22 +54,22 @@ public class Ex15_7 {
         for (int i = 0; (i < n.length) && (empty); i++) {
           if (n[i] == 0) {
             n[i] = people;
-            System.out.println("Tu grupo ha sido agregado a la mesa " + i + ", disfrute la comida.");
+            System.out.println("Tu grupo ha sido agregado a la mesa " + i + ", disfrute la comida.\n");
             empty = false;
           } else if ((n[i] == 1) && (people <= 3)) {
             n[i] += people;
-            System.out.println("Tu grupo ha sido agregado a la mesa " + i + ", disfrute la comida.");
+            System.out.println("Tu grupo ha sido agregado a la mesa " + i + ", disfrute la comida.\n");
             empty = false;
           } else if ((n[i] == 2) && (people <= 2)) {
             n[i] += people;
-            System.out.println("Tu grupo ha sido agregado a la mesa " + i + ", disfrute la comida.");
+            System.out.println("Tu grupo ha sido agregado a la mesa " + i + ", disfrute la comida.\n");
             empty = false;
           } else if ((n[i] == 3) && (people <= 1)) {
             n[i] += people;
-            System.out.println("Tu grupo ha sido agregado a la mesa " + i + ", disfrute la comida.");
+            System.out.println("Tu grupo ha sido agregado a la mesa " + i + ", disfrute la comida.\n");
             empty = false;
           } else {
-            System.out.print("Lo siento, en estos momentos no queda sitio");
+            System.out.print("Lo siento, en estos momentos no queda sitio\n");
             empty = false;
           }
         }
@@ -82,6 +83,7 @@ public class Ex15_7 {
         for (int i = 0; i < n.length; i++) {
           System.out.print(n[i] + "  ");
         }
+        System.out.println();
       }
       System.out.println();
       System.out.print("Muchas gracias por venir. Hasta pronto.");
