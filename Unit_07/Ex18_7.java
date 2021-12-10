@@ -14,8 +14,21 @@ public class Ex18_7 {
   public static void main(String[] args) {
     // Crear array y aleatorizarlo
     int[] n = new int[10];
+    int[] aux = new int[10];
     for (int i = 0; i < n.length; i++) {
-      n[i] = (int) (Math.random() * 200);
+      n[i] = (int) (Math.random() * 20);
+      if ((n[i] <= 100) && ((i % 2 == 0) || (i == 0))) {
+        for (int j = 0; j < aux.length; j++) {
+          if (n[i] == 0) {
+            aux[i] = n[i];
+          }
+        }
+
+      }
+      if ((n[i] > 100) && (i % 2 != 0)) {
+        aux[i] = n[i];
+      }
+
     }
     // Mostrar Indice + Array
     System.out.println("ARRAY ORIGINAL");
@@ -25,6 +38,16 @@ public class Ex18_7 {
     System.out.println();
     for (int i = 0; i < n.length; i++) {
       System.out.printf("%-5s", n[i]);
+    }
+    // Mostrar array ordenado
+    System.out.println();
+    System.out.print("ARRAY ORDENADO\n");
+    for (int i = 0; i < n.length; i++) {
+      System.out.printf(" %-4d", i);
+    }
+    System.out.println();
+    for (int i = 0; i < n.length; i++) {
+      System.out.printf("%-5s", aux[i]);
     }
   }
 }
