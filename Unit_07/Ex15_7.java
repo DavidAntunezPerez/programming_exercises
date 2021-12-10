@@ -59,7 +59,6 @@ public class Ex15_7 {
     System.out.println();
     System.out.print("Ocupación : ");
     for (int i = 0; i < n.length; i++) {
-      n[i] = (int) (Math.random() * 4);
       System.out.print(n[i] + "  ");
     }
   }
