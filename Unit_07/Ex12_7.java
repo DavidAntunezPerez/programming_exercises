@@ -39,21 +39,32 @@ public class Ex12_7 {
         System.out.print("El valor inicial no puede ser mayor que el final.\n");
       }
     } while (pFinal < pInicial);
-    int aux = n[pFinal];
+    for (int i = 0; i < 10; i++) {
+      n[i] = n[i];
+    }
+    
     n[pFinal] = n[pInicial];
-    int aux2 = n[9];
-    for (int i = 9; i > 0; i--) {
+    
+    for (int i = pFinal + 1; i < 10; i++)
       n[i] = n[i - 1];
+    
+    n[0] = n[9];
+    
+    for (int i = 0; i < pInicial; i++)
+      n[i + 1] = n[i];
+    
+    // Muestra el resultado.
+    System.out.println("\nArray resultante:");
+    System.out.println("\n┌────────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┐");
+    System.out.print("│ Índice ");
+    for ( int i = 0; i < 10; i++) {
+      System.out.printf("│%4d ", i);
     }
-    n[0] = aux2;
-
-    // resultado final
-    for (int i = 0; i < n.length; i++) {
-      System.out.printf(" %4d", i);
+    System.out.println("│\n├────────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┤");    
+    System.out.print("│ Valor  ");
+    for (int i = 0; i < 10; i++) {
+      System.out.printf("│%4d ", n[i]);
     }
-    System.out.println();
-    for (int i = 0; i < n.length; i++) {
-      System.out.printf(" %4d", n[i]);
-    }
+    System.out.println("│\n└────────┴─────┴─────┴─────┴─────┴─────┴─────┴─────┴─────┴─────┴─────┘");  
   }
 }
