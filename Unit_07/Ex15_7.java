@@ -49,6 +49,20 @@ public class Ex15_7 {
         n[i] = people;
         System.out.println("Tu grupo ha sido agregado a la mesa " + i + ", disfrute la comida.");
         empty = false;
+      } else if ((n[i] == 1) && (people <= 3)) {
+        n[i] += people;
+        System.out.println("Tu grupo ha sido agregado a la mesa " + i + ", disfrute la comida.");
+        empty = false;
+      } else if ((n[i] == 2) && (people <= 2)) {
+        n[i] += people;
+        System.out.println("Tu grupo ha sido agregado a la mesa " + i + ", disfrute la comida.");
+        empty = false;
+      } else if ((n[i] == 3) && (people <= 1)) {
+        n[i] += people;
+        System.out.println("Tu grupo ha sido agregado a la mesa " + i + ", disfrute la comida.");
+        empty = false;
+      } else {
+        System.out.print("Lo siento, en estos momentos no queda sitio");
       }
     }
     // print del número de mesas
