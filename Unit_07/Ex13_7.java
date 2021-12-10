@@ -10,6 +10,10 @@
  */
 public class Ex13_7 {
   public static void main(String[] args) {
-
+    int[] n = new int[100];
+    for (int i = 0; i < n.length; i++) {
+      n[i] = (int) (Math.random() * 500);
+      System.out.print(n[i] + "  ");
+    }
   }
 }
