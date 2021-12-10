@@ -16,7 +16,17 @@ public class Ex13_7 {
       System.out.print(n[i] + "  ");
     }
     System.out.println();
+    int dest;
+    do{
     System.out.print("¿Qué quieres destacar? (1 - max ; 2 - min) : ");
-    int dest = Integer.parseInt(System.console().readLine());
+    dest = Integer.parseInt(System.console().readLine());
+  }while((dest < 1)||( dest > 2));
+    System.out.println();
+    switch (dest){
+      case 1:
+      break;
+      case 2:
+      break;
+    }
   }
 }
