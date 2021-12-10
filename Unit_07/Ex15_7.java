@@ -21,6 +21,7 @@ public class Ex15_7 {
   public static void main(String[] args) {
     int people;
     do {
+      System.out.println();
       System.out.print("¿Cuántos son? : ");
       people = Integer.parseInt(System.console().readLine());
       if (people > 4) {
