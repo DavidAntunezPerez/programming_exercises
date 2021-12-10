@@ -22,7 +22,7 @@ public class Ex15_7 {
     int people;
     int[] n = new int[10];
     // print del número de mesas
-    System.out.print("Nº Mesa : ");
+    System.out.print("Nº Mesa   : ");
     for (int i = 0; i < n.length; i++) {
       System.out.print(i + "  ");
     }
@@ -36,18 +36,31 @@ public class Ex15_7 {
       System.out.println();
       System.out.print("¿Cuántos son? : ");
       people = Integer.parseInt(System.console().readLine());
-      if (people > 4) {
+      if ((people > 4) || (people < 1)) {
         System.out.println();
         System.out
-            .print("Lo siento, no admitimos grupos de 6, haga grupos de 4 personas como máximo e intente de nuevo.");
+            .print("Lo siento, no admitimos grupos de " + people
+                + " , haga grupos de 4 personas como máximo e intente de nuevo.");
       }
-    } while (people > 4);
-    for (int i = 0; i < n.length; i++) {
+    } while ((people > 4) || (people < 1));
+    boolean empty = true;
+    for (int i = 0; (i < n.length) && (empty); i++) {
       if (n[i] == 0) {
         n[i] = people;
         System.out.println("Tu grupo ha sido agregado a la mesa " + i + ", disfrute la comida.");
+        empty = false;
       }
-
+    }
+    // print del número de mesas
+    System.out.print("Nº Mesa   : ");
+    for (int i = 0; i < n.length; i++) {
+      System.out.print(i + "  ");
+    }
+    System.out.println();
+    System.out.print("Ocupación : ");
+    for (int i = 0; i < n.length; i++) {
+      n[i] = (int) (Math.random() * 4);
+      System.out.print(n[i] + "  ");
     }
   }
 }
