@@ -15,54 +15,80 @@
  */
 public class Ex12_7 {
   public static void main(String[] args) {
+
     int[] n = new int[10];
-    for (int i = 0; i < n.length; i++) {
-      System.out.print("Introduce un número: ");
+    int[] resultado = new int[10];
+    int i;
+    int nInicial;
+    int nFinal;
+    boolean valido;
+
+    System.out.println("Introduzca 10 números separados por INTRO:");
+
+    for (i = 0; i < 10; i++) {
       n[i] = Integer.parseInt(System.console().readLine());
     }
-    for (int i = 0; i < n.length; i++) {
-      System.out.printf(" %4d", i);
-    }
-    System.out.println();
-    for (int i = 0; i < n.length; i++) {
-      System.out.printf(" %4d", n[i]);
-    }
-    System.out.println();
-    int pInicial = 9;
-    int pFinal = 0;
-    do {
-      System.out.print("Escribe el número inicial: ");
-      pInicial = Integer.parseInt(System.console().readLine());
-      System.out.print("Escribe el número final: ");
-      pFinal = Integer.parseInt(System.console().readLine());
-      if (pFinal < pInicial) {
-        System.out.print("El valor inicial no puede ser mayor que el final.\n");
-      }
-    } while (pFinal < pInicial);
-    for (int i = 0; i < 10; i++) {
-      n[i] = n[i];
-    }
-    
-    n[pFinal] = n[pInicial];
-    
-    for (int i = pFinal + 1; i < 10; i++)
-      n[i] = n[i - 1];
-    
-    n[0] = n[9];
-    
-    for (int i = 0; i < pInicial; i++)
-      n[i + 1] = n[i];
-    
-    // Muestra el resultado.
-    System.out.println("\nArray resultante:");
+
+    // Muestra el array original.
+    System.out.println("\n\nArray original:");
     System.out.println("\n");
-    for ( int i = 0; i < 10; i++) {
+    for (i = 0; i < 10; i++) {
       System.out.printf("%4d ", i);
     }
-    System.out.println("\n");    
-    for (int i = 0; i < 10; i++) {
+    System.out.println("\n");
+    for (i = 0; i < 10; i++) {
       System.out.printf("%4d ", n[i]);
     }
-     
+    System.out.println("\n");
+
+    // Pide las posiciones inicial y final.
+    do {
+      valido = true;
+
+      System.out.print("Introduzca la posición inicial (0 - 9): ");
+      nInicial = Integer.parseInt(System.console().readLine());
+      if ((nInicial < 0) || (nInicial > 9)) {
+        System.out.println("Valor incorrecto, debe ser un número entre el 0 y el 9.");
+        valido = false;
+      }
+
+      System.out.print("Introduzca la posición final (0 - 9): ");
+      nFinal = Integer.parseInt(System.console().readLine());
+      if ((nFinal < 0) || (nFinal > 9)) {
+        System.out.println("Valor incorrecto, debe ser un número entre el 0 y el 9.");
+        valido = false;
+      }
+
+      if (nInicial >= nFinal) {
+        System.out.println("Valores incorrectos, la posición inicial debe ser menor que la posición final.");
+        valido = false;
+      }
+    } while (!valido);
+
+    // Copia el array n en resultado.
+    for (i = 0; i < 10; i++) {
+      resultado[i] = n[i];
+    }
+
+    resultado[nFinal] = n[nInicial];
+
+    for (i = nFinal + 1; i < 10; i++)
+      resultado[i] = n[i - 1];
+
+    resultado[0] = n[9];
+
+    for (i = 0; i < nInicial; i++)
+      resultado[i + 1] = n[i];
+
+    // Muestra el resultado.
+    System.out.println("\nArray resultante:");
+    for (i = 0; i < 10; i++) {
+      System.out.printf("%4d ", i);
+    }
+    System.out.println("\n");
+    for (i = 0; i < 10; i++) {
+      System.out.printf("%4d ", resultado[i]);
+    }
+    System.out.println("\n");
   }
 }
