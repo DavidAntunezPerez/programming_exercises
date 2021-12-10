@@ -55,16 +55,14 @@ public class Ex12_7 {
     
     // Muestra el resultado.
     System.out.println("\nArray resultante:");
-    System.out.println("\n┌────────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┐");
-    System.out.print("│ Índice ");
+    System.out.println("\n");
     for ( int i = 0; i < 10; i++) {
-      System.out.printf("│%4d ", i);
+      System.out.printf("%4d ", i);
     }
-    System.out.println("│\n├────────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┤");    
-    System.out.print("│ Valor  ");
+    System.out.println("\n");    
     for (int i = 0; i < 10; i++) {
-      System.out.printf("│%4d ", n[i]);
+      System.out.printf("%4d ", n[i]);
     }
-    System.out.println("│\n└────────┴─────┴─────┴─────┴─────┴─────┴─────┴─────┴─────┴─────┴─────┘");  
+     
   }
 }
