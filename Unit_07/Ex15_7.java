@@ -40,40 +40,44 @@ public class Ex15_7 {
         System.out.println();
         System.out
             .print("Lo siento, no admitimos grupos de " + people
-                + " , haga grupos de 4 personas como máximo e intente de nuevo.");
+                + " , haga grupos de 4 personas como máximo e intente de nuevo. Para salir del programa, introduzca un valor por debajo de 1.");
       }
-    } while ((people > 4) || (people < 1));
-    boolean empty = true;
-    for (int i = 0; (i < n.length) && (empty); i++) {
-      if (n[i] == 0) {
-        n[i] = people;
-        System.out.println("Tu grupo ha sido agregado a la mesa " + i + ", disfrute la comida.");
-        empty = false;
-      } else if ((n[i] == 1) && (people <= 3)) {
-        n[i] += people;
-        System.out.println("Tu grupo ha sido agregado a la mesa " + i + ", disfrute la comida.");
-        empty = false;
-      } else if ((n[i] == 2) && (people <= 2)) {
-        n[i] += people;
-        System.out.println("Tu grupo ha sido agregado a la mesa " + i + ", disfrute la comida.");
-        empty = false;
-      } else if ((n[i] == 3) && (people <= 1)) {
-        n[i] += people;
-        System.out.println("Tu grupo ha sido agregado a la mesa " + i + ", disfrute la comida.");
-        empty = false;
-      } else {
-        System.out.print("Lo siento, en estos momentos no queda sitio");
+    } while ((people > 4));
+    if (people > 0) {
+      boolean empty = true;
+      for (int i = 0; (i < n.length) && (empty); i++) {
+        if (n[i] == 0) {
+          n[i] = people;
+          System.out.println("Tu grupo ha sido agregado a la mesa " + i + ", disfrute la comida.");
+          empty = false;
+        } else if ((n[i] == 1) && (people <= 3)) {
+          n[i] += people;
+          System.out.println("Tu grupo ha sido agregado a la mesa " + i + ", disfrute la comida.");
+          empty = false;
+        } else if ((n[i] == 2) && (people <= 2)) {
+          n[i] += people;
+          System.out.println("Tu grupo ha sido agregado a la mesa " + i + ", disfrute la comida.");
+          empty = false;
+        } else if ((n[i] == 3) && (people <= 1)) {
+          n[i] += people;
+          System.out.println("Tu grupo ha sido agregado a la mesa " + i + ", disfrute la comida.");
+          empty = false;
+        } else {
+          System.out.print("Lo siento, en estos momentos no queda sitio");
+        }
       }
-    }
-    // print del número de mesas
-    System.out.print("Nº Mesa   : ");
-    for (int i = 0; i < n.length; i++) {
-      System.out.print(i + "  ");
+      // print del número de mesas
+      System.out.print("Nº Mesa   : ");
+      for (int i = 0; i < n.length; i++) {
+        System.out.print(i + "  ");
+      }
+      System.out.println();
+      System.out.print("Ocupación : ");
+      for (int i = 0; i < n.length; i++) {
+        System.out.print(n[i] + "  ");
+      }
     }
     System.out.println();
-    System.out.print("Ocupación : ");
-    for (int i = 0; i < n.length; i++) {
-      System.out.print(n[i] + "  ");
-    }
+    System.out.print("Muchas gracias por venir. Hasta pronto.");
   }
 }
