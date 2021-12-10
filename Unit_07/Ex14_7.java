@@ -18,12 +18,12 @@ public class Ex14_7 {
       words[i] = System.console().readLine();
     }
     for (int i = 0; i < words.length; i++) {
-      System.out.printf("%5d",i);
+      System.out.printf("%-8d", i);
     }
     System.out.println();
     for (int i = 0; i < words.length; i++) {
-      System.out.printf(words[i]+ " ");
+      System.out.printf("%-8s", words[i]);
     }
-    
+
   }
 }
