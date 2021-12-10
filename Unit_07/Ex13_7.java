@@ -15,5 +15,8 @@ public class Ex13_7 {
       n[i] = (int) (Math.random() * 500);
       System.out.print(n[i] + "  ");
     }
+    System.out.println();
+    System.out.print("¿Qué quieres destacar? (1 - max ; 2 - min) : ");
+    int dest = Integer.parseInt(System.console().readLine());
   }
 }
