@@ -21,6 +21,7 @@ public class Ex15_7 {
   public static void main(String[] args) {
     int people;
     int[] n = new int[10];
+    int cont = 0;
     do {
       // print del número de mesas
       System.out.print("Nº Mesa   : ");
@@ -30,7 +31,9 @@ public class Ex15_7 {
       System.out.println();
       System.out.print("Ocupación : ");
       for (int i = 0; i < n.length; i++) {
-        n[i] = (int) (Math.random() * 4);
+        if (cont > 0) {
+          n[i] = (int) (Math.random() * 4);
+        }
         System.out.print(n[i] + "  ");
       }
       do {
@@ -43,6 +46,7 @@ public class Ex15_7 {
               .print("Lo siento, no admitimos grupos de " + people
                   + " , haga grupos de 4 personas como máximo e intente de nuevo.\nPara salir del programa, introduzca un valor por debajo de 1.");
         }
+        cont++;
       } while ((people > 4));
       if (people > 0) {
         boolean empty = true;
@@ -65,6 +69,7 @@ public class Ex15_7 {
             empty = false;
           } else {
             System.out.print("Lo siento, en estos momentos no queda sitio");
+            empty = false;
           }
         }
         // print del número de mesas
