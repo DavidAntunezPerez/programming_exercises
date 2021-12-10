@@ -13,12 +13,19 @@
 public class Ex14_7 {
   public static void main(String[] args) {
     String[] words = new String[8];
+    String[] result = new String[8];
     String[] color = {
         "verde", "rojo", "azul", "amarillo", "naranja", "rosa", "negro ", "blanco", "morado"
     };
+    int j = 0;
     System.out.print("Introduce 8 palabras seguidas cada una de ENTER: \n");
     for (int i = 0; i < words.length; i++) {
       words[i] = System.console().readLine();
+      for (String c : color) {
+        if (words[i].equals(c)) {
+          result[i++] = c;
+        }
+      }
     }
     System.out.println("ARRAY ORIGINAL");
     for (int i = 0; i < words.length; i++) {
@@ -27,6 +34,28 @@ public class Ex14_7 {
     System.out.println();
     for (int i = 0; i < words.length; i++) {
       System.out.printf("%-8s", words[i]);
+    }
+
+    for (int i = 0; i < 8; i++) {
+      boolean esColor = false;
+
+      for (String c : color) {
+        if (words[i].equals(c)) {
+          esColor = true;
+        }
+      }
+
+      if (!esColor) {
+        result[j++] = words[i];
+      }
+    }
+    System.out.println();
+    System.out.println("ARRAY RESULTADO");
+    for (int i = 0; i < words.length; i++) {
+      System.out.printf("%-8d", i);
+    }
+    for (String r : result) {
+      System.out.printf("%-8s", r);
     }
 
   }
