@@ -26,6 +26,7 @@ public class Ex18_7 {
     }
     System.out.println();
     boolean valid = false;
+    int l = 0;
     int nIntr;
     do {
       // Pedir número a usuario
@@ -35,23 +36,28 @@ public class Ex18_7 {
       for (int i = 0; i < n.length; i++) {
         if (n[i] == nIntr) {
           valid = true;
+          l++;
         }
 
       }
       if (!valid) {
         System.out.print("Su número no se encuentra entre los números dados, inténtelo de nuevo.");
         System.out.println();
+        l = 0;
       }
     } while (!valid);
     // Rotar el array para que ese número quede primero
-    int aux = -1;
+    int aux;
+    
     do {
+
       for (int i = 0; i < n.length - 1; i++) {
         aux = n[i + 1];
         n[i + 1] = n[0];
         n[0] = aux;
       }
-    } while (aux == nIntr);
+      l--;
+    } while (l >= 0);
     // Mostramos el array resultante
     System.out.println();
     System.out.println("ARRAY RESULTANTE");
