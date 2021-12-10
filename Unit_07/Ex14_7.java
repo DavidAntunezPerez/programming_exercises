@@ -17,5 +17,13 @@ public class Ex14_7 {
     for (int i = 0; i < words.length; i++) {
       words[i] = System.console().readLine();
     }
+    for (int i = 0; i < words.length; i++) {
+      System.out.printf("%5d",i);
+    }
+    System.out.println();
+    for (int i = 0; i < words.length; i++) {
+      System.out.printf(words[i]+ " ");
+    }
+    
   }
 }
