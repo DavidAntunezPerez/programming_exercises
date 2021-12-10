@@ -21,51 +21,7 @@ public class Ex15_7 {
   public static void main(String[] args) {
     int people;
     int[] n = new int[10];
-    // print del número de mesas
-    System.out.print("Nº Mesa   : ");
-    for (int i = 0; i < n.length; i++) {
-      System.out.print(i + "  ");
-    }
-    System.out.println();
-    System.out.print("Ocupación : ");
-    for (int i = 0; i < n.length; i++) {
-      n[i] = (int) (Math.random() * 4);
-      System.out.print(n[i] + "  ");
-    }
     do {
-      System.out.println();
-      System.out.print("¿Cuántos son? : ");
-      people = Integer.parseInt(System.console().readLine());
-      if ((people > 4) || (people < 1)) {
-        System.out.println();
-        System.out
-            .print("Lo siento, no admitimos grupos de " + people
-                + " , haga grupos de 4 personas como máximo e intente de nuevo. Para salir del programa, introduzca un valor por debajo de 1.");
-      }
-    } while ((people > 4));
-    if (people > 0) {
-      boolean empty = true;
-      for (int i = 0; (i < n.length) && (empty); i++) {
-        if (n[i] == 0) {
-          n[i] = people;
-          System.out.println("Tu grupo ha sido agregado a la mesa " + i + ", disfrute la comida.");
-          empty = false;
-        } else if ((n[i] == 1) && (people <= 3)) {
-          n[i] += people;
-          System.out.println("Tu grupo ha sido agregado a la mesa " + i + ", disfrute la comida.");
-          empty = false;
-        } else if ((n[i] == 2) && (people <= 2)) {
-          n[i] += people;
-          System.out.println("Tu grupo ha sido agregado a la mesa " + i + ", disfrute la comida.");
-          empty = false;
-        } else if ((n[i] == 3) && (people <= 1)) {
-          n[i] += people;
-          System.out.println("Tu grupo ha sido agregado a la mesa " + i + ", disfrute la comida.");
-          empty = false;
-        } else {
-          System.out.print("Lo siento, en estos momentos no queda sitio");
-        }
-      }
       // print del número de mesas
       System.out.print("Nº Mesa   : ");
       for (int i = 0; i < n.length; i++) {
@@ -74,10 +30,56 @@ public class Ex15_7 {
       System.out.println();
       System.out.print("Ocupación : ");
       for (int i = 0; i < n.length; i++) {
+        n[i] = (int) (Math.random() * 4);
         System.out.print(n[i] + "  ");
       }
-    }
-    System.out.println();
-    System.out.print("Muchas gracias por venir. Hasta pronto.");
+      do {
+        System.out.println();
+        System.out.print("¿Cuántos son? : ");
+        people = Integer.parseInt(System.console().readLine());
+        if (people > 4) {
+          System.out.println();
+          System.out
+              .print("Lo siento, no admitimos grupos de " + people
+                  + " , haga grupos de 4 personas como máximo e intente de nuevo.\nPara salir del programa, introduzca un valor por debajo de 1.");
+        }
+      } while ((people > 4));
+      if (people > 0) {
+        boolean empty = true;
+        for (int i = 0; (i < n.length) && (empty); i++) {
+          if (n[i] == 0) {
+            n[i] = people;
+            System.out.println("Tu grupo ha sido agregado a la mesa " + i + ", disfrute la comida.");
+            empty = false;
+          } else if ((n[i] == 1) && (people <= 3)) {
+            n[i] += people;
+            System.out.println("Tu grupo ha sido agregado a la mesa " + i + ", disfrute la comida.");
+            empty = false;
+          } else if ((n[i] == 2) && (people <= 2)) {
+            n[i] += people;
+            System.out.println("Tu grupo ha sido agregado a la mesa " + i + ", disfrute la comida.");
+            empty = false;
+          } else if ((n[i] == 3) && (people <= 1)) {
+            n[i] += people;
+            System.out.println("Tu grupo ha sido agregado a la mesa " + i + ", disfrute la comida.");
+            empty = false;
+          } else {
+            System.out.print("Lo siento, en estos momentos no queda sitio");
+          }
+        }
+        // print del número de mesas
+        System.out.print("Nº Mesa   : ");
+        for (int i = 0; i < n.length; i++) {
+          System.out.print(i + "  ");
+        }
+        System.out.println();
+        System.out.print("Ocupación : ");
+        for (int i = 0; i < n.length; i++) {
+          System.out.print(n[i] + "  ");
+        }
+      }
+      System.out.println();
+      System.out.print("Muchas gracias por venir. Hasta pronto.");
+    } while (people > 0);
   }
 }
