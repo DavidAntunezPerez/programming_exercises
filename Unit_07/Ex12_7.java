@@ -46,6 +46,7 @@ public class Ex12_7 {
       n[i] = n[i - 1];
     }
     n[0] = aux2;
+  
 
     // resultado final
     for (int i = 0; i < n.length; i++) {
