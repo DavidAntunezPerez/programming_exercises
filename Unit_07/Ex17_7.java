@@ -11,7 +11,7 @@
  * 
  * @author David Antunez Perez
  */
-public class Ex18_7 {
+public class Ex17_7 {
   public static void main(String[] args) {
     // Declarar array
     int[] n = new int[10];
@@ -36,9 +36,9 @@ public class Ex18_7 {
       for (int i = 0; i < n.length; i++) {
         if (n[i] == nIntr) {
           valid = true;
+        } else if ((n[i] != nIntr) && (!valid)) {
           l++;
         }
-
       }
       if (!valid) {
         System.out.print("Su número no se encuentra entre los números dados, inténtelo de nuevo.");
@@ -48,16 +48,15 @@ public class Ex18_7 {
     } while (!valid);
     // Rotar el array para que ese número quede primero
     int aux;
-    
+    l = n.length - l;
     do {
-
       for (int i = 0; i < n.length - 1; i++) {
         aux = n[i + 1];
         n[i + 1] = n[0];
         n[0] = aux;
       }
       l--;
-    } while (l >= 0);
+    } while (l > 0);
     // Mostramos el array resultante
     System.out.println();
     System.out.println("ARRAY RESULTANTE");
