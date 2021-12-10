@@ -71,7 +71,7 @@ public class Ex15_7 {
           }
         }
         if (empty) {
-          System.out.print("Lo siento, en estos momentos no queda sitio\n");
+          System.out.print("Lo siento, en estos momentos no queda sitio. Venga más tarde o inserte un número menor que 1 para salir.\n");
         }
         // print del número de mesas
         System.out.print("Nº Mesa   : ");
