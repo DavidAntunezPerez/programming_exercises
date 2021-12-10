@@ -24,8 +24,15 @@ public class Ex13_7 {
     System.out.println();
     switch (dest){
       case 1:
+      for (int i = 0; i < n.length; i++) {
+        
+        System.out.print(n[i] + "  ");
+      }
       break;
       case 2:
+      for (int i = 0; i < n.length; i++) {
+        System.out.print(n[i] + "  ");
+      }
       break;
     }
   }
