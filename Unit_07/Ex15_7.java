@@ -59,18 +59,18 @@ public class Ex15_7 {
           } else if ((n[i] == 1) && (people <= 3)) {
             n[i] += people;
             System.out.println("Tu grupo ha sido agregado a la mesa " + i + ", disfrute la comida.\n");
-            empty = false;
+
           } else if ((n[i] == 2) && (people <= 2)) {
             n[i] += people;
             System.out.println("Tu grupo ha sido agregado a la mesa " + i + ", disfrute la comida.\n");
-            empty = false;
+
           } else if ((n[i] == 3) && (people <= 1)) {
             n[i] += people;
             System.out.println("Tu grupo ha sido agregado a la mesa " + i + ", disfrute la comida.\n");
-            empty = false;
+
           } else {
             System.out.print("Lo siento, en estos momentos no queda sitio\n");
-            empty = false;
+
           }
         }
         // print del número de mesas
@@ -85,8 +85,8 @@ public class Ex15_7 {
         }
         System.out.println();
       }
-      System.out.println();
-      System.out.print("Muchas gracias por venir. Hasta pronto.");
     } while (people > 0);
+    System.out.println();
+    System.out.print("Muchas gracias por venir. Hasta pronto.");
   }
 }
