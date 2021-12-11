@@ -15,33 +15,16 @@ public class Ex18_7 {
     // Crear array y aleatorizarlo
     int[] n = new int[10];
     int[] aux = new int[10];
+    boolean skip = false;
     for (int i = 0; i < n.length; i++) {
+      skip = false;
       n[i] = (int) (Math.random() * 201);
-      if (n[i] <= 100) {
-        if (aux[0] == 0) {
-          aux[0] = n[i];
-        } else if (aux[2] == 0) {
-          aux[2] = n[i];
-        } else if (aux[4] == 0) {
-          aux[4] = n[i];
-        } else if (aux[6] == 0) {
-          aux[6] = n[i];
-        } else if (aux[8] == 0) {
-          aux[8] = n[i];
-        }
+      if ((n[i] > 100) && (aux[i] == 0)) {
+        aux[i] = n[i];
+        skip = true;
       }
-      if (n[i] > 100) {
-        if (aux[1] == 0) {
-          aux[1] = n[i];
-        } else if (aux[3] == 0) {
-          aux[3] = n[i];
-        } else if (aux[5] == 0) {
-          aux[5] = n[i];
-        } else if (aux[7] == 0) {
-          aux[7] = n[i];
-        } else if (aux[9] == 0) {
-          aux[9] = n[i];
-        }
+      if ((n[i] <= 100) && (aux[i] == 0)&&(!skip)) {
+        aux[i] = n[i];
       }
     }
     // Mostrar Indice + Array
