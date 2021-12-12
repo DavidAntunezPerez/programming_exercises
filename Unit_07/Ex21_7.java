@@ -10,6 +10,10 @@
  */
 public class Ex21_7 {
   public static void main(String[] args) {
+    int[] n = new int[15];
+    for(int i = 0; i < n.length; i++) {
+      n[i] = (int) (Math.random() * 501);
+    }
     
   }
 }
