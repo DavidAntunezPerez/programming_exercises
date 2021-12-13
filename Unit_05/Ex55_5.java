@@ -17,8 +17,12 @@ public class Ex55_5 {
       cont++;
     }
     int aux = n % 10;
-    
-    System.out.print(" "+aux);
+    n = n / 10;
+    if (cont > 1) {
+      System.out.print("Resultado: " + aux + n);
+    } else {
+      System.out.print("Resultado: " + aux);
+    }
 
   }
 }
