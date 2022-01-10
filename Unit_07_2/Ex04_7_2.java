@@ -20,7 +20,7 @@ public class Ex04_7_2 {
         n[4][columna] += n[fila][columna]; // suma columna
         n[fila][5] += n[fila][columna]; // suma filas
         n[4][5] += n[fila][columna]; // suma total
-      }
+      } 
     }
     for (fila = 0; fila < 5; fila++) {
       for (columna = 0; columna < 6; columna++) {

@@ -10,7 +10,7 @@ public class Ex05_7_2 {
         n[filas][columnas] = (int) (Math.random() * 1000);
         if (n[filas][columnas] >= max) {
           max = n[filas][columnas];
-        }
+        } 
         if (n[filas][columnas] <= min) {
           min = n[filas][columnas];
         }

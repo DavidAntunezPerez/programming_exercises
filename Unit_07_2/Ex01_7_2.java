@@ -6,7 +6,7 @@
  *         y asigna los valores según la siguiente tabla. Muestra el contenido
  *         de todos
  *         los elementos del array dispuestos en forma de tabla como se muestra
- *         en la
+ *         en la 
  *         figura.
  */
 public class Ex01_7_2 {
