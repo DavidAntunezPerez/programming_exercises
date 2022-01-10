@@ -16,16 +16,15 @@ public class Ex02_7_2 {
     // asignamos valores aleatorios al array
     for (fila = 0; fila < 4; fila++) {
       for (columna = 0; columna < 5; columna++) {
-        n[fila][columna] = (int) (Math.random() * 101);
+        // introducir número
+        System.out.print("Introduce un número:");
+        n[fila][columna] = Integer.parseInt(System.console().readLine());
         n[4][columna] += n[fila][columna]; // suma columna
         n[fila][5] += n[fila][columna]; // suma filas
-        n[4][5] += n[fila][5];
-        n[4][5] += n[4][columna];
+        n[4][5] += n[fila][columna]; // suma total
       }
     }
-
     for (fila = 0; fila < 5; fila++) {
-      System.out.print("Fila: " + fila);
       for (columna = 0; columna < 6; columna++) {
         System.out.printf("%10d ", n[fila][columna]);
       }
