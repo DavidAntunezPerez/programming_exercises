@@ -1,3 +1,14 @@
+/**
+ * @author David Antunez Perez
+ * 
+ *         Define un array de números enteros de 3 filas por 6 columnas con
+ *         nombre num
+ *         y asigna los valores según la siguiente tabla. Muestra el contenido
+ *         de todos
+ *         los elementos del array dispuestos en forma de tabla como se muestra
+ *         en la
+ *         figura.
+ */
 public class Ex01_7_2 {
   public static void main(String[] args) {
     int[][] n = new int[3][6]; // array de 3 filas 6 columnas
