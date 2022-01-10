@@ -30,6 +30,5 @@ public class Ex02_7_2 {
       }
       System.out.println();
     }
-
   }
 }
