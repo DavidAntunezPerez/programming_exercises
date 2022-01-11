@@ -1,3 +1,15 @@
+/**
+ * @author David Antunez Perez
+ * 
+ *         Realiza un programa que rellene un array de 6 filas por 10 columnas
+ *         con
+ *         números enteros positivos comprendidos entre 0 y 1000 (ambos
+ *         incluidos). A
+ *         continuación, el programa deberá dar la posición tanto del máximo
+ *         como del
+ *         mínimo.
+ * 
+ */
 public class Ex05_7_2 {
   public static void main(String[] args) {
     int[][] n = new int[6][10];
@@ -10,7 +22,7 @@ public class Ex05_7_2 {
         n[filas][columnas] = (int) (Math.random() * 1000);
         if (n[filas][columnas] >= max) {
           max = n[filas][columnas];
-        } 
+        }
         if (n[filas][columnas] <= min) {
           min = n[filas][columnas];
         }
