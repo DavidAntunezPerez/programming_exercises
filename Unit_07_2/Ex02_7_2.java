@@ -14,10 +14,10 @@ public class Ex02_7_2 {
     int[][] n = new int[5][6]; // aumentamos el tamaño del array puesto que queremos meter las sumas
     int fila, columna;
     // asignamos valores al array
+    System.out.println("Introduce 20 números y ve pulsando ENTER:");
     for (fila = 0; fila < 4; fila++) {
       for (columna = 0; columna < 5; columna++) {
         // introducir número
-        System.out.print("Introduce un número:");
         n[fila][columna] = Integer.parseInt(System.console().readLine());
         n[4][columna] += n[fila][columna]; // suma columna
         n[fila][5] += n[fila][columna]; // suma filas
