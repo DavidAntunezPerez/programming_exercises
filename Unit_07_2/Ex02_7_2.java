@@ -13,7 +13,7 @@ public class Ex02_7_2 {
   public static void main(String[] args) {
     int[][] n = new int[5][6]; // aumentamos el tamaño del array puesto que queremos meter las sumas
     int fila, columna;
-    // asignamos valores al array 
+    // asignamos valores al array
     for (fila = 0; fila < 4; fila++) {
       for (columna = 0; columna < 5; columna++) {
         // introducir número
