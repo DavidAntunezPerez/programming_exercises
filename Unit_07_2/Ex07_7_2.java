@@ -4,7 +4,7 @@
  *         Mejora el juego “Busca el tesoro” de tal forma que si hay una mina a
  *         una casilla
  *         de distancia, el programa avise diciendo ¡Cuidado! ¡Hay una mina
- *         cerca! 
+ *         cerca!
  * 
  * 
  */
@@ -16,7 +16,8 @@ public class Ex07_7_2 {
     int fila, columna;
     boolean repeat = true; // para asegurar que no estan en el mismo lugar bomba y premio
     boolean end = false; // fin del programa
-    int[][] n = new int[4][4];
+    int[][] n = new int[4][4]; // Array principal que gestionará el código
+    String[][] gArray = new String[4][4]; // Array gráfico secundario
     // creamos las variables para la posición de la bomba y el premio
     int xBomb = (int) (Math.random() * 4);
     int yBomb = (int) (Math.random() * 4);
@@ -59,5 +60,7 @@ public class Ex07_7_2 {
         end = true;
       }
     } while (!end);
+    gArray[xBomb][yBomb] = "*"; // la posición se verá por pantalla
+    gArray[xPrize][yPrize] = "&"; // la posición se verá por pantalla
   }
 }
