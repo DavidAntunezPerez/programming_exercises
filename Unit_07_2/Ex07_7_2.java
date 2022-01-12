@@ -46,7 +46,7 @@ public class Ex07_7_2 {
       for (fila = 0; fila < 4; fila++) {
         System.out.print(fila + " | ");
         for (columna = 0; columna < 4; columna++) {
-          System.out.printf("%10d", gArray[fila][columna]);
+          System.out.printf(" " + gArray[fila][columna] + " ");
         }
         System.out.println();
       }
@@ -58,14 +58,23 @@ public class Ex07_7_2 {
       System.out.print("Coordenada y: ");
       y = Integer.parseInt(System.console().readLine());
       if (n[x][y] == 1) {
-        System.out.print("La bomba ha explotado, has perdido.");
+        System.out.print("La bomba ha explotado, has perdido.\n");
         end = true;
       } else if (n[x][y] == 2) {
-        System.out.print("Enhorabuena, encontraste el tesoro, has ganado!");
+        System.out.print("Enhorabuena, encontraste el tesoro, has ganado!\n");
         end = true;
+      } else {
+        gArray[x][y] = "X";
       }
     } while (!end);
     gArray[xBomb][yBomb] = "*"; // la posición se verá por pantalla
     gArray[xPrize][yPrize] = "&"; // la posición se verá por pantalla
+    for (fila = 0; fila < 4; fila++) {
+      System.out.print(fila + " | ");
+      for (columna = 0; columna < 4; columna++) {
+        System.out.printf(" " + gArray[fila][columna] + " ");
+      }
+      System.out.println();
+    }
   }
 }
