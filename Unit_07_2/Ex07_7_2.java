@@ -76,5 +76,7 @@ public class Ex07_7_2 {
       }
       System.out.println();
     }
+    System.out.println("----------------");
+    System.out.println("  |  0  1  2  3");
   }
 }
