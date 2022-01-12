@@ -18,6 +18,11 @@ public class Ex07_7_2 {
     boolean end = false; // fin del programa
     int[][] n = new int[4][4]; // Array principal que gestionará el código
     String[][] gArray = new String[4][4]; // Array gráfico secundario
+    for (int i = 0; i < 4; i++) {
+      for (int j = 0; j < 4; j++) {
+        gArray[i][j] = " "; // hacemos que no se vea nada en cada hueco del array para no revelarlo
+      }
+    }
     // creamos las variables para la posición de la bomba y el premio
     int xBomb = (int) (Math.random() * 4);
     int yBomb = (int) (Math.random() * 4);
@@ -41,7 +46,7 @@ public class Ex07_7_2 {
       for (fila = 0; fila < 4; fila++) {
         System.out.print(fila + " | ");
         for (columna = 0; columna < 4; columna++) {
-          System.out.printf("%2d ", n[fila][columna]);
+          System.out.printf("%10d", gArray[fila][columna]);
         }
         System.out.println();
       }
