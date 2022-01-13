@@ -15,28 +15,29 @@ public class Ex09_7_2 {
     int[][] m = new int[12][12]; // matriz cuadradada de 12 x 12
     int fila, columna;
     // hacemos que la matriz contenga números generados al azar
-    System.out.println("                             MATRIZ ORIGINAL");
-    System.out.println("                             ---------------");
+    System.out.println("                               MATRIZ ORIGINAL");
+    System.out.println("                               ---------------");
     for (fila = 0; fila < 12; fila++) {
       for (columna = 0; columna < 12; columna++) {
         m[fila][columna] = (int) (Math.random() * 101);
-        System.out.printf("%5d ", m[fila][columna]); // lo mostramos por pantalla
+        System.out.printf("%6d ", m[fila][columna]); // lo mostramos por pantalla
       }
       System.out.println();
     }
     // mostramos el resultado por pantalla
     System.out.println();
-    System.out.println("                             MATRIZ RESULTADO");
-    System.out.println("                             ----------------");
+    System.out.println("                               MATRIZ RESULTADO");
+    System.out.println("                               ----------------");
     int aux = m[11][11];
     for (int i = 11; i > 0; i--) {
-      m[i][i] = m[i - 1][i - 1];
+      for(int j = 11; j > 0 ; j--)
+      m[i][j] = m[i - 1][j - 1];
     }
     m[0][0] = aux;
     // Mostrar por pantalla
     for (fila = 0; fila < 12; fila++) {
       for (columna = 0; columna < 12; columna++) {
-        System.out.printf("%5d ", m[fila][columna]); // lo mostramos por pantalla
+        System.out.printf("%6d ", m[fila][columna]); // lo mostramos por pantalla
       }
       System.out.println();
     }
