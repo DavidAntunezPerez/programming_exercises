@@ -9,7 +9,7 @@ public class Ex10_7_2 {
     int x;
     int y;
     int fila, columna;
-    boolean end = false; // fin del programa
+    int turnos = 9; // contador de turnos
     int[][] n = new int[3][3]; // Array principal que gestionará el código
     String[][] gArray = new String[3][3]; // Array gráfico secundario
     for (int i = 0; i < 3; i++) {
@@ -59,15 +59,7 @@ public class Ex10_7_2 {
       System.out.print("Coordenada y: ");
       y = Integer.parseInt(System.console().readLine());
       gArray[y][x] = "O";
-    } while (!end);
-    for (fila = 0; fila < 4; fila++) {
-      System.out.print(fila + " | ");
-      for (columna = 0; columna < 4; columna++) {
-        System.out.printf(" " + gArray[fila][columna] + " ");
-      }
-      System.out.println();
-    }
-    System.out.println("------------");
-    System.out.println("  |  0  1  2");
+    } while (turnos > 0);
+
   }
 }
