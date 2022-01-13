@@ -16,7 +16,6 @@ public class Ex09_7_2 {
     int fila, columna;
     int capa;
     int i;
-    int j;
     int aux1;
     int aux2;
     // hacemos que la matriz contenga números generados al azar
