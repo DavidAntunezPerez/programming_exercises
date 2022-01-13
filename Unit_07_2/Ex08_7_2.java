@@ -17,7 +17,7 @@ public class Ex08_7_2 {
     int[][] n = new int[8][8]; // array principal
     System.out.print("Introduzca la posición numérica del alfil(1 - 8): ");
     int lPos = Integer.parseInt(System.console().readLine());
-    lPos -= 1;
+    lPos -= 1; // para igualarlo a las posiciones del array
     System.out.println();
     System.out.print("Introduzca ahora la posición alfabética del alfil (a - h):");
     String cPos = System.console().readLine();
@@ -50,6 +50,6 @@ public class Ex08_7_2 {
     }
     // resultado por pantalla
     System.out.print("El alfil puede moverse hacia las siguientes posiciones: ");
-
+    
   }
 }
