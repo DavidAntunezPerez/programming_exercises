@@ -17,13 +17,28 @@ public class Ex09_7_2 {
     // hacemos que la matriz contenga números generados al azar
     System.out.println("                             MATRIZ ORIGINAL");
     System.out.println("                             ---------------");
-    for (fila = 0; fila < 3; fila++) {
-      for (columna = 0; columna < 6; columna++) {
+    for (fila = 0; fila < 12; fila++) {
+      for (columna = 0; columna < 12; columna++) {
         m[fila][columna] = (int) (Math.random() * 101);
-        System.out.printf("%10d ", m[fila][columna]); // lo mostramos por pantalla
+        System.out.printf("%5d ", m[fila][columna]); // lo mostramos por pantalla
       }
       System.out.println();
     }
-
+    // mostramos el resultado por pantalla
+    System.out.println();
+    System.out.println("                             MATRIZ RESULTADO");
+    System.out.println("                             ----------------");
+    int aux = m[11][11];
+    for (int i = 11; i > 0; i--) {
+      m[i][i] = m[i - 1][i - 1];
+    }
+    m[0][0] = aux;
+    // Mostrar por pantalla
+    for (fila = 0; fila < 12; fila++) {
+      for (columna = 0; columna < 12; columna++) {
+        System.out.printf("%5d ", m[fila][columna]); // lo mostramos por pantalla
+      }
+      System.out.println();
+    }
   }
 }
