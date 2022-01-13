@@ -15,7 +15,8 @@ public class Ex08_7_2 {
   public static void main(String[] args) {
     int fila, columna;
     int[][] n = new int[8][8]; // array principal
-    String[][] gArray = new String[8][8]; // array gráfico
+    System.out.print("Introduzca la posición del alfil: ");
+    String pos = System.console().readLine();
     
   }
 }
