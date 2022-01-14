@@ -52,6 +52,7 @@ public class Ex10_7_2 {
       System.out.println("------------");
       System.out.println("  |  0  1  2");
       System.out.println();
+      if(turnos > 0){ // Para que si gana el jugador 1 no continue el 2
       // coordenadas jugador 2
       System.out.println("TURNO JUGADOR 2:");
       System.out.println();
@@ -62,7 +63,7 @@ public class Ex10_7_2 {
       gArray[y][x] = "O";
       n[x][y] = 2;
       turnos--;
-      
+      }
     } while (turnos > 0);
   }
 }
