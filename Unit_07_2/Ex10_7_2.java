@@ -38,6 +38,7 @@ public class Ex10_7_2 {
       System.out.print("Coordenada y: ");
       y = Integer.parseInt(System.console().readLine());
       gArray[y][x] = "X";
+      n[x][y] = 1;
       // print por pantalla
       System.out.println("TRES EN RAYA");
       System.out.println("------------");
@@ -59,6 +60,7 @@ public class Ex10_7_2 {
       System.out.print("Coordenada y: ");
       y = Integer.parseInt(System.console().readLine());
       gArray[y][x] = "O";
+      n[x][y] = 2;
     } while (turnos > 0);
 
   }
