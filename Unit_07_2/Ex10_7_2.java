@@ -61,7 +61,8 @@ public class Ex10_7_2 {
       y = Integer.parseInt(System.console().readLine());
       gArray[y][x] = "O";
       n[x][y] = 2;
+      turnos--;
+      
     } while (turnos > 0);
-
   }
 }
