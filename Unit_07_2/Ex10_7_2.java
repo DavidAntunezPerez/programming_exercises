@@ -64,6 +64,7 @@ public class Ex10_7_2 {
       n[x][y] = 2;
       turnos--;
       }
+      
     } while (turnos > 0);
   }
 }
