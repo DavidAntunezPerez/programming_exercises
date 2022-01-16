@@ -33,7 +33,7 @@ public class Ex10_7_2 {
       System.out.println("  |  0  1  2");
       System.out.println();
       // pedimos las coordenadas del jugador 1º
-      System.out.println("TURNO JUGADOR 1:");
+      System.out.println("TURNO \033[31mJUGADOR 1\033[37m:");
       System.out.print("Coordenada x: ");
       x = Integer.parseInt(System.console().readLine());
       System.out.print("Coordenada y: ");
@@ -61,10 +61,10 @@ public class Ex10_7_2 {
           || (n[0][0] + n[1][1] + n[2][2] == 3) || (n[2][0] + n[1][1] + n[0][2] == 3)) {
         turnos = 0; // la partida acaba
         System.out.print("FIN DEL JUEGO\n");
-        System.out.println("GANA EL JUGADOR 1");
+        System.out.println("GANA EL \033[31mJUGADOR 1\033[37m");
       } else { // Para que continue el P2
         // coordenadas jugador 2
-        System.out.println("TURNO JUGADOR 2:");
+        System.out.println("TURNO \033[34mJUGADOR 2\033[37m:");
         System.out.print("Coordenada x: ");
         x = Integer.parseInt(System.console().readLine());
         System.out.print("Coordenada y: ");
@@ -77,9 +77,8 @@ public class Ex10_7_2 {
             || (n[0][0] + n[1][1] + n[2][2] == 15) || (n[2][0] + n[1][1] + n[0][2] == 15)) {
           turnos = 0; // la partida acaba
           System.out.print("FIN DEL JUEGO\n");
-          System.out.println("GANA EL JUGADOR 2");
+          System.out.println("GANA EL \033[34mJUGADOR 2\033[37m");
         }
-
       }
       turnos--;
     } while (turnos > 0);
