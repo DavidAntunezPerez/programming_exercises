@@ -19,6 +19,7 @@ public class Ex10_7_2 {
     }
     do { // para que el programa no pare hasta que gane o se acaben los turnos
       // print por pantalla
+      System.out.println();
       System.out.println("TRES EN RAYA");
       System.out.println("------------");
       for (fila = 0; fila < 3; fila++) {
@@ -40,6 +41,7 @@ public class Ex10_7_2 {
       gArray[y][x] = "X";
       n[x][y] = 1;
       // print por pantalla
+      System.out.println();
       System.out.println("TRES EN RAYA");
       System.out.println("------------");
       for (fila = 0; fila < 3; fila++) {
@@ -52,19 +54,34 @@ public class Ex10_7_2 {
       System.out.println("------------");
       System.out.println("  |  0  1  2");
       System.out.println();
-      if(turnos > 0){ // Para que si gana el jugador 1 no continue el 2
-      // coordenadas jugador 2
-      System.out.println("TURNO JUGADOR 2:");
-      System.out.println();
-      System.out.print("Coordenada x: ");
-      x = Integer.parseInt(System.console().readLine());
-      System.out.print("Coordenada y: ");
-      y = Integer.parseInt(System.console().readLine());
-      gArray[y][x] = "O";
-      n[x][y] = 2;
-      turnos--;
+      // para verificar si el P1 ha ganado el juego
+      if ((n[0][0] + n[1][0] + n[2][0] == 3) || (n[0][1] + n[1][1] + n[2][1] == 3)
+          || (n[0][2] + n[1][2] + n[2][2] == 3) || (n[0][0] + n[0][1] + n[0][2] == 3)
+          || (n[1][0] + n[1][1] + n[1][2] == 3) || (n[2][0] + n[2][1] + n[2][2] == 3)
+          || (n[0][0] + n[1][1] + n[2][2] == 3) || (n[2][0] + n[1][1] + n[0][2] == 3)) {
+        turnos = 0; // la partida acaba
+        System.out.print("FIN DEL JUEGO\n");
+        System.out.println("GANA EL JUGADOR 1");
+      } else { // Para que continue el P2
+        // coordenadas jugador 2
+        System.out.println("TURNO JUGADOR 2:");
+        System.out.print("Coordenada x: ");
+        x = Integer.parseInt(System.console().readLine());
+        System.out.print("Coordenada y: ");
+        y = Integer.parseInt(System.console().readLine());
+        gArray[y][x] = "O";
+        n[x][y] = 5;
+        if ((n[0][0] + n[1][0] + n[2][0] == 3) || (n[0][1] + n[1][1] + n[2][1] == 3)
+            || (n[0][2] + n[1][2] + n[2][2] == 3) || (n[0][0] + n[0][1] + n[0][2] == 3)
+            || (n[1][0] + n[1][1] + n[1][2] == 3) || (n[2][0] + n[2][1] + n[2][2] == 3)
+            || (n[0][0] + n[1][1] + n[2][2] == 3) || (n[2][0] + n[1][1] + n[0][2] == 3)) {
+          turnos = 0; // la partida acaba
+          System.out.print("FIN DEL JUEGO\n");
+          System.out.println("GANA EL JUGADOR 2");
+        }
+
       }
-      
+      turnos--;
     } while (turnos > 0);
   }
 }
