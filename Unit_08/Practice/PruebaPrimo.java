@@ -31,7 +31,7 @@ public class PruebaPrimo {
       }
       contDivisores++;
     } while (contDivisores < numInt && pregPrimo == true);
-    // Es menor que "<" porque np ùede ser el misom número
+    // Es menor que "<" porque no  puede ser el misom número
     return pregPrimo;
 
   }// esPrimo
