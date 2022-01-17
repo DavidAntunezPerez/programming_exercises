@@ -22,7 +22,7 @@ public class PruebaPrimo {
   } // random
 
   public static boolean esPrimo(int numInt) {
-    // Comrpueba Primo
+    // Comprueba Primo
     int contDivisores = 2; // No puede ser 1
     boolean pregPrimo = true; // Presupone que el número es primo
     do {
