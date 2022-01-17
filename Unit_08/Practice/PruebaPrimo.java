@@ -21,18 +21,16 @@ public class PruebaPrimo {
     return (int) (Math.random() * (end - start + 1) + start);
   } // random
 
-  public static boolean esPrimo(int numInt) {
+  public static boolean esPrimo(int n) {
     // Comprueba Primo
-    int contDivisores = 2; // No puede ser 1
-    boolean pregPrimo = true; // Presupone que el número es primo
-    do {
-      if (numInt % contDivisores == 0 && numInt != contDivisores) {
-        pregPrimo = false; // Si encuentra un divisor: Ya no es primo
+    boolean esPrimo = true;
+    
+    for (int i = 2; i < n; i++) {
+      if ((n % i) == 0) {
+        esPrimo = false;
       }
-      contDivisores++;
-    } while (contDivisores < numInt && pregPrimo == true);
-    // Es menor que "<" porque no  puede ser el misom número
-    return pregPrimo;
-
+    }
+    
+    return esPrimo;
   }// esPrimo
 } // class
