@@ -17,6 +17,7 @@ public class Ex08_7_2 {
     int[][] n = new int[8][8]; // array principal
     System.out.print("Introduzca la posición numérica del alfil(1 - 8): ");
     int lPos = Integer.parseInt(System.console().readLine());
+    int cnPos = 0;
     lPos -= 1; // para igualarlo a las posiciones del array
     System.out.println();
     System.out.print("Introduzca ahora la posición alfabética del alfil (a - h):");
@@ -24,33 +25,49 @@ public class Ex08_7_2 {
     // asignamos cada valor numérico del array a su correspondiente letra
     switch (cPos) {
       case "a":
-        columna = 0;
+        cnPos = 0;
         break;
       case "b":
-        columna = 1;
+        cnPos = 1;
         break;
       case "c":
-        columna = 2;
+        cnPos = 2;
         break;
       case "d":
-        columna = 3;
+        cnPos = 3;
         break;
       case "e":
-        columna = 4;
+        cnPos = 4;
         break;
       case "f":
-        columna = 5;
+        cnPos = 5;
         break;
       case "g":
-        columna = 6;
+        cnPos = 6;
         break;
       case "h":
-        columna = 7;
+        cnPos = 7;
         break;
     }
-    
+    // generar tablero
+    // posición alfil
+    n[lPos][cnPos] = 4;
+    // diagonal superior-izquierda
+    int cont = 1; // contador
+    do { // bucle para asignar los movimientos a todas las casillas en ese rango
+      if ((lPos - cont >= 0) && (cnPos - cont >= 0)) {
+        n[lPos - cont][cnPos - cont] = 1;
+      }
+      cont++;
+    } while (cont < 8);
+    for (fila = 0; fila < n.length; fila++) {
+      for (columna = 0; columna < n[0].length; columna++) {
+        System.out.printf("%1d ", n[fila][columna]);
+      }
+      System.out.println();
+    }
     // resultado por pantalla
     System.out.print("El alfil puede moverse hacia las siguientes posiciones: ");
-    
+
   }
 }
