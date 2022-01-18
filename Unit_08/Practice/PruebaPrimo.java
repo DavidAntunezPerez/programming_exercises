@@ -1,3 +1,6 @@
+/**
+ * Programa de prueba de diversas funciones, esPrimo() y random()
+ */
 public class PruebaPrimo {
   public static void main(String[] args) {
     int[] n = new int[100];
