@@ -48,6 +48,7 @@ public class Ex08_7_2 {
         columna = 7;
         break;
     }
+    
     // resultado por pantalla
     System.out.print("El alfil puede moverse hacia las siguientes posiciones: ");
     
