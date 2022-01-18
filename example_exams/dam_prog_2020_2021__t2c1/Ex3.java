@@ -7,11 +7,12 @@ public class Ex3 {
     int h = Integer.parseInt(System.console().readLine());
     int imp = 1;
     for (int i = 0; i < h - 1; i++) {
+      System.out.print(linea(h - i, ' ', ' '));
       System.out.println(linea(imp, '*', ' '));
       imp += 2;
     }
     // base pirámide
-    System.out.println(linea((2 * h) - 2, '*', '*'));
+    System.out.println(" " + linea((2 * h) - 1, '*', '*'));
   }
 
   public static String linea(int longitud, char extremo, char relleno) {
