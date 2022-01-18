@@ -15,6 +15,7 @@ public class Ex08_7_2 {
   public static void main(String[] args) {
     int fila, columna;
     int[][] n = new int[8][8]; // array principal
+    String[][] gArray = new String[8][8]; // array gráfico
     System.out.print("Introduzca la posición numérica del alfil(1 - 8): ");
     int lPos = Integer.parseInt(System.console().readLine());
     int cnPos = 0;
@@ -65,6 +66,22 @@ public class Ex08_7_2 {
     do { // bucle para asignar los movimientos a todas las casillas en ese rango
       if ((lPos - cont >= 0) && (cnPos + cont <= 7)) {
         n[lPos - cont][cnPos + cont] = 1;
+      }
+      cont++;
+    } while (cont < 8);
+    // diagonal inferior-izquierda  
+    cont = 1;
+    do { // bucle para asignar los movimientos a todas las casillas en ese rango
+      if ((lPos + cont <= 7) && (cnPos - cont >= 0)) {
+        n[lPos + cont][cnPos - cont] = 1;
+      }
+      cont++;
+    } while (cont < 8);
+    // diagonal inferior-derecha  
+    cont = 1;
+    do { // bucle para asignar los movimientos a todas las casillas en ese rango
+      if ((lPos + cont <= 7) && (cnPos + cont <= 7)) {
+        n[lPos + cont][cnPos + cont] = 1;
       }
       cont++;
     } while (cont < 8);
