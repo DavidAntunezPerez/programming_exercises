@@ -28,6 +28,12 @@ public class PruebaPrimo {
     return (int) (Math.random() * (end - start + 1) + start);
   } // random
 
+  /**
+   * Verifica si un número es o no primo (divisible entre sí y la unidad)
+   * 
+   * @param n número a comprobar (entero y positivo)
+   * @return true si el número es primo y false si no lo es
+   */
   public static boolean esPrimo(int n) {
     // Comprueba Primo
     boolean esPrimo = true;
