@@ -3,7 +3,7 @@ package misfunciones;
 /**
  * Funciones matemáticas variadas
  */
-public class matematicas {
+public class Matematicas {
   /**
    * Genera un valor entero aleatorio entre <code>inicio</code> y <code>fin</code>
    * 

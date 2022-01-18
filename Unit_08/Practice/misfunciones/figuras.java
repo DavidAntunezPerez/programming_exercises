@@ -4,7 +4,7 @@ package misfunciones;
  * Realiza figuras
  */
 
-public class figuras {
+public class Figuras {
   /**
    * Crea una linea de asteriscos de una longitud determinada
    * 
