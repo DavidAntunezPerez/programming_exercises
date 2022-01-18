@@ -60,6 +60,14 @@ public class Ex08_7_2 {
       }
       cont++;
     } while (cont < 8);
+    // diagonal superior-derecha
+    cont = 1;
+    do { // bucle para asignar los movimientos a todas las casillas en ese rango
+      if ((lPos - cont >= 0) && (cnPos + cont <= 7)) {
+        n[lPos - cont][cnPos + cont] = 1;
+      }
+      cont++;
+    } while (cont < 8);
     for (fila = 0; fila < n.length; fila++) {
       for (columna = 0; columna < n[0].length; columna++) {
         System.out.printf("%1d ", n[fila][columna]);
