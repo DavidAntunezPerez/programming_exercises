@@ -51,8 +51,14 @@ public class Ex08_7_2 {
         break;
     }
     // generar tablero
+    for (int i = 0; i < gArray.length; i++) {
+      for (int j = 0; j < gArray[0].length; j++) {
+        gArray[i][j] = "■"; // hacemos que no se vea nada en cada hueco que no sea posicion del alfil
+      }
+    }
     // posición alfil
     n[lPos][cnPos] = 4;
+    gArray[lPos][cnPos] = "X";
     // diagonal superior-izquierda
     int cont = 1; // contador
     do { // bucle para asignar los movimientos a todas las casillas en ese rango
@@ -69,7 +75,7 @@ public class Ex08_7_2 {
       }
       cont++;
     } while (cont < 8);
-    // diagonal inferior-izquierda  
+    // diagonal inferior-izquierda
     cont = 1;
     do { // bucle para asignar los movimientos a todas las casillas en ese rango
       if ((lPos + cont <= 7) && (cnPos - cont >= 0)) {
@@ -77,7 +83,7 @@ public class Ex08_7_2 {
       }
       cont++;
     } while (cont < 8);
-    // diagonal inferior-derecha  
+    // diagonal inferior-derecha
     cont = 1;
     do { // bucle para asignar los movimientos a todas las casillas en ese rango
       if ((lPos + cont <= 7) && (cnPos + cont <= 7)) {
@@ -85,14 +91,15 @@ public class Ex08_7_2 {
       }
       cont++;
     } while (cont < 8);
+    // resultado por pantalla
     for (fila = 0; fila < n.length; fila++) {
       for (columna = 0; columna < n[0].length; columna++) {
-        System.out.printf("%1d ", n[fila][columna]);
+        if (n[fila][columna] == 1) {
+          gArray[fila][columna] = "*";
+        }
+        System.out.printf("  " + gArray[fila][columna]);
       }
       System.out.println();
     }
-    // resultado por pantalla
-    System.out.print("El alfil puede moverse hacia las siguientes posiciones: ");
-
   }
 }
