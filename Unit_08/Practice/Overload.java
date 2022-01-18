@@ -1,4 +1,4 @@
-public class Sobrecarga {
+public class Overload {
   public static void main(String[] args) {
     greet();
     greet("Juan");
