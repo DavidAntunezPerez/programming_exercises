@@ -18,12 +18,12 @@ public class PruebaPrimo {
   } // main
 
   /**
+   * Genera un valor entero aleatorio entre <code>inicio</code> y <code>fin</code>
    * 
    * @param start valor mínimo a devolver
    * @param end   valor máximo a devolver
    * @return un número aleatorio entre <code>inicio</code> y <code>fin</code>
    */
-
   public static int random(int start, int end) {
     return (int) (Math.random() * (end - start + 1) + start);
   } // random
