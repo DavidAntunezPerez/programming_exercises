@@ -91,8 +91,11 @@ public class Ex08_7_2 {
       }
       cont++;
     } while (cont < 8);
+    System.out.println("    a  b  c  d  e  f  g  h");
+    System.out.println("    ----------------------");
     // resultado por pantalla
     for (fila = 0; fila < n.length; fila++) {
+      System.out.print(fila+1 + "|");
       for (columna = 0; columna < n[0].length; columna++) {
         if (n[fila][columna] == 1) {
           gArray[fila][columna] = "*";
