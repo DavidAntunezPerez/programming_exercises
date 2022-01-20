@@ -40,7 +40,7 @@ public class Ex11_7_2 {
     System.out.println("DIAGONAL DEL ARRAY:");
     for (fila = 0; fila < n.length; fila++) {
       for (columna = 0; columna < n[0].length; columna++) {
-        if ((fila == columna) || (fila - 1 == columna) || (fila == columna - 1)) {
+        if (fila == columna) {
           System.out.printf("%4d", n[fila][columna]);
           if (n[fila][columna] > max) {
             max = n[fila][columna];
