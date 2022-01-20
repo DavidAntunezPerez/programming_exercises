@@ -14,14 +14,43 @@
 public class Ex11_7_2 {
   public static void main(String[] args) {
     // definir array
-    int [][] n = new int[10][10];
+    int[][] n = new int[10][10];
     // agregar numeros aleatorios al array
     int fila, columna;
     for (fila = 0; fila < n.length; fila++) {
-      for (columna = 0; columna < n[0].length ; columna++){
-        n[fila][columna] = (int) ( Math.random()* 100 + 200);
+      for (columna = 0; columna < n[0].length; columna++) {
+        n[fila][columna] = (int) (Math.random() * 100 + 200);
       }
     }
-    //
+    // creamos el máximo, el mínimo
+    int max = 200;
+    int min = 300;
+    // print de los números
+    System.out.println("ARRAY ORIGINAL:");
+    for (fila = 0; fila < n.length; fila++) {
+      for (columna = 0; columna < n[0].length; columna++) {
+        System.out.printf("%4d", n[fila][columna]);
+      }
+      System.out.println();
+    }
+    System.out.println("DIAGONAL DEL ARRAY:");
+    for (fila = 0; fila < n.length; fila++) {
+      for (columna = 0; columna < n[0].length; columna++) {
+        if ((fila == columna) || (fila - 1 == columna) || (fila == columna - 1)) {
+          System.out.printf("%4d", n[fila][columna]);
+          if(n[fila][columna] > max){
+            max = n[fila][columna];
+          }
+          if(n[fila][columna] < min){
+            min = n[fila][columna];
+          }
+        }
+      }
+      System.out.println();
+    }
+    System.out.println();
+    System.out.println("El mínimo es " + min);
+    System.out.println("El máximo es "+ max);
+    System.out.println("La media es ");
   }
 }
