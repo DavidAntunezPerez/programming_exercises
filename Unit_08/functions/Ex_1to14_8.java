@@ -144,4 +144,43 @@ public class Ex_1to14_8 {
     }
     return (int) n % 10;
   }
+
+  /**
+   * 8.
+   * Da la posición de la primera ocurrencia de un dígito
+   * dentro de un número entero. Si no se encuentra, devuelve -1.
+   * Las posiciones comienzan desde 0 hasta el numero mayor de digitos.
+   * @param n número a introducir
+   * @param digito dígito del cual obtendremos la posición
+   * @return posicion del dígito o -1 si no la encuentra
+   */
+  public static int posicionDeDigito(int n, int digito) {
+    int result = 0;
+    int nIntr = voltea(n);
+    boolean trueResult = false; // verificar que result tenga un valor
+    int cifra = nIntr;
+    int cogNum = 0;
+    int contcif = 0;
+    for (int i = 1; i <= nIntr; i *= 10) {
+      cogNum = cifra % 10;
+      if (cogNum == digito) {
+        result = contcif;
+        trueResult = true;
+      }
+      cifra = (cifra - cogNum) / 10;
+      if (!trueResult) {
+        contcif++;
+      }
+    }
+    if (!trueResult) {
+      result = -1;
+    }
+    return result;
+  }
+  public static int quitaPorDetras(int n, int veces){
+    for(int i = 0; i < veces; i++){
+      n = n / 10;
+    }
+    return n;
+  }
 } // class

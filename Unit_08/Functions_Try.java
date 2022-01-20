@@ -12,6 +12,8 @@ public class Functions_Try {
     System.out.println(Ex_1to14_8.digitos(256));
     System.out.println(Ex_1to14_8.voltea(259321));
     System.out.println(Ex_1to14_8.digitoN(12345, 4));
+    System.out.println(Ex_1to14_8.posicionDeDigito(12675, 5));
+    System.out.println(Ex_1to14_8.quitaPorDetras(1212313235, 6));
     
   }
 }
