@@ -91,6 +91,13 @@ public class Ex_1to14_8 {
     return result;
   }// potencia
 
+  /**
+   * 5.
+   * Introduces un número y te devuelve el número de cifras
+   * 
+   * @param n número introducido
+   * @return número de cifras del número
+   */
   public static int digitos(int n) {
     // Separa número del último al primero
     int numInt = n;
@@ -103,5 +110,38 @@ public class Ex_1to14_8 {
       contCif++;
     }
     return contCif;
+  }
+
+  /**
+   * 6.
+   * Voltea un número
+   * 
+   * @param n número a voltear
+   * @return número volteado
+   */
+  public static int voltea(int n) {
+    int inv = 0;
+    while (n > 0) {
+      inv = (inv * 10) + (n % 10);
+      n /= 10;
+    }
+    return inv;
+  }
+
+  /**
+   * 7.
+   * Devuelve el dígito que está en la posición n de un número entero.
+   * Se empieza contando por el 0 y de izquierda a derecha.
+   * 
+   * @param n        número indicado
+   * @param posicion posición del número que queremos obtener
+   * @return posición del número indicado
+   */
+  public static int digitoN(int n, int posicion) {
+    n = voltea(n);
+    while (posicion-- > 0) {
+      n = n / 10;
+    }
+    return (int) n % 10;
   }
 } // class
