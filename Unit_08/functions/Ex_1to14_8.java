@@ -150,7 +150,8 @@ public class Ex_1to14_8 {
    * Da la posición de la primera ocurrencia de un dígito
    * dentro de un número entero. Si no se encuentra, devuelve -1.
    * Las posiciones comienzan desde 0 hasta el numero mayor de digitos.
-   * @param n número a introducir
+   * 
+   * @param n      número a introducir
    * @param digito dígito del cual obtendremos la posición
    * @return posicion del dígito o -1 si no la encuentra
    */
@@ -177,8 +178,18 @@ public class Ex_1to14_8 {
     }
     return result;
   }
-  public static int quitaPorDetras(int n, int veces){
-    for(int i = 0; i < veces; i++){
+
+  /**
+   * 9.
+   * Le quita a un número n dígitos por detrás (por la
+   * derecha).
+   * 
+   * @param n     numero a quitar cifras
+   * @param veces veces que queremos quitar una cifra detrás
+   * @return número con las cifras quitadas
+   */
+  public static int quitaPorDetras(int n, int veces) {
+    for (int i = 0; i < veces; i++) {
       n = n / 10;
     }
     return n;
