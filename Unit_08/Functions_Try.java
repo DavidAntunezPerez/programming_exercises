@@ -8,5 +8,6 @@ public class Functions_Try {
     System.out.println(Ex_1to14_8.esCapicua(2012));
     System.out.println(Ex_1to14_8.esPrimo(5));
     System.out.println(Ex_1to14_8.siguientePrimo(10));
+    System.out.println(Ex_1to14_8.potencia(5 , 2));
   }
 }

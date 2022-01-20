@@ -5,6 +5,7 @@ package functions;
  */
 public class Ex_1to14_8 {
   /**
+   * 1.
    * Esta función nos dice si un número es Capicua o no
    * 
    * @param n número a verificar
@@ -50,6 +51,7 @@ public class Ex_1to14_8 {
   }// esPrimo
 
   /**
+   * 3.
    * Devuelve el menor primo que es mayor al número que
    * se pasa como parámetro
    * 
@@ -77,13 +79,19 @@ public class Ex_1to14_8 {
   }// siguientePrimo
 
   /**
+   * 4.
    * Devuelve el valor de una potencia dados base y exponente
-   * @param base base de la potencia
+   * 
+   * @param base      base de la potencia
    * @param exponente exponente de la potencia
    * @return
    */
   public static int potencia(int base, int exponente) {
-    int result = base ^ exponente; // elevamos la base al exponente y ya tenemos el resultado
+    int result = (int) (Math.pow(base, exponente)); // elevamos la base al exponente y ya tenemos el resultado
     return result;
+  }// potencia
+
+  public static int digitos(int n){
+
   }
 } // class
