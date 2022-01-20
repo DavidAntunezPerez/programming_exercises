@@ -74,5 +74,16 @@ public class Ex_1to14_8 {
     } while (!esPrimo);
     result = n;
     return result;
+  }// siguientePrimo
+
+  /**
+   * Devuelve el valor de una potencia dados base y exponente
+   * @param base base de la potencia
+   * @param exponente exponente de la potencia
+   * @return
+   */
+  public static int potencia(int base, int exponente) {
+    int result = base ^ exponente; // elevamos la base al exponente y ya tenemos el resultado
+    return result;
   }
 } // class
