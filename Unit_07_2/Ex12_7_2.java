@@ -36,14 +36,11 @@ public class Ex12_7_2 {
       }
       System.out.println();
     }
-    // creamos variables para que se ajuste a la diagonal
-    int contfila = 8;
-    int contcolum = 0; 
     System.out.println();
     System.out.println("DIAGONAL DEL ARRAY:");
     for (fila = 8; fila >= 0; fila--) {
       for (columna = 0; columna < n[0].length; columna++) {
-        if ((fila == contfila)&&(columna == contcolum)) {
+        if (fila + columna == 8) {
           System.out.printf("%4d", n[fila][columna]);
           if (n[fila][columna] > max) {
             max = n[fila][columna];
@@ -53,8 +50,6 @@ public class Ex12_7_2 {
           }
           sum += n[fila][columna];
           count++;
-          contfila--;
-          contcolum++;
         }
       }
       System.out.println();
