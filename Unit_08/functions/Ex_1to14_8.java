@@ -195,6 +195,15 @@ public class Ex_1to14_8 {
     return n;
   }
 
+  /**
+   * 9.
+   * Le quita a un número n dígitos por delante (por la
+   * izquierda).
+   * 
+   * @param n     número indicado
+   * @param veces veces que queremos quitar un número por delante
+   * @return numero con esas veces quitadas delante
+   */
   public static int quitaPorDelante(int n, int veces) {
     n = voltea(n);
     for (int i = 0; i < veces; i++) {
@@ -203,4 +212,34 @@ public class Ex_1to14_8 {
     n = voltea(n);
     return n;
   }
+  /**
+   * 11.
+   * Pega un número, otro por detras
+   * @param n numero original
+   * @param nAñadido numero a pegar por detras
+   * @return numero pegado por detras
+   */
+  public static int pegaPorDetras (int n, int nAñadido){
+    return juntaNumeros(n, nAñadido);
+  }
+  /**
+   * 12.
+   * Pega un número, otro por delante
+   * @param n numero original
+   * @param nAñadido numero a pegar por delante
+   * @return numero pegado por delante
+   */
+  public static int pegaPorDelante (int n, int nAñadido){
+    return juntaNumeros(nAñadido, n);
+  }
+  /**
+   * 14.
+   * Junta dos números en uno solo
+   * @param x Número 1
+   * @param y Número 2
+   * @return numeros unidos en uno solo
+   */
+  public static int juntaNumeros(int x, int y) {
+    return (int) (x * potencia(10,digitos(y))) + y;
+    }
 } // class
