@@ -1,5 +1,3 @@
-package Practice;
-
 public class ExampleArray4 {
   public static void main(String[] args) throws InterruptedException {
     int[][] n = new int[3][2]; // array de 3 filas y 2 columnas

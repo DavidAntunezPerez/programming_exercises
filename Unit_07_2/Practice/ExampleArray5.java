@@ -1,5 +1,3 @@
-package Practice;
-
 public class ExampleArray5 {
   public static void main(String[] args)
       throws InterruptedException { // Se añade esta línea para poder usar sleep
