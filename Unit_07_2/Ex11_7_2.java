@@ -22,9 +22,12 @@ public class Ex11_7_2 {
         n[fila][columna] = (int) (Math.random() * 100 + 200);
       }
     }
-    // creamos el máximo, el mínimo
+    // creamos el máximo, el mínimo y la media
     int max = 200;
     int min = 300;
+    int sum = 0;
+    int count = 0; // contador de números
+    double average;
     // print de los números
     System.out.println("ARRAY ORIGINAL:");
     for (fila = 0; fila < n.length; fila++) {
@@ -38,19 +41,22 @@ public class Ex11_7_2 {
       for (columna = 0; columna < n[0].length; columna++) {
         if ((fila == columna) || (fila - 1 == columna) || (fila == columna - 1)) {
           System.out.printf("%4d", n[fila][columna]);
-          if(n[fila][columna] > max){
+          if (n[fila][columna] > max) {
             max = n[fila][columna];
           }
-          if(n[fila][columna] < min){
+          if (n[fila][columna] < min) {
             min = n[fila][columna];
           }
+          sum += n[fila][columna];
+          count++;
         }
       }
       System.out.println();
     }
+    average = (double) sum / (double) count; // Para que la media salga con decimales
     System.out.println();
     System.out.println("El mínimo es " + min);
-    System.out.println("El máximo es "+ max);
-    System.out.println("La media es ");
+    System.out.println("El máximo es " + max);
+    System.out.println("La media es " + average);
   }
 }
