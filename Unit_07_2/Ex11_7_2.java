@@ -13,6 +13,15 @@
  */
 public class Ex11_7_2 {
   public static void main(String[] args) {
-
+    // definir array
+    int [][] n = new int[10][10];
+    // agregar numeros aleatorios al array
+    int fila, columna;
+    for (fila = 0; fila < n.length; fila++) {
+      for (columna = 0; columna < n[0].length ; columna++){
+        n[fila][columna] = (int) ( Math.random()* 100 + 200);
+      }
+    }
+    //
   }
 }
