@@ -61,8 +61,8 @@ public class Ex_1to14_8 {
           esPrimo = false;
         }
       }
-      if (!esPrimo) { // si no es primo, bajar al numero anterior
-        n--;
+      if (!esPrimo) { // si no es primo, pasa al número siguiente
+        n++;
       }
     } while (!esPrimo);
     result = n;
