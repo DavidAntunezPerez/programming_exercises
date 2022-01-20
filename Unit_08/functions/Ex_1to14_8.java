@@ -194,4 +194,13 @@ public class Ex_1to14_8 {
     }
     return n;
   }
+
+  public static int quitaPorDelante(int n, int veces) {
+    n = voltea(n);
+    for (int i = 0; i < veces; i++) {
+      n /= 10;
+    }
+    n = voltea(n);
+    return n;
+  }
 } // class
