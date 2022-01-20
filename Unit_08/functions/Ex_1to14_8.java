@@ -49,6 +49,13 @@ public class Ex_1to14_8 {
     return esPrimo;
   }// esPrimo
 
+  /**
+   * Devuelve el menor primo que es mayor al número que
+   * se pasa como parámetro
+   * 
+   * @param n número introducido
+   * @return siguiente número primo
+   */
   public static int siguientePrimo(int n) {
     int result; // resultado final
     boolean esPrimo = true;
