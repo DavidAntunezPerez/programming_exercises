@@ -1,3 +1,5 @@
+package Practice;
+
 
 // Funcion para calcular la media del trimestre con funciones
 import java.util.Scanner;

@@ -1,4 +1,4 @@
-package misfunciones;
+package Practice.misfunciones;
 
 /**
  * Funciones matemáticas variadas
