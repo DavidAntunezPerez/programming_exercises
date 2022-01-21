@@ -232,6 +232,13 @@ public class Ex_1to14_8 {
   public static int pegaPorDelante (int n, int nAñadido){
     return juntaNumeros(nAñadido, n);
   }
+  /**
+   * Quita trozos de un número de cada lado
+   * @param n numero original
+   * @param quitarDerecha cantidad de números que quieres quitar a la derecha
+   * @param quitarIzquierda cantidad de números que quieres quitar a la izquierda
+   * @return número troceado
+   */
   public static int trozoDeNumero(int n, int quitarDerecha, int quitarIzquierda){
     int result = n;
     // Quitar Derecha
