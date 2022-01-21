@@ -233,6 +233,7 @@ public class Ex_1to14_8 {
     return juntaNumeros(nAñadido, n);
   }
   /**
+   * 13.
    * Quita trozos de un número de cada lado
    * @param n numero original
    * @param quitarDerecha cantidad de números que quieres quitar a la derecha
