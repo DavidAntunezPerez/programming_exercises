@@ -17,7 +17,7 @@ public class Functions_Try {
     System.out.println(Ex_1to14_8.quitaPorDelante(12345, 3));
     System.out.println(Ex_1to14_8.pegaPorDetras(123 , 45));
     System.out.println(Ex_1to14_8.pegaPorDelante(12345, 45));
-    
+    System.out.println(Ex_1to14_8.trozoDeNumero(12345, 2, 1));
     System.out.println(Ex_1to14_8.juntaNumeros(505, 1));
   }
 }
