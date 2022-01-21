@@ -237,7 +237,9 @@ public class Ex_1to14_8 {
     // Quitar Derecha
     result /= potencia(10, quitarDerecha);
     // Quitar Izquierda
-    
+    result = voltea(result);
+    result /= potencia(10, quitarIzquierda);
+    result = voltea(result);
     return result;
   }
   /**
