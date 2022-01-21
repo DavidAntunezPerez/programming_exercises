@@ -234,6 +234,9 @@ public class Ex_1to14_8 {
   }
   public static int trozoDeNumero(int n, int quitarDerecha, int quitarIzquierda){
     int result = n;
+    // Quitar Derecha
+    n /= potencia(10, quitarDerecha);
+    // Quitar Izquierda
     return n;
   }
   /**
