@@ -3,7 +3,7 @@ package functions;
 /**
  * Funciones matemáticas variadas
  */
-public class Ex_1to14_8 {
+public class Functions_1to14_8 {
   /**
    * 1.
    * Esta función nos dice si un número es Capicua o no
