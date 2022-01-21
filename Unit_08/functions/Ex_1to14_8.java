@@ -232,7 +232,10 @@ public class Ex_1to14_8 {
   public static int pegaPorDelante (int n, int nAñadido){
     return juntaNumeros(nAñadido, n);
   }
-  public static int trozoDeNumero(){}
+  public static int trozoDeNumero(int n, int quitarDerecha, int quitarIzquierda){
+    int result = n;
+    return n;
+  }
   /**
    * 14.
    * Junta dos números en uno solo
