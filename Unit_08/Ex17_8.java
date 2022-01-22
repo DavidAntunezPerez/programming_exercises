@@ -16,6 +16,6 @@ public class Ex17_8 {
       result = (cogNum * Functions_1to14_8.potencia(2, cont));
       cifra = (cifra - cogNum) / 10;
     }
-    return result;
+    return result; // devuelve el resultado de las operaciones
   }
 }
