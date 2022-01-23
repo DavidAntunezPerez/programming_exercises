@@ -6,9 +6,9 @@ public class Ex17_8 {
     System.out.println(binarioDecimal(1011));
   }
   /**
-   * 
+   * Pasa un número de binario a decimal
    * @param numInt Número introducido en binario
-   * @return
+   * @return Valor en decimal
    */
   public static int binarioDecimal(int numInt) {
     int cont = 1;
