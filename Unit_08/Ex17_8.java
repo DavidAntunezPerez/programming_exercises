@@ -7,7 +7,7 @@ public class Ex17_8 {
   }
   /**
    * 
-   * @param numInt
+   * @param numInt Número introducido en binario
    * @return
    */
   public static int binarioDecimal(int numInt) {
