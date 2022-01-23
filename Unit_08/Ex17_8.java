@@ -5,6 +5,11 @@ public class Ex17_8 {
   public static void main(String[] args) {
     System.out.println(binarioDecimal(1011));
   }
+  /**
+   * 
+   * @param numInt
+   * @return
+   */
   public static int binarioDecimal(int numInt) {
     int cont = 1;
     int contDigit = Functions_1to14_8.digitos(numInt); // numero de dígitos
