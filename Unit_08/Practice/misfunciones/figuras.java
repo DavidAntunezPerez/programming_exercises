@@ -1,4 +1,4 @@
-package Practice.misfunciones;
+package misfunciones;
 
 /**
  * Realiza figuras

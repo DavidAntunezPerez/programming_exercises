@@ -1,8 +1,5 @@
-package Practice;
-
-
-import Practice.misfunciones.Matematicas;
-import Practice.misfunciones.Figuras;
+import misfunciones.Matematicas;
+import misfunciones.Figuras;
 
 public class PruebaPaquete {
   public static void main(String[] args) {

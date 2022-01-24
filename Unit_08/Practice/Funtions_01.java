@@ -1,4 +1,4 @@
-package Practice;
+
 
 
 // Funcion para calcular la media del trimestre con funciones
