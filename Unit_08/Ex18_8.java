@@ -7,5 +7,6 @@ public class Ex18_8 {
   }
   public static int decimalBinario(int nIntr){
     int result = 0;
+    return result;
   }
 }
