@@ -3,16 +3,20 @@
  */
 public class Ex18_8 {
   public static void main(String[] args) {
-    
+
   }
-  public static int decimalBinario(int nIntr){
-    int result = 0;
-    int aux;
-    do{
-      aux= nIntr;
-      aux %= 2;
-      nIntr /= 2;
-    }while(nIntr > 0);
+
+  public static long decimalBinario(int nIntr) {
+    String binario = "";
+    while (nIntr > 0) {
+      if (nIntr % 2 == 0) {
+        binario = "0" + binario; 
+      } else {
+        binario = "1" + binario;
+      }
+      nIntr = nIntr / 2; 
+    }
+    long result = Long.parseLong(binario);
     return result;
   }
 }
