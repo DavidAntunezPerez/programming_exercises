@@ -3,6 +3,7 @@
  */
 public class Ex18_8 {
   public static void main(String[] args) {
+    System.out.println(decimalBinario(11));
 
   }
 
