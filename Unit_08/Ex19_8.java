@@ -159,9 +159,9 @@ public class Ex19_8 {
    * @return número decimal
    */
   public static long octalDecimal(int numIntr) {
-    // pasamos primero a binario
     long result = numIntr;
-    result = octalBinario((int) (result));
+    // pasamos primero a binario
+    result = octalBinario(numIntr);
     // después a decimal
     result = binarioDecimal((int) (result));
     return result;
