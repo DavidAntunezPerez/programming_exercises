@@ -85,7 +85,11 @@ public class Ex19_8 {
     // devuelve el resultado
     return result;
   }
-
+  /**
+   * De decimal a octal
+   * @param nIntr número decimal
+   * @return número octal
+   */
   public static double decimalOctal(int nIntr) {
     // Igual que el binario a octal pero sin convertir de binario a decimal.
     int aux = 0;
