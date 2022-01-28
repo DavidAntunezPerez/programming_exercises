@@ -85,8 +85,10 @@ public class Ex19_8 {
     // devuelve el resultado
     return result;
   }
+
   /**
    * De decimal a octal
+   * 
    * @param nIntr número decimal
    * @return número octal
    */
@@ -112,5 +114,25 @@ public class Ex19_8 {
     } while (nIntr / 8 > 0);
     // devuelve el resultado
     return result;
+  }
+
+  public static long octalBinario(int numInt) {
+
+    // Separamos un número de la primera cifra a la última:ç
+
+    int cifra = numInt;
+    int cogNum = 0;
+    int contDigit = 0;
+    int aux = 0;
+    for (int h = 1; h <= numInt; h *= 10) {
+      contDigit++;
+    }
+
+    for (int i = 1; i <= contDigit; i++) {
+      int potencia10 = (int) (Math.pow(10, (contDigit - i)));
+      cogNum = cifra / potencia10;
+      System.out.print(cogNum + "\n");
+      cifra = cifra - (cogNum * potencia10);
+    }
   }
 }
