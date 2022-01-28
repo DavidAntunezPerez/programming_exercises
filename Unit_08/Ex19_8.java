@@ -128,7 +128,7 @@ public class Ex19_8 {
     int cifra = numInt;
     int cogNum = 0;
     int contDigit = 0;
-    int aux1 = 0;
+    long aux1 = 0;
     String aux2 = "";
     String stringResult = "";
     long result = 0;
@@ -139,12 +139,21 @@ public class Ex19_8 {
     for (int i = 1; i <= contDigit; i++) {
       int potencia10 = (int) (Math.pow(10, (contDigit - i)));
       cogNum = cifra / potencia10;
-      aux1 = (int) (decimalBinario(cogNum));
+      aux1 = (decimalBinario(cogNum));
       aux2 = String.valueOf(aux1);
       stringResult += aux2;
       cifra = cifra - (cogNum * potencia10);
     }
     result = Long.parseLong(stringResult);
     return result;
+  }
+
+  public static long octalDecimal(int numInt){
+    // pasamos primero a binario
+    numInt = (int) octalBinario(numInt);
+    // después a decimal
+    numInt = binarioDecimal(numInt);
+    return numInt;
+
   }
 }
