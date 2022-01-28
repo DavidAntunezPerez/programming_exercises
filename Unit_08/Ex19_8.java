@@ -136,7 +136,7 @@ public class Ex19_8 {
       int potencia10 = (int) (Math.pow(10, (contDigit - i)));
       cogNum = cifra / potencia10;
       aux1 = (int) (decimalBinario(cogNum));
-      aux2 = String.valueOf(cogNum);
+      aux2 = String.valueOf(aux1);
       stringResult += aux2;
       cifra = cifra - (cogNum * potencia10);
     }
