@@ -151,17 +151,19 @@ public class Ex19_8 {
     result = Long.parseLong(stringResult);
     return result;
   }
+
   /**
    * Octal a Decimal
+   * 
    * @param numInt número octal
    * @return número decimal
    */
-  public static long octalDecimal(int numInt) {
+  public static long octalDecimal(int numIntr) {
     // pasamos primero a binario
-    long result = numInt;
-    result = octalBinario(numInt);
+    long result = numIntr;
+    result = octalBinario((int) (result));
     // después a decimal
-    result = binarioDecimal(numInt);
+    result = binarioDecimal((int) (result));
     return result;
   }
 }
