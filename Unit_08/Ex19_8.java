@@ -116,7 +116,11 @@ public class Ex19_8 {
     // devuelve el resultado
     return result;
   }
-
+  /**
+   * De Octal a Binario
+   * @param numInt número octal
+   * @return número en binario
+   */
   public static long octalBinario(int numInt) {
 
     // Separamos un número de la primera cifra a la última:ç
