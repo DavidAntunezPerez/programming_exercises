@@ -54,8 +54,10 @@ public class Ex19_8 {
     }
     return result; // devuelve el resultado de las operaciones
   }
+
   /**
    * De binario a octal
+   * 
    * @param nIntr número introducido en binario
    * @return resultado en octal
    */
@@ -74,7 +76,7 @@ public class Ex19_8 {
       if (cont < digitos) {
         cont++;
       }
-      if(cont == digitos){
+      if (cont == digitos) {
         aux = (nIntr / 8) * 10;
         result += aux;
       }
