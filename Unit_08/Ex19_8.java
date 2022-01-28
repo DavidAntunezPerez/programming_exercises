@@ -20,7 +20,7 @@ public class Ex19_8 {
    * @param nIntr Numero introducido en decimal
    * @return Numero pasado a binario
    */
-  public static long decimalBinario(int nIntr) {
+  public static long decimalBinario(long nIntr) {
     String binario = "";
     while (nIntr > 0) {
       if (nIntr % 2 == 0) {
@@ -40,11 +40,11 @@ public class Ex19_8 {
    * @param numInt Número introducido en binario
    * @return Valor en decimal
    */
-  public static long binarioDecimal(int numInt) {
+  public static long binarioDecimal(long numInt) {
     long result = 0; // resultado final
     // Separa número del último al primero
-    int cifra = numInt;
-    int cogNum = 0;
+    long cifra = numInt;
+    long cogNum = 0;
     int elevado = 0;
     int posicion = 0;
     for (int i = 1; i <= numInt; i *= 10) {
@@ -64,16 +64,16 @@ public class Ex19_8 {
    * @param nIntr número introducido en binario
    * @return resultado en octal
    */
-  public static long binarioOctal(int nIntr) {
+  public static long binarioOctal(long nIntr) {
     // lo convertimos en decimal
     nIntr = (int) binarioDecimal(nIntr);
-    int aux = 0;
+    long aux = 0;
     int result = 0;
     int digitos = 0;
     int cont = 1;
     // hacer la cuenta mientras sea divisible entre 8
     do {
-      digitos = functions.Functions_1to14_8.digitos(nIntr);
+      digitos = functions.Functions_1to14_8.digitos((int)(nIntr));
       aux = (nIntr % 8) * (functions.Functions_1to14_8.potencia(10, cont - 1));
       result += aux;
       if (cont < digitos) {
@@ -95,15 +95,15 @@ public class Ex19_8 {
    * @param nIntr número decimal
    * @return número octal
    */
-  public static double decimalOctal(int nIntr) {
+  public static double decimalOctal(long nIntr) {
     // Igual que el binario a octal pero sin convertir de binario a decimal.
-    int aux = 0;
+    long aux = 0;
     int result = 0;
     int digitos = 0;
     int cont = 1;
     // hacer la cuenta mientras sea divisible entre 8
     do {
-      digitos = functions.Functions_1to14_8.digitos(nIntr);
+      digitos = functions.Functions_1to14_8.digitos((int)(nIntr));
       aux = (nIntr % 8) * (functions.Functions_1to14_8.potencia(10, cont - 1));
       result += aux;
       if (cont < digitos) {
@@ -125,11 +125,11 @@ public class Ex19_8 {
    * @param numInt número octal
    * @return número en binario
    */
-  public static long octalBinario(int numInt) {
+  public static long octalBinario(long numInt) {
 
     // Separamos un número de la primera cifra a la última:ç
 
-    int cifra = numInt;
+    int cifra = (int) (numInt);
     int cogNum = 0;
     int contDigit = 0;
     long aux1 = 0;
@@ -158,12 +158,12 @@ public class Ex19_8 {
    * @param numInt número octal
    * @return número decimal
    */
-  public static long octalDecimal(int numIntr) {
+  public static long octalDecimal(long numIntr) {
     long result = numIntr;
     // pasamos primero a binario
     result = octalBinario(numIntr);
     // después a decimal
-    result = binarioDecimal((int) (result));
+    result = binarioDecimal(result);
     return result;
   }
 }
