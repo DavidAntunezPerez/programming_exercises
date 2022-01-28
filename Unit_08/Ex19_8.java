@@ -85,4 +85,28 @@ public class Ex19_8 {
     // devuelve el resultado
     return result;
   }
+
+  public static double decimalOctal(int nIntr) {
+    // Igual que el binario a octal pero sin convertir de binario a decimal.
+    int aux = 0;
+    int result = 0;
+    int digitos = 0;
+    int cont = 1;
+    // hacer la cuenta mientras sea divisible entre 8
+    do {
+      digitos = functions.Functions_1to14_8.digitos(nIntr);
+      aux = (nIntr % 8) * (functions.Functions_1to14_8.potencia(10, cont - 1));
+      result += aux;
+      if (cont < digitos) {
+        cont++;
+      }
+      if (cont == digitos) {
+        aux = (nIntr / 8) * 10;
+        result += aux;
+      }
+      nIntr = nIntr / 8;
+    } while (nIntr / 8 > 0);
+    // devuelve el resultado
+    return result;
+  }
 }
