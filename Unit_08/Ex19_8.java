@@ -73,7 +73,7 @@ public class Ex19_8 {
     int cont = 1;
     // hacer la cuenta mientras sea divisible entre 8
     do {
-      digitos = functions.Functions_1to14_8.digitos((int)(nIntr));
+      digitos = functions.Functions_1to14_8.digitos((int) (nIntr));
       aux = (nIntr % 8) * (functions.Functions_1to14_8.potencia(10, cont - 1));
       result += aux;
       if (cont < digitos) {
@@ -103,7 +103,7 @@ public class Ex19_8 {
     int cont = 1;
     // hacer la cuenta mientras sea divisible entre 8
     do {
-      digitos = functions.Functions_1to14_8.digitos((int)(nIntr));
+      digitos = functions.Functions_1to14_8.digitos((int) (nIntr));
       aux = (nIntr % 8) * (functions.Functions_1to14_8.potencia(10, cont - 1));
       result += aux;
       if (cont < digitos) {
