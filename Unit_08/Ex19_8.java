@@ -58,12 +58,15 @@ public class Ex19_8 {
   public static long binarioOctal(int nIntr) {
     // lo convertimos en decimal
     nIntr = binarioDecimal(nIntr);
+    int aux = 0;
     int result = 0;
     int digitos = 0;
     // hacer la cuenta mientras sea divisible entre 8
     do {
-      digitos =  functions.Functions_1to14_8.digitos(nIntr);
-      
+      digitos = functions.Functions_1to14_8.digitos(nIntr);
+      aux = (nIntr % 8) * (functions.Functions_1to14_8.potencia(10, digitos));
+      result += aux;
+      nIntr = nIntr / 8;
     } while (nIntr / 8 > 0);
     // devuelve el resultado
     return result;
