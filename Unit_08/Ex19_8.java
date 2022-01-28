@@ -1,4 +1,5 @@
 import functions.Functions_1to14_8;
+
 /**
  * Une y amplía los dos programas anteriores de tal forma que se permita
  * convertir un número entre cualquiera de las siguientes bases: decimal,
@@ -53,7 +54,8 @@ public class Ex19_8 {
     }
     return result; // devuelve el resultado de las operaciones
   }
-  public static long binarioOctal(int nIntr){
-    
+
+  public static long binarioOctal(int nIntr) {
+
   }
 }
