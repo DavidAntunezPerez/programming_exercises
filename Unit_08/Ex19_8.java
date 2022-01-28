@@ -54,7 +54,11 @@ public class Ex19_8 {
     }
     return result; // devuelve el resultado de las operaciones
   }
-
+  /**
+   * De binario a octal
+   * @param nIntr número introducido en binario
+   * @return resultado en octal
+   */
   public static long binarioOctal(int nIntr) {
     // lo convertimos en decimal
     nIntr = binarioDecimal(nIntr);
