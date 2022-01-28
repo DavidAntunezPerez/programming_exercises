@@ -8,7 +8,7 @@ import functions.Functions_1to14_8;
  */
 public class Ex19_8 {
   public static void main(String[] args) {
-    System.out.println();
+    System.out.println(binarioOctal(1101));
   }
 
   /**
