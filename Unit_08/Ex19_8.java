@@ -59,9 +59,11 @@ public class Ex19_8 {
     // lo convertimos en decimal
     nIntr = binarioDecimal(nIntr);
     int result = 0;
+    int digitos = 0;
     // hacer la cuenta mientras sea divisible entre 8
     do {
-
+      digitos =  functions.Functions_1to14_8.digitos(nIntr);
+      
     } while (nIntr / 8 > 0);
     // devuelve el resultado
     return result;
