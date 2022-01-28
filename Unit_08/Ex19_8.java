@@ -9,6 +9,7 @@ import functions.Functions_1to14_8;
 public class Ex19_8 {
   public static void main(String[] args) {
     System.out.println(binarioOctal(101));
+    System.out.println(octalBinario(5));
   }
 
   /**
@@ -123,7 +124,10 @@ public class Ex19_8 {
     int cifra = numInt;
     int cogNum = 0;
     int contDigit = 0;
-    int aux = 0;
+    int aux1 = 0;
+    String aux2 = "";
+    String stringResult = "";
+    long result = 0;
     for (int h = 1; h <= numInt; h *= 10) {
       contDigit++;
     }
@@ -131,8 +135,12 @@ public class Ex19_8 {
     for (int i = 1; i <= contDigit; i++) {
       int potencia10 = (int) (Math.pow(10, (contDigit - i)));
       cogNum = cifra / potencia10;
-      System.out.print(cogNum + "\n");
+      aux1 = (int) (decimalBinario(cogNum));
+      aux2 = String.valueOf(cogNum);
+      stringResult += aux2;
       cifra = cifra - (cogNum * potencia10);
     }
+    result = Long.parseLong(stringResult);
+    return result;
   }
 }
