@@ -63,6 +63,8 @@ public class Ex19_8 {
     do {
 
     } while (nIntr / 8 > 0);
+    // devuelve el resultado
+    return result;
 
   }
 }
