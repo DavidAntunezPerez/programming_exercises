@@ -10,6 +10,7 @@ public class Ex19_8 {
   public static void main(String[] args) {
     System.out.println(binarioOctal(101));
     System.out.println(octalBinario(5));
+    System.out.println(octalDecimal(20));
   }
 
   /**
@@ -116,8 +117,10 @@ public class Ex19_8 {
     // devuelve el resultado
     return result;
   }
+
   /**
    * De Octal a Binario
+   * 
    * @param numInt número octal
    * @return número en binario
    */
@@ -148,12 +151,11 @@ public class Ex19_8 {
     return result;
   }
 
-  public static long octalDecimal(int numInt){
+  public static long octalDecimal(int numInt) {
     // pasamos primero a binario
     numInt = (int) octalBinario(numInt);
     // después a decimal
     numInt = binarioDecimal(numInt);
     return numInt;
-
   }
 }
