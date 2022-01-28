@@ -8,7 +8,7 @@ import functions.Functions_1to14_8;
  */
 public class Ex19_8 {
   public static void main(String[] args) {
-    System.out.println(binarioOctal(1101));
+    System.out.println(binarioOctal(1111));
   }
 
   /**
@@ -64,8 +64,9 @@ public class Ex19_8 {
     // hacer la cuenta mientras sea divisible entre 8
     do {
       digitos = functions.Functions_1to14_8.digitos(nIntr);
-      aux = (nIntr % 8) * (functions.Functions_1to14_8.potencia(10, digitos));
+      aux = (nIntr % 8) * (functions.Functions_1to14_8.potencia(10, digitos - 1));
       result += aux;
+      digitos--;
       nIntr = nIntr / 8;
     } while (nIntr / 8 > 0);
     // devuelve el resultado
