@@ -53,4 +53,7 @@ public class Ex19_8 {
     }
     return result; // devuelve el resultado de las operaciones
   }
+  public static long binarioOctal(int nIntr){
+    
+  }
 }
