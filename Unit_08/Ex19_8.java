@@ -188,7 +188,7 @@ public class Ex19_8 {
    */
   public static long octalBinario(long numInt) {
 
-    // Separamos un número de la primera cifra a la última:ç
+    // Separamos un número de la primera cifra a la última:
 
     int cifra = (int) (numInt);
     int cogNum = 0;
@@ -210,6 +210,21 @@ public class Ex19_8 {
       cifra = cifra - (cogNum * potencia10);
     }
     result = Long.parseLong(stringResult);
+    return result;
+  }
+
+  /**
+   * Octal a Decimal
+   * 
+   * @param numInt número octal
+   * @return número decimal
+   */
+  public static long octalDecimal(long numIntr) {
+    long result = numIntr;
+    // pasamos primero a binario
+    result = octalBinario(numIntr);
+    // después a decimal
+    result = binarioDecimal(result);
     return result;
   }
 }
