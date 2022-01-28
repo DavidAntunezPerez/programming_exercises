@@ -11,6 +11,7 @@ public class Ex19_8 {
     System.out.println(binarioOctal(101));
     System.out.println(octalBinario(5));
     System.out.println(octalDecimal(20));
+    System.out.println(binarioDecimal(11));
   }
 
   /**
@@ -39,8 +40,8 @@ public class Ex19_8 {
    * @param numInt Número introducido en binario
    * @return Valor en decimal
    */
-  public static int binarioDecimal(int numInt) {
-    int result = 0; // resultado final
+  public static long binarioDecimal(int numInt) {
+    long result = 0; // resultado final
     // Separa número del último al primero
     int cifra = numInt;
     int cogNum = 0;
@@ -65,7 +66,7 @@ public class Ex19_8 {
    */
   public static long binarioOctal(int nIntr) {
     // lo convertimos en decimal
-    nIntr = binarioDecimal(nIntr);
+    nIntr = (int) binarioDecimal(nIntr);
     int aux = 0;
     int result = 0;
     int digitos = 0;
@@ -150,10 +151,14 @@ public class Ex19_8 {
     result = Long.parseLong(stringResult);
     return result;
   }
-
+  /**
+   * Octal a Decimal
+   * @param numInt número octal
+   * @return número decimal
+   */
   public static long octalDecimal(int numInt) {
     // pasamos primero a binario
-    long result = 0;
+    long result = numInt;
     result = octalBinario(numInt);
     // después a decimal
     result = binarioDecimal(numInt);
