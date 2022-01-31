@@ -106,7 +106,12 @@ public class Functions_20to28_8 {
     }
     return esta;
   }
-
+  /**
+   * Devuelve la posición en la que se encuentra un número en un array indicado
+   * @param n número indicado 
+   * @param x array donde se encuentra el número
+   * @return valor en el índice donde se encuentra ese número dentro del array
+   */
   public static int posicionEnArray(int n, int[] x) {
     for (int i = 0; i < x.length; i++) {
       if (x[i] == n) {
