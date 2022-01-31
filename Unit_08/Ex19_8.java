@@ -302,11 +302,11 @@ public class Ex19_8 {
 
         String digitoBi = String.valueOf(decimalBinario(Long.valueOf(digitoABi)));
 
-        if (functions.Functions_1to14_8.digitos(Long.valueOf(digitoBi)) == 1) {
+        if (functions.Functions_1to14_8.digitosLong(Long.valueOf(digitoBi)) == 1) {
           digitoBi = "000" + digitoBi;
-        } else if (functions.Functions_1to14_8.digitos(Long.valueOf(digitoBi)) == 2) {
+        } else if (functions.Functions_1to14_8.digitosLong(Long.valueOf(digitoBi)) == 2) {
           digitoBi = "00" + digitoBi;
-        } else if (functions.Functions_1to14_8.digitos(Long.valueOf(digitoBi)) == 3) {
+        } else if (functions.Functions_1to14_8.digitosLong(Long.valueOf(digitoBi)) == 3) {
           digitoBi = "0" + digitoBi;
         } //if (funciones.funcionesTema801.digitos(Long.valueOf(digitoBi)) == 1)
 
