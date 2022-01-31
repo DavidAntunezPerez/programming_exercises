@@ -16,9 +16,10 @@ public class Functions_20to28_8 {
     int max = maximoArrayInt(x);
     double average = mediaArrayInt(x);
     System.out.println("MIN:" + min + " MAX:" + max + " AVG:" + average);
-    // EJERCICIO 24
-    System.out.println(estaEnArrayInt(3 , x));
-    
+    // EJERCICIO 24 Y 25
+    System.out.println(estaEnArrayInt(3, x));
+    System.out.println("ESTA EN LA POSICION DEL ARRAY: "+posicionEnArray(3 , x));
+
   }
 
   /**
@@ -104,5 +105,15 @@ public class Functions_20to28_8 {
       }
     }
     return esta;
+  }
+
+  public static int posicionEnArray(int n, int[] x) {
+    for (int i = 0; i < x.length; i++) {
+      if (x[i] == n) {
+        return i;
+      }
+    }
+    return -1;
+
   }
 }
