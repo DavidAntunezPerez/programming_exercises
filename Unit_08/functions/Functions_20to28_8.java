@@ -7,12 +7,13 @@ package functions;
 public class Functions_20to28_8 {
   public static void main(String[] args) {
     // EJERCICIO 20
-    int[] x = generaArrayInt(0, 5);
+    int[] x = generaArrayInt(2, 10);
     for (int i = 0; i < x.length; i++) {
       System.out.println(x[i]);
     }
     // EJERCICIO 21
-
+    int min = minimoArrayInt(x);
+    System.out.println(min);
   }
 
   /**
