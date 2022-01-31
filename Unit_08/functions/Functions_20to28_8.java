@@ -62,4 +62,12 @@ public class Functions_20to28_8 {
     // devuelve el valor mínimo
     return max;
   }
+  public static int mediaArrayInt(int n[]){
+    int result = 0;
+    for(int i = 0; i < n.length; i++){
+      result += n[i];
+    }
+    result = (result / n.length);
+    return result;
+  }
 }
