@@ -41,8 +41,8 @@ public class Ex19_8 {
         resultado = Long.toString(binarioDecimal(numeroIntroducido));
         break;
       case 3:
-      resultado = Long.toString(binarioHexadecimal(numeroIntroducido));
-      break;
+        resultado = Long.toString(binarioHexadecimal(numeroIntroducido));
+        break;
       case 4:
         resultado = Long.toString(octalBinario(numeroIntroducido));
         break;
@@ -229,23 +229,44 @@ public class Ex19_8 {
     result = binarioDecimal(result);
     return result;
   }
+
   /**
    * Binario -> Hexadecimal
+   * 
    * @param nIntr numero introducido en binario
    * @return número en hexadecimal
    */
-  public static long binarioHexadecimal(long nIntr) {
+  public static String binarioHexadecimal(long nIntr) {
     // lo convertimos en decimal
     nIntr = (int) binarioDecimal(nIntr);
     long aux = 0;
-    int result = 0;
+    int intaux = 0;
+    String result = "";
     int digitos = 0;
     int cont = 1;
     // hacer la cuenta mientras sea divisible entre 16
     do {
       digitos = functions.Functions_1to14_8.digitos((int) (nIntr));
       aux = (nIntr % 16) * (functions.Functions_1to14_8.potencia(10, cont - 1));
-      result += aux;
+      intaux = (int) (aux);
+      switch (intaux) {
+        case 10:
+          result += "A";
+          break;
+        case 11:
+          result += "B";
+        case 12:
+          result += "C";
+        case 13:
+          result += "D";
+        case 14:
+          result += "E";
+        case 15:
+          result += "F";
+        default:
+          result += aux;
+      }
+
       if (cont < digitos) {
         cont++;
       }
