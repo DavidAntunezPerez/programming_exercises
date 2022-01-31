@@ -50,8 +50,8 @@ public class Ex19_8 {
         resultado = Long.toString(binarioDecimal(octalBinario(numeroIntroducido)));
         break;
       case 6:
-      resultado = binarioHexadecimal(octalBinario(numeroIntroducido));
-      break;
+        resultado = binarioHexadecimal(octalBinario(numeroIntroducido));
+        break;
       case 7:
         resultado = Long.toString(decimalBinario(numeroIntroducido));
         break;
@@ -59,19 +59,17 @@ public class Ex19_8 {
         resultado = Long.toString(decimalOctal(numeroIntroducido));
         break;
       case 9:
-      resultado = binarioHexadecimal(decimalBinario(numeroIntroducido));
-      break;
+        resultado = binarioHexadecimal(decimalBinario(numeroIntroducido));
+        break;
       case 10:
-      resultado = Long.toString(hexadecimalBinario(numeroIntroducidoString));
-      break;
+        resultado = Long.toString(hexadecimalBinario(numeroIntroducidoString));
+        break;
       case 11:
-      resultado =
-      Long.toString(binarioAOctal(hexadecimalBinario(numeroIntroducidoString)));
-      break;
+        resultado = Long.toString(binarioOctal(hexadecimalBinario(numeroIntroducidoString)));
+        break;
       case 12:
-      resultado =
-      Long.toString(binarioDecimal(hexadecimalBinario(numeroIntroducidoString)));
-      break;
+        resultado = Long.toString(binarioDecimal(hexadecimalBinario(numeroIntroducidoString)));
+        break;
     }
 
     System.out.println(resultado);
@@ -270,14 +268,15 @@ public class Ex19_8 {
 
     return numeroHex;
   }
-  public static long hexadecimalBinario(String nIntr){
+
+  public static long hexadecimalBinario(String nIntr) {
     if (nIntr.equals("0")) {
       return 0;
     } else {
       String numeroBi = "";
       String digitoABi = "";
       for (int i = 0; i < nIntr.length(); i++) {
-        switch(nIntr.charAt(i)) {
+        switch (nIntr.charAt(i)) {
           case 'A':
             digitoABi = "10";
             break;
@@ -297,8 +296,8 @@ public class Ex19_8 {
             digitoABi = "15";
             break;
           default:
-            digitoABi = String.valueOf(nIntr.charAt(i)); 
-        } //switch(numeroHex.charAt(i))
+            digitoABi = String.valueOf(nIntr.charAt(i));
+        }
 
         String digitoBi = String.valueOf(decimalBinario(Long.valueOf(digitoABi)));
 
@@ -308,11 +307,12 @@ public class Ex19_8 {
           digitoBi = "00" + digitoBi;
         } else if (functions.Functions_1to14_8.digitosLong(Long.valueOf(digitoBi)) == 3) {
           digitoBi = "0" + digitoBi;
-        } //if (funciones.funcionesTema801.digitos(Long.valueOf(digitoBi)) == 1)
+        }
 
         numeroBi = numeroBi + digitoBi;
-      } //for (int i = 0; i < numeroHex.length(); i++)
+      }
 
-      return Long.valueOf(numeroBi); //la función devuelve numeroBi como un long en vez de un String (así no saldrán ceros a la izquierda)
+      return Long.valueOf(numeroBi);
+    }
   }
 }
