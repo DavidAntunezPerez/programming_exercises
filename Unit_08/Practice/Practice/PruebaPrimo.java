@@ -1,5 +1,3 @@
-package Practice;
-
 /**
  * Programa de prueba de diversas funciones, esPrimo() y random()
  */
