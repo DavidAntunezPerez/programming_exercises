@@ -138,4 +138,26 @@ public class Functions_20to28_8 {
 
     return a;
   }
+
+  /**
+   * Rota a la derecha un array
+   * 
+   * @param x array introducido
+   * @param n número de rotaciones a la derecha
+   * @return array rotado
+   */
+  public static int[] rotaDerechaArrayInt(int[] x, int n) {
+
+    int[] a = x.clone(); // clona en a el contenido de x
+    int i;
+    int aux;
+    while (n-- > 0) {
+      aux = a[a.length - 1];
+      for (i = a.length - 1; i > 0; i--) {
+        a[i] = a[i - 1];
+      }
+      a[0] = aux;
+    }
+    return a;
+  }
 }
