@@ -227,7 +227,7 @@ public class Ex19_8 {
     result = binarioDecimal(result);
     return result;
   }
-  public static binarioHexadecimal(int nIntr){
+  public static long binarioHexadecimal(int nIntr){
     // lo convertimos en decimal
     nIntr = (int) binarioDecimal(nIntr);
     long aux = 0;
