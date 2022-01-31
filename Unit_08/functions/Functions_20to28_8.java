@@ -32,10 +32,12 @@ public class Functions_20to28_8 {
     }
     return n;
   }
+
   /**
    * Devuelve el valor mínimo de un array
+   * 
    * @param n array a entregar
-   * @return  menor número del array
+   * @return menor número del array
    */
   public static int minimoArrayInt(int n[]) {
     int min = Integer.MAX_VALUE; // valor maximo posible
@@ -47,5 +49,17 @@ public class Functions_20to28_8 {
     }
     // devuelve el valor mínimo
     return min;
+  }
+
+  public static int maximoArrayInt(int n[]) {
+    int max = Integer.MIN_VALUE; // valor maximo posible
+    for (int i = 0; i < n.length; i++) {
+      // si es mayor que el máximo, se convierte en el menor
+      if (n[i] > max) {
+        max = n[i];
+      }
+    }
+    // devuelve el valor mínimo
+    return max;
   }
 }
