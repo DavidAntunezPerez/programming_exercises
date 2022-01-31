@@ -18,7 +18,7 @@ public class Functions_20to28_8 {
     System.out.println("MIN:" + min + " MAX:" + max + " AVG:" + average);
     // EJERCICIO 24 Y 25
     System.out.println(estaEnArrayInt(3, x));
-    System.out.println("ESTA EN LA POSICION DEL ARRAY: "+posicionEnArray(3 , x));
+    System.out.println("ESTA EN LA POSICION DEL ARRAY: " + posicionEnArray(3, x));
 
   }
 
@@ -106,9 +106,11 @@ public class Functions_20to28_8 {
     }
     return esta;
   }
+
   /**
    * Devuelve la posición en la que se encuentra un número en un array indicado
-   * @param n número indicado 
+   * 
+   * @param n número indicado
    * @param x array donde se encuentra el número
    * @return valor en el índice donde se encuentra ese número dentro del array
    */
@@ -119,6 +121,21 @@ public class Functions_20to28_8 {
       }
     }
     return -1;
+  }
 
+  /**
+   * Voltea un array
+   * 
+   * @param x array introducido
+   * @return array voteado
+   */
+  public static int[] volteaArrayInt(int[] x) {
+    int[] a = new int[x.length];
+
+    for (int i = 0; i < x.length; i++) {
+      a[x.length - i - 1] = x[i];
+    }
+
+    return a;
   }
 }
