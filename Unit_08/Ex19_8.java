@@ -227,4 +227,7 @@ public class Ex19_8 {
     result = binarioDecimal(result);
     return result;
   }
+  public static binarioHexadecimal(int numInt){
+    
+  }
 }
