@@ -10,7 +10,7 @@ public class Ex19_8 {
   public static void main(String[] args) {
     String resultado = "";
     long numeroIntroducido = 666;
-    
+
     System.out.println(" 1) Binario -> Octal");
     System.out.println(" 2) Binario -> Decimal");
     System.out.println(" 3) Binario -> Hexadecimal");
@@ -25,14 +25,14 @@ public class Ex19_8 {
     System.out.println("12) Hexadecimal -> Decimal");
     System.out.print("Elija una opción: ");
     int opcion = Integer.parseInt(System.console().readLine());
-    
+
     System.out.print("Introduzca el número que quiere convertir: ");
     String numeroIntroducidoString = System.console().readLine();
-    
+
     if (opcion < 10) {
       numeroIntroducido = Long.parseLong(numeroIntroducidoString);
     }
-    
+
     switch (opcion) {
       case 1:
         resultado = Long.toString(binarioOctal(numeroIntroducido));
@@ -40,38 +40,40 @@ public class Ex19_8 {
       case 2:
         resultado = Long.toString(binarioDecimal(numeroIntroducido));
         break;
-      // case 3:
-      //   resultado = binarioHexadecimal(numeroIntroducido);
-      //   break;
+      case 3:
+      resultado = Long.toString(binarioHexadecimal(numeroIntroducido));
+      break;
       case 4:
         resultado = Long.toString(octalBinario(numeroIntroducido));
         break;
-      case  5:
+      case 5:
         resultado = Long.toString(binarioDecimal(octalBinario(numeroIntroducido)));
         break;
-      // case  6:
-      //   resultado = binarioHexadecimal(octalBinario(numeroIntroducido));
-      //   break;
-      case  7:
+      // case 6:
+      // resultado = binarioHexadecimal(octalBinario(numeroIntroducido));
+      // break;
+      case 7:
         resultado = Long.toString(decimalBinario(numeroIntroducido));
         break;
-      case  8:
+      case 8:
         resultado = Long.toString(decimalOctal(numeroIntroducido));
         break;
-      // case  9:
-      //   resultado = binarioHexadecimal(decimalBinario(numeroIntroducido));
-      //   break;
+      // case 9:
+      // resultado = binarioHexadecimal(decimalBinario(numeroIntroducido));
+      // break;
       // case 10:
-      //   resultado = Long.toString(hexadecimalBinario(numeroIntroducidoString));
-      //   break;
+      // resultado = Long.toString(hexadecimalBinario(numeroIntroducidoString));
+      // break;
       // case 11:
-      //   resultado = Long.toString(binarioAOctal(hexadecimalBinario(numeroIntroducidoString)));
-      //   break;
+      // resultado =
+      // Long.toString(binarioAOctal(hexadecimalBinario(numeroIntroducidoString)));
+      // break;
       // case 12:
-      //   resultado = Long.toString(binarioDecimal(hexadecimalBinario(numeroIntroducidoString)));
-      //   break;
+      // resultado =
+      // Long.toString(binarioDecimal(hexadecimalBinario(numeroIntroducidoString)));
+      // break;
     }
-    
+
     System.out.println(resultado);
   }
 
@@ -227,27 +229,32 @@ public class Ex19_8 {
     result = binarioDecimal(result);
     return result;
   }
-  public static long binarioHexadecimal(int nIntr){
+  /**
+   * Binario -> Hexadecimal
+   * @param nIntr numero introducido en binario
+   * @return número en hexadecimal
+   */
+  public static long binarioHexadecimal(long nIntr) {
     // lo convertimos en decimal
     nIntr = (int) binarioDecimal(nIntr);
     long aux = 0;
     int result = 0;
     int digitos = 0;
     int cont = 1;
-    // hacer la cuenta mientras sea divisible entre 8
+    // hacer la cuenta mientras sea divisible entre 16
     do {
       digitos = functions.Functions_1to14_8.digitos((int) (nIntr));
-      aux = (nIntr % 8) * (functions.Functions_1to14_8.potencia(10, cont - 1));
+      aux = (nIntr % 16) * (functions.Functions_1to14_8.potencia(10, cont - 1));
       result += aux;
       if (cont < digitos) {
         cont++;
       }
       if (cont == digitos) {
-        aux = (nIntr / 8) * 10;
+        aux = (nIntr / 16) * 10;
         result += aux;
       }
-      nIntr = nIntr / 8;
-    } while (nIntr / 8 > 0);
+      nIntr = nIntr / 16;
+    } while (nIntr / 16 > 0);
     // devuelve el resultado
     return result;
   }
