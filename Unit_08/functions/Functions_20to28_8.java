@@ -11,9 +11,11 @@ public class Functions_20to28_8 {
     for (int i = 0; i < x.length; i++) {
       System.out.println(x[i]);
     }
-    // EJERCICIO 21
+    // EJERCICIO 21 , 22 Y 23
     int min = minimoArrayInt(x);
-    System.out.println(min);
+    int max = maximoArrayInt(x);
+    double average = mediaArrayInt(x);
+    System.out.println("MIN:" + min + " MAX:" + max + " AVG:" + average);
   }
 
   /**
@@ -62,9 +64,10 @@ public class Functions_20to28_8 {
     // devuelve el valor mínimo
     return max;
   }
-  public static int mediaArrayInt(int n[]){
-    int result = 0;
-    for(int i = 0; i < n.length; i++){
+
+  public static double mediaArrayInt(int n[]) {
+    double result = 0;
+    for (int i = 0; i < n.length; i++) {
       result += n[i];
     }
     result = (result / n.length);
