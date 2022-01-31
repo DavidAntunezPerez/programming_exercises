@@ -111,7 +111,24 @@ public class Functions_1to14_8 {
     }
     return contCif;
   }
-
+  /**
+   * Contador de dígitos (LONG)
+   * @param n número Long introducido
+   * @return número de dígitos
+   */
+  public static long digitosLong(long n){
+    // Separa número del último al primero
+    long numInt = n;
+    long contCif = 0;
+    long cifra = numInt;
+    long cogNum = 0;
+    for (int i = 1; i <= numInt; i *= 10) {
+      cogNum = cifra % 10;
+      cifra = (cifra - cogNum) / 10;
+      contCif++;
+    }
+    return contCif;
+  }
   /**
    * 6.
    * Voltea un número
