@@ -16,6 +16,9 @@ public class Functions_20to28_8 {
     int max = maximoArrayInt(x);
     double average = mediaArrayInt(x);
     System.out.println("MIN:" + min + " MAX:" + max + " AVG:" + average);
+    // EJERCICIO 24
+    System.out.println(estaEnArrayInt(3 , x));
+    
   }
 
   /**
@@ -53,6 +56,12 @@ public class Functions_20to28_8 {
     return min;
   }
 
+  /**
+   * Devuelve el valor máximo de un array
+   * 
+   * @param n valor array indicado
+   * @return mayor valor del array
+   */
   public static int maximoArrayInt(int n[]) {
     int max = Integer.MIN_VALUE; // valor maximo posible
     for (int i = 0; i < n.length; i++) {
@@ -65,6 +74,12 @@ public class Functions_20to28_8 {
     return max;
   }
 
+  /**
+   * Devuelve la media de un array indicado
+   * 
+   * @param n array indicado
+   * @return media (en double) de todos los valores del array
+   */
   public static double mediaArrayInt(int n[]) {
     double result = 0;
     for (int i = 0; i < n.length; i++) {
@@ -72,5 +87,22 @@ public class Functions_20to28_8 {
     }
     result = (result / n.length);
     return result;
+  }
+
+  /**
+   * Devuelve un valor boolean en función de si un número se encuentra o no
+   * 
+   * @param n Número a encontrar
+   * @param x Array en el que buscar el número
+   * @return Boolean (V o F) de si está o no
+   */
+  public static boolean estaEnArrayInt(int n, int x[]) {
+    boolean esta = false;
+    for (int i = 0; i < x.length; i++) {
+      if (x[i] == n) {
+        esta = true;
+      }
+    }
+    return esta;
   }
 }
