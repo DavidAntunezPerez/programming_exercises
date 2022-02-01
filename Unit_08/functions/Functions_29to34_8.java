@@ -34,4 +34,12 @@ public class Functions_29to34_8 {
     }
     return f;
   }
+
+  public static int[] columnaDeArrayBiInt(int[][] x, int columna){
+    int [] f = new int [x.length];
+    for (int i = 0; i < x.length;i++){
+      f[i] = x[i][columna];
+    }
+    return f;
+  }
 }
