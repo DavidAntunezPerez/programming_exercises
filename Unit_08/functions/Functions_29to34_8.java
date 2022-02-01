@@ -5,7 +5,7 @@ public class Functions_29to34_8 {
 
   }
 
-  public static int[][] generaArrayBiInt(int xlength, int ylength, int min, int max) {
+  public static int[][] generaArrayBiInt(int xlength, int ylength, int min, int max) {       
     int[][] x = new int[xlength][ylength];
     for (int i = 0; i < xlength; i++) {
       for (int j = 0; j < ylength; j++) {
