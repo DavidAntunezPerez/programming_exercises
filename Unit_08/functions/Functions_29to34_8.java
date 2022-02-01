@@ -34,7 +34,12 @@ public class Functions_29to34_8 {
     }
     return f;
   }
-
+  /**
+   * Devuelve la fila indicada en un array bidimensional
+   * @param x array bidimensional
+   * @param columna columna del array
+   * @return columna indicada del array
+   */
   public static int[] columnaDeArrayBiInt(int[][] x, int columna){
     int [] f = new int [x.length];
     for (int i = 0; i < x.length;i++){
