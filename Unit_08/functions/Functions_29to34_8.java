@@ -75,10 +75,19 @@ public class Functions_29to34_8 {
     return c;
   }
 
+  /**
+   * Dice si un número es o no punto de silla, es decir,
+   * mínimo en su fila y máximo en su columna.
+   * 
+   * @param x       array bidimensional
+   * @param fila    fila indicada
+   * @param columna columna indicada
+   * @return verdadero o falso, segun si es punto de silla o no
+   */
   public static boolean esPuntoDeSilla(int[][] x, int fila, int columna) {
     for (int i = 0; i < x.length; i++) {
       for (int j = 0; j < x[0].length; j++) {
-        if ((x[i][j] == x[fila][columna]) && (fila == 0)&& (columna == x[0].length)) {
+        if ((x[i][j] == x[fila][columna]) && (fila == 0) && (columna == x[0].length)) {
           return true;
         }
       }
