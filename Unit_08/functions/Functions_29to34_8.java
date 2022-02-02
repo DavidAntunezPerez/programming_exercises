@@ -95,7 +95,33 @@ public class Functions_29to34_8 {
     return false;
   }
 
-  public static int[] diagonal(int[][]x, String direccion){
-
+  public static int[] diagonal(int[][] x, String direccion) {
+    int[] ext = new int[(x.length + x[0].length) / 2];
+    int count = 0;
+    // caso de que sea neso
+    if (direccion == "nose") {
+      for (int fila = 8; fila >= 0; fila--) {
+        for (int columna = 0; columna < x[0].length; columna++) {
+          if (fila == columna) {
+            ext[count] = x[fila][columna];
+            count++;
+          }
+        }
+        System.out.println();
+      }
+      return ext;
+    } else if (direccion == "neso") {
+      for (int fila = 8; fila >= 0; fila--) {
+        for (int columna = 0; columna < x[0].length; columna++) {
+          if (fila + columna ==  ext.length - 1) {
+            ext[count] = x[fila][columna];
+            count++;
+          }
+        }
+        System.out.println();
+      }
+      return ext;
+    } else
+      return ext;
   }
 }
