@@ -74,4 +74,15 @@ public class Functions_29to34_8 {
     int[] c = { -1, -1 };
     return c;
   }
+
+  public static boolean esPuntoDeSilla(int[][] x, int fila, int columna) {
+    for (int i = 0; i < x.length; i++) {
+      for (int j = 0; j < x[0].length; j++) {
+        if ((x[i][j] == x[fila][columna]) && (fila == 0)&& (columna == x[0].length)) {
+          return true;
+        }
+      }
+    }
+    return false;
+  }
 }
