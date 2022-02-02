@@ -95,6 +95,21 @@ public class Functions_29to34_8 {
     return false;
   }
 
+  /**
+   * Devuelve un array que contiene una de las diagonales del array
+   * bidimensional que se pasa como parámetro. Se pasan como parámetros
+   * fila, columna y dirección. La fila y la columna determinan el número que
+   * marcará las dos posibles diagonales dentro del array. La dirección es
+   * una cadena de caracteres que puede ser “nose” o “neso”. La cadena
+   * “nose” indica que se elige la diagonal que va del noroeste hacia el sureste,
+   * mientras que la cadena “neso” indica que se elige la diagonal que va del
+   * noreste hacia el suroeste.
+   * 
+   * @param x         array bidimensional original
+   * @param direccion direccion (nose o neso)
+   * @return si se ha indicado bien, un array de una dimensión con la diagonal
+   *         indicada, si no, un array de una dimension lleno de 0
+   */
   public static int[] diagonal(int[][] x, String direccion) {
     int[] ext = new int[(x.length + x[0].length) / 2];
     int count = 0;
@@ -113,7 +128,7 @@ public class Functions_29to34_8 {
     } else if (direccion == "neso") {
       for (int fila = 8; fila >= 0; fila--) {
         for (int columna = 0; columna < x[0].length; columna++) {
-          if (fila + columna ==  ext.length - 1) {
+          if (fila + columna == ext.length - 1) {
             ext[count] = x[fila][columna];
             count++;
           }
