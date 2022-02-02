@@ -94,4 +94,8 @@ public class Functions_29to34_8 {
     }
     return false;
   }
+
+  public static int[] diagonal(int[][]x, String direccion){
+
+  }
 }
