@@ -6,6 +6,6 @@ public class DualGestion {
     Alumno Joseph = new Alumno();
     Alumno Manolo = new Alumno();
 
-    System.out.println(Juan.telefono);
+    System.out.println(Juan.apellidos);
   }
 }
