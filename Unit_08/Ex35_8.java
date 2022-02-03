@@ -1,6 +1,9 @@
 import functions.Functions_1to14_8;
 
 public class Ex35_8 {
+  public static void main(String[] args) {
+    System.out.println(convierteEnPalotes(123));
+  }
   public static String convierteEnPalotes(int n) {
     int contDigit = Functions_1to14_8.digitos(n);
     String palotes = "";
@@ -14,7 +17,10 @@ public class Ex35_8 {
       for (int j = 0; j < cogNum; j++) {
         palotes += "|";
       }
-      palotes += "-";
+      if(cogNum != (n % (n /10))){
+        palotes += "-";
+      }
+      
       cifra = cifra - (cogNum * potencia10);
     }
     return palotes;
