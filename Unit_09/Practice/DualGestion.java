@@ -2,7 +2,7 @@ public class DualGestion {
   public static void main(String[] args) {
     System.out.println("DUAL GESTION");
     System.out.println("------------");
-    Alumno Juan = new Alumno(1234, "Juan" , "Juanez Juanez", "610662934" , "Bachillerato", 1983, true);
+    Alumno Juan = new Alumno(1234, "Juan", "Juanez Juanez", "610662934", "Bachillerato", 1983, true);
     Alumno Joseph = new Alumno();
     Alumno Manolo = new Alumno();
 
@@ -11,7 +11,6 @@ public class DualGestion {
     Manolo.saluda();
     Manolo.dimeNumero();
     Juan.saluda("debil");
-
 
   }
 }
