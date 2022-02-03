@@ -3,7 +3,7 @@ package Ex03dap;
 /**
  * @author David Antunez Perez 1º DAM , 14/12/21
  */
-public class Ex03dap4 {
+public class Ex03dap4_4 {
   public static void main(String[] args) {
     // Declaramos las variables
     int entr = (int) (Math.random() * 3 + 1); // Número aleatoria para el entrante

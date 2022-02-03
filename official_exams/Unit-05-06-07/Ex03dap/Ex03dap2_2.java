@@ -3,7 +3,7 @@ package Ex03dap;
 /**
  * @author David Antunez Perez 1º DAM , 14/12/21
  */
-public class Ex03dap2 {
+public class Ex03dap2_2 {
   public static void main(String[] args) {
     // Declaramos el array
     int[] n = new int[20];

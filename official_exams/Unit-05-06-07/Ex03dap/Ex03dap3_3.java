@@ -3,7 +3,7 @@ package Ex03dap;
 /**
  * @author David Antunez Perez 1º DAM , 14/12/21
  */
-public class Ex03dap3 {
+public class Ex03dap3_3 {
   public static void main(String[] args) {
     int ancho = 0;
     int largo = 0;

@@ -3,7 +3,7 @@ package Ex03dap;
 /**
  * @author David Antunez Perez 1º DAM , 14/12/21
  */
-public class Ex03dap1 {
+public class Ex03dap1_1 {
   public static void main(String[] args) {
     int ans = 0;
     // Hacemos un bucle para que se muestre siempre el resultado correcto
