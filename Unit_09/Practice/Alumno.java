@@ -7,5 +7,5 @@ public class Alumno {
   String telefono;
   String estudiosPrevios = "Bachillerato";
   Date fechaNacimiento;
-
+  boolean esRepetidor;
 }
