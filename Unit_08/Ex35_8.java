@@ -11,7 +11,10 @@ public class Ex35_8 {
     for (int i = 1; i <= contDigit; i++) {
       int potencia10 = (int) (Math.pow(10, (contDigit - i)));
       cogNum = cifra / potencia10;
-      System.out.print(cogNum + "\n");
+      for (int j = 0; j < cogNum; j++) {
+        palotes += "|";
+      }
+      palotes += "-";
       cifra = cifra - (cogNum * potencia10);
     }
     return palotes;
