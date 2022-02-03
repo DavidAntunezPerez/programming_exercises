@@ -4,7 +4,7 @@
     introducidos. Si alguno de los datos es incorrecto, el programa debe seguir preguntando hasta
     que el usuario meta un dato correcto.
  */
-public class Ex3 {
+public class Ex3_validate {
     public static void main(String[] args) {
         int color = 0; // nº de colores de la taza
         int keyring = 0; // tipo de llavero (1 o 2)
