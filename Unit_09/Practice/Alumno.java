@@ -24,11 +24,11 @@ public class Alumno {
   }
 
   public void saluda() {
-    System.out.println("HOLA SOY " + this.nombre);
+    System.out.println("Hola soy" + this.nombre);
   }
 
   public void saluda(String intensidad) {
-    String chain = "HOLA SOY " + this.nombre;
+    String chain = "Hola soy " + this.nombre;
     switch (intensidad) {
       case "fuerte":
         // PONEMOS EN MAYUSCULAS
@@ -39,5 +39,6 @@ public class Alumno {
         break;
       default:
     }
+    System.out.println(chain);
   }
 }
