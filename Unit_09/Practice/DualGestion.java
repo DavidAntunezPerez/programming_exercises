@@ -7,5 +7,7 @@ public class DualGestion {
     Alumno Manolo = new Alumno();
 
     System.out.println(Juan.apellidos);
+    Juan.saluda();
+    Manolo.saluda();
   }
 }

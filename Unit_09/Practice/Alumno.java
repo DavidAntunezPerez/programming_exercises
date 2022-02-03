@@ -23,4 +23,7 @@ public class Alumno {
     this.esRepetidor = esRepetidor;
   }
 
+  public void saluda() {
+    System.out.println("HOLA SOY " + this.nombre);
+  }
 }
