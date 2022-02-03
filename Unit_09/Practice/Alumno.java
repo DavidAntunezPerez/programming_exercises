@@ -44,4 +44,8 @@ public class Alumno {
   public void dimeNumero() {
     System.out.println("Mi número es " + this.telefono);
   }
+  // getter
+  public String getNombre(){
+    return this.nombre;
+  }
 }

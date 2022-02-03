@@ -11,6 +11,6 @@ public class DualGestion {
     Manolo.saluda();
     Manolo.dimeNumero();
     Juan.saluda("debil");
-
+    System.out.println(Manolo.getNombre()); 
   }
 }
