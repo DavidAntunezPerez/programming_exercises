@@ -12,5 +12,6 @@ public class DualGestion {
     Manolo.dimeNumero();
     Juan.saluda("debil");
     System.out.println(Manolo.getNombre()); 
+    System.out.println(Manolo.getTelefono());
   }
 }

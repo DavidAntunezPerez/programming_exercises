@@ -48,4 +48,13 @@ public class Alumno {
   public String getNombre(){
     return this.nombre;
   }
+
+  public String getTelefono() {
+    return telefono;
+  }
+
+  public void setTelefono(String telefono) {
+    this.telefono = telefono;
+  }
+  
 }
