@@ -1,3 +1,5 @@
+package Ex03dap;
+
 /**
  * @author David Antunez Perez
  * Implementa un programa que calcule el número de latidos del corazón de una persona
