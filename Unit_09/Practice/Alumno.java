@@ -2,13 +2,12 @@ public class Alumno {
   int numeroExpediente;
   String nombre;
   String apellidos;
-  String telefono;
+  String telefono = String.valueOf((int) (Math.random() * 999999999 + 100000000));
   String estudiosPrevios = "Bachillerato";
   int fechaNacimiento;
   boolean esRepetidor;
 
   public Alumno() {
-
   }
 
   public Alumno(int numeroExpediente, String nombre, String apellidos, String telefono, String estudiosPrevios,
@@ -40,5 +39,9 @@ public class Alumno {
       default:
     }
     System.out.println(chain);
+  }
+
+  public void dimeNumero() {
+    System.out.println("Mi número es " + this.telefono);
   }
 }

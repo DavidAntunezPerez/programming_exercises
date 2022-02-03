@@ -9,6 +9,9 @@ public class DualGestion {
     System.out.println(Juan.apellidos);
     Juan.saluda();
     Manolo.saluda();
+    Manolo.dimeNumero();
     Juan.saluda("debil");
+
+
   }
 }
