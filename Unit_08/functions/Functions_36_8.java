@@ -2,7 +2,7 @@ package functions;
 
 public class Functions_36_8 {
   public static void main(String[] args) {
-    int[] numeros = Functions_20to28_8.generaArrayInt(1, 20);
+    int[] numeros = Functions_20to28_8.generaArrayInt(1, 21);
 
     System.out.println("Array original: ");
     Functions_20to28_8.muestraArrayInt(numeros);
