@@ -49,6 +49,9 @@ public class Ex39_8 {
           palabra += "cero";
           break;
       }
+      if(cogNum != n % 10){
+        palabra += ","; 
+      }
       palabra += " ";
       cifra = cifra - (cogNum * potencia10);
     }
