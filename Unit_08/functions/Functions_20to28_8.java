@@ -40,6 +40,18 @@ public class Functions_20to28_8 {
   }
 
   /**
+   * Muestra un array introducido
+   * 
+   * @param x array a mostrar
+   */
+  public static void muestraArrayInt(int x[]) {
+    for (int n : x) {
+      System.out.print(n + " ");
+    }
+    System.out.println();
+  }
+
+  /**
    * Devuelve el valor mínimo de un array
    * 
    * @param n array a entregar
