@@ -1,6 +1,6 @@
 public class Ex39_8 {
   public static void main(String[] args) {
-    System.out.println(convierteEnPalabras(12));
+    System.out.println(convierteEnPalabras(1234567890));
   }
 
   public static String convierteEnPalabras(int n) {
