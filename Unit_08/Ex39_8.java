@@ -1,3 +1,6 @@
+/**
+ * @author David Antunez Perez
+ */
 public class Ex39_8 {
   public static void main(String[] args) {
     System.out.println(convierteEnPalabras(1234567890));
