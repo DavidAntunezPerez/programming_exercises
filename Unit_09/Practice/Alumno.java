@@ -1,4 +1,4 @@
-public class Alumno {
+public class Alumno extends Persona{
   int numeroExpediente;
   String nombre;
   String apellidos;
@@ -24,21 +24,6 @@ public class Alumno {
 
   public void saluda() {
     System.out.println("Hola soy " + this.nombre);
-  }
-
-  public void saluda(String intensidad) {
-    String chain = "Hola soy " + this.nombre;
-    switch (intensidad) {
-      case "fuerte":
-        // PONEMOS EN MAYUSCULAS
-        chain = chain.toUpperCase();
-        break;
-      case "debil":
-        chain = chain.toLowerCase();
-        break;
-      default:
-    }
-    System.out.println(chain);
   }
 
   public void dimeNumero() {
