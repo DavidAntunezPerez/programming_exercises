@@ -1,4 +1,5 @@
 public class Persona {
+  // métodos públicos y atributos privados
   private String dni;
   private String nombre;
   private String apellidos;
