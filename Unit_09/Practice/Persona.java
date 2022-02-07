@@ -20,4 +20,25 @@ public class Persona {
     }
     System.out.println(chain);
   }
+
+  public void saluda() {
+    System.out.println("Hola soy " + this.nombre);
+  }
+
+  public void dimeNumero() {
+    System.out.println("Mi número es " + this.telefono);
+  }
+
+  // getter
+  public String getNombre() {
+    return this.nombre;
+  }
+
+  public String getTelefono() {
+    return telefono;
+  }
+
+  public void setTelefono(String telefono) {
+    this.telefono = telefono;
+  }
 }
