@@ -14,5 +14,6 @@ public class DualGestion {
     System.out.println(Joseph.getNombre()); 
     Manolo.setTelefono("666666666");
     System.out.println(Manolo.getTelefono());
+    Sysout.println(profe1.saluda());
   }
 }
