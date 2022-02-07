@@ -1,3 +1,6 @@
 public class Profesor extends Persona{
-  Profesor profe1 = new Profesor();
+  @Override
+  public void saluda(){
+    System.out.println("Buenos días");
+  }
 }

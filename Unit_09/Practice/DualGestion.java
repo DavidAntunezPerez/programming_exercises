@@ -5,7 +5,7 @@ public class DualGestion {
     Alumno Juan = new Alumno(1234, "Juan", "Juanez Juanez", "610662934", "Bachillerato", 1983, true);
     Alumno Joseph = new Alumno();
     Alumno Manolo = new Alumno();
-
+    Profesor profe1 = new Profesor();
     System.out.println(Juan.apellidos);
     Juan.saluda();
     Manolo.saluda();
@@ -14,6 +14,6 @@ public class DualGestion {
     System.out.println(Joseph.getNombre()); 
     Manolo.setTelefono("666666666");
     System.out.println(Manolo.getTelefono());
-    Sysout.println(profe1.saluda());
+    profe1.saluda();
   }
 }
