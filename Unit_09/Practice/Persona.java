@@ -1,10 +1,10 @@
 public class Persona {
-  String dni;
-  String nombre;
-  String apellidos;
-  String telefono = String.valueOf((int) (Math.random() * 999999999 + 100000000));
-  int fechaNacimiento;
-  String domicilio;
+  private String dni;
+  private String nombre;
+  private String apellidos;
+  private String telefono = String.valueOf((int) (Math.random() * 999999999 + 100000000));
+  private int fechaNacimiento;
+  private String domicilio;
 
   public void saluda(String intensidad) {
     String chain = "Hola soy " + this.nombre;
