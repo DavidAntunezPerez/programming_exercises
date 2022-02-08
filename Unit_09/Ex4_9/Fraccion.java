@@ -50,7 +50,7 @@ public class Fraccion {
   public Fraccion simplifica() {
     int n = (int) (this.numerador);
     int d = (int) (this.denominador);
-    for (int i = 2; i < Math.min(n, d); i++) {
+    for (int i = 2; i < Math.min(this.numerador, this.denominador); i++) {
       while (((n % i) == 0) && ((d % i) == 0)) {
         n /= i;
         d /= i;
