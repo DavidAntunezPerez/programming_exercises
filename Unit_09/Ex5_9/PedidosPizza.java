@@ -8,7 +8,7 @@ public class PedidosPizza {
     System.out.println(p2);
     System.out.println(p3);
     // p2.sirve();
-    // System.out.println("pedidas: " + Pizza.getTotalPedidas());
-    // System.out.println("servidas: " + Pizza.getTotalServidas());
+    System.out.println("pedidas: " + Pizza.getTotalPedidas());
+    System.out.println("servidas: " + Pizza.getTotalServidas());
   }
 }

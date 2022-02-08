@@ -1,7 +1,21 @@
 public class Pizza {
-  private String tamaño;
-  private String tipo;
-  private String estado = "pedida";
+  private static String tamaño;
+  private static String tipo;
+  private static String estado = "pedida";
+  private static int TotalPedidas = 0;
+  private static int TotalServidas = 0;
+  public static int getTotalPedidas() {
+    return TotalPedidas;
+  }
+  public void setTotalPedidas(int totalPedidas) {
+    TotalPedidas = totalPedidas;
+  }
+  public static int getTotalServidas() {
+    return TotalServidas;
+  }
+  public void setTotalServidas(int totalServidas) {
+    TotalServidas = totalServidas;
+  }
   public String getTamaño() {
     return tamaño;
   }
@@ -24,9 +38,14 @@ public class Pizza {
     this.tamaño = tamaño;
     this.tipo = tipo;
     this.estado = estado;
+    TotalPedidas++;
+    if(estado == "servida"){
+      TotalServidas++;
+    }
   }
   public Pizza(String tamaño, String tipo) {
     this.tamaño = tamaño;
     this.tipo = tipo;
+    TotalPedidas++;
   }
 }
