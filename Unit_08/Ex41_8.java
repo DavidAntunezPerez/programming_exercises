@@ -1,5 +1,3 @@
-import java.util.Scanner;
-
 /**
  * Realiza un programa que pinte un triángulo relleno tal como se muestra en
  * los ejemplos. El usuario debe introducir la altura de la figura. Este
