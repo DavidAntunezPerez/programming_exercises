@@ -12,9 +12,11 @@
 public class Ex41_8 {
   public static void main(String[] args) {
     System.out.println("PINTA PIRAMIDE");
-    System.out.println("Selecciona el tamaño de la pirámide: ");
+    System.out.println();
+    System.out.print("Selecciona el tamaño de la pirámide: ");
     int rep = Integer.parseInt(System.console().readLine());
-    System.out.println("Selecciona el caracter de la pirámide: ");
+    System.out.println();
+    System.out.print("Selecciona el caracter de la pirámide: ");
     char character = System.console().readLine().charAt(0);
     System.out.println();
     for (int i = rep; i > 0;i--){
