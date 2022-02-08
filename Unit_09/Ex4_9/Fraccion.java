@@ -44,6 +44,6 @@ public class Fraccion {
     Fraccion f2 = new Fraccion(3, 4);
     System.out.println(f1.invierte());
     f1.multiplica(f2).mostrar();
-    System.out.println(f2.multiplica(5));
+    f2.multiplica(5).mostrar();
   }
 }
