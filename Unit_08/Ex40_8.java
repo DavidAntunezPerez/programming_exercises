@@ -19,7 +19,7 @@ public class Ex40_8 {
     int[] result = new int[cont];
     cont = 0;
     for (int i = 0; i < c.length; i++) {
-      if (c[i] == 7) {
+      if (c[i] != 0) {
         result[cont] = c[i];
         cont++;
       }
@@ -28,7 +28,7 @@ public class Ex40_8 {
   }
 
   public static void main(String[] args) {
-    int[] x = functions.Functions_20to28_8.generaArrayInt(0, 10);
+    int[] x = functions.Functions_20to28_8.generaArrayInt(0, 100);
     System.out.println("ARRAY ORIGINAL:");
     functions.Functions_20to28_8.muestraArrayInt(x);
     System.out.println("ARRAY CON 7:");
