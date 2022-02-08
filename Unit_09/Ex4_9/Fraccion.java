@@ -40,7 +40,7 @@ public class Fraccion {
   }
 
   public Fraccion divide(Fraccion f) {
-    return new Fraccion(this.numerador / f.getNumerador(), this.denominador / f.getDenominador());
+    return new Fraccion(this.numerador * f.getDenominador(), this.denominador * f.getNumerador());
   }
 
   public Fraccion divide(double nMult) {
@@ -53,5 +53,6 @@ public class Fraccion {
     System.out.println(f1.invierte());
     f1.multiplica(f2).mostrar();
     f2.multiplica(5).mostrar();
+    f1.divide(f2).mostrar();
   }
 }
