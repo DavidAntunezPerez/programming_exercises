@@ -28,7 +28,7 @@ public class Fraccion {
   }
 
   public Fraccion multiplica(double nMult) {
-    return new Fraccion(this.numerador * nMult, this.denominador);
+    return new Fraccion(this.numerador * nMult, this.denominador * nMult);
   }
 
   public Fraccion multiplica(Fraccion f) {
@@ -37,6 +37,14 @@ public class Fraccion {
 
   public void mostrar() {
     System.out.println("Mi numerador es " + this.numerador + " y mi denominador es " + this.denominador);
+  }
+
+  public Fraccion divide(Fraccion f) {
+    return new Fraccion(this.numerador / f.getNumerador(), this.denominador / f.getDenominador());
+  }
+
+  public Fraccion divide(double nMult) {
+    return new Fraccion(this.numerador / nMult, this.denominador / nMult);
   }
 
   public static void main(String[] args) {
