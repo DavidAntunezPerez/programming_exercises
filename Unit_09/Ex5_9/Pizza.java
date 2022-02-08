@@ -4,7 +4,7 @@ public class Pizza {
   private String estado = "pedida";
   private static int TotalPedidas = 0;
   private static int TotalServidas = 0;
-
+  // al poner el nombre del objeto saldrá
   public String toString() {
     return "pizza " + this.tipo + " " + this.tamano + ", " + this.estado;
   }
@@ -21,7 +21,7 @@ public class Pizza {
   public static void setTotalPedidas(int totalPedidas) {
     TotalPedidas = totalPedidas;
   }
-  public int getTotalServidas() {
+  public static int getTotalServidas() {
     return TotalServidas;
   }
 
