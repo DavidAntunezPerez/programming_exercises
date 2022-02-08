@@ -47,6 +47,18 @@ public class Fraccion {
     return new Fraccion(this.numerador / nMult, this.denominador / nMult);
   }
 
+  public Fraccion simplifica() {
+    int n = (int) (this.numerador);
+    int d = (int) (this.denominador);
+    for (int i = 2; i < Math.min(n, d); i++) {
+      while (((n % i) == 0) && ((d % i) == 0)) {
+        n /= i;
+        d /= i;
+      }
+    }
+    return new Fraccion(n, d);
+  }
+
   public static void main(String[] args) {
     Fraccion f1 = new Fraccion(5, 4);
     Fraccion f2 = new Fraccion(3, 4);
@@ -54,5 +66,6 @@ public class Fraccion {
     f1.multiplica(f2).mostrar();
     f2.multiplica(5).mostrar();
     f1.divide(f2).mostrar();
+    f1.simplifica();
   }
 }
