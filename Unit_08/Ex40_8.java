@@ -18,9 +18,11 @@ public class Ex40_8 {
     }
     int[] result = new int[cont];
     cont = 0;
-    for (int i = 0; i < result.length; i++) {
-      result[cont] = c[i];
-      cont++;
+    for (int i = 0; i < c.length; i++) {
+      if (c[i] == 7) {
+        result[cont] = c[i];
+        cont++;
+      }
     }
     return result;
   }
