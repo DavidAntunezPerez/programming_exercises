@@ -62,10 +62,11 @@ public class Fraccion {
   public static void main(String[] args) {
     Fraccion f1 = new Fraccion(5, 4);
     Fraccion f2 = new Fraccion(3, 4);
+    Fraccion f3 = new Fraccion(100, 10);
     System.out.println(f1.invierte());
     f1.multiplica(f2).mostrar();
-    f2.multiplica(5).mostrar();
+    f2.multiplica(2.5).mostrar();
     f1.divide(f2).mostrar();
-    f1.simplifica();
+    f3.simplifica().mostrar();
   }
 }
