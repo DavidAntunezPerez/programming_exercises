@@ -19,9 +19,9 @@ public class Ex41_8 {
     System.out.print("Selecciona el caracter de la pirámide: ");
     char character = System.console().readLine().charAt(0);
     System.out.println();
-    for (int i = rep; i > 0;i--){
-    System.out.println(linea(character,i));
-  }
+    for (int i = rep; i > 0; i--) {
+      System.out.println(linea(character, i));
+    }
   }
 
   public static String linea(char caracter, int repeticiones) {
