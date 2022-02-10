@@ -18,8 +18,8 @@ public class Entrada {
         case 2:
           break;
         case 3:
-        System.out.println("Nos vemos!");
-        salir = true;
+          System.out.println("Nos vemos!");
+          salir = true;
           break;
       }
     } while (!salir);
