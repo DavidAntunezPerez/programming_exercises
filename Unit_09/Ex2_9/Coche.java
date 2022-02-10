@@ -1,4 +1,4 @@
-public class Coche extends Vehiculo{
+public class Coche extends Vehiculo {
   private static String matricula;
 
   public static String getMatricula() {
@@ -12,7 +12,7 @@ public class Coche extends Vehiculo{
   public Coche() {
   }
 
-  public void derrape(){
-    System.out.println("FIUMMMM");
+  public void derrape() {
+    System.out.println(this.nombre + " hace FIUMMMM");
   }
 }

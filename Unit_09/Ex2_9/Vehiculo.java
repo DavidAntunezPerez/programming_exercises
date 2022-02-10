@@ -1,6 +1,7 @@
 public class Vehiculo {
   private static int kilometrosTotales;
   private static int vehiculosCreados;
+  String nombre;
   private int kilometrosRecorridos;
 
   // GETTERS AND SETTERS
@@ -10,6 +11,14 @@ public class Vehiculo {
 
   public static void setKilometrosTotales(int kilometrosTotales) {
     Vehiculo.kilometrosTotales = kilometrosTotales;
+  }
+
+  public String getNombre() {
+    return nombre;
+  }
+
+  public void setNombre(String nombre) {
+    this.nombre = nombre;
   }
 
   public static int getVehiculosCreados() {
