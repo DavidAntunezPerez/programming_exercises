@@ -29,12 +29,12 @@ public class Persona {
       default:
     }
     System.out.println(chain);
-    saludosTotal++;
+    Persona.saludosTotal++;
   }
 
   public void saluda() {
     System.out.println("Hola soy " + this.nombre);
-    saludosTotal++;
+    Persona.saludosTotal++;
   }
 
   public void dimeNumero() {
