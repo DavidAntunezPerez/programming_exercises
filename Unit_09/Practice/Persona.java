@@ -2,6 +2,19 @@ public class Persona {
   // métodos públicos y atributos privados
   private String nombre;
   private String telefono = String.valueOf((int) (Math.random() * 999999999 + 100000000));
+  private static int saludosTotal = 0;
+
+  public void setNombre(String nombre) {
+    this.nombre = nombre;
+  }
+
+  public static int getSaludosTotal() {
+    return saludosTotal;
+  }
+
+  public static void setSaludosTotal(int saludosTotal) {
+    Persona.saludosTotal = saludosTotal;
+  }
 
   public void saluda(String intensidad) {
     String chain = "Hola soy " + this.nombre;
@@ -16,10 +29,12 @@ public class Persona {
       default:
     }
     System.out.println(chain);
+    saludosTotal++;
   }
 
   public void saluda() {
     System.out.println("Hola soy " + this.nombre);
+    saludosTotal++;
   }
 
   public void dimeNumero() {
