@@ -1,6 +1,6 @@
 public class Persona {
   // métodos públicos y atributos privados
-  private String nombre;
+  public String nombre;
   private String telefono = String.valueOf((int) (Math.random() * 999999999 + 100000000));
   private static int saludosTotal = 0;
 

@@ -1,6 +1,5 @@
 public class Alumno extends Persona{
   int numeroExpediente;
-  String nombre;
   String apellidos;
   String telefono = String.valueOf((int) (Math.random() * 999999999 + 100000000));
   String estudiosPrevios = "Bachillerato";
@@ -14,12 +13,12 @@ public class Alumno extends Persona{
       int fechaNacimiento, boolean esRepetidor) {
     // this significa el objeto al que hace referencia el método
     this.numeroExpediente = numeroExpediente; // lo de a la derecha del punt es el atributo
-    this.nombre = nombre;
     this.apellidos = apellidos;
     this.telefono = telefono;
     this.estudiosPrevios = estudiosPrevios;
     this.fechaNacimiento = fechaNacimiento;
     this.esRepetidor = esRepetidor;
+    this.nombre = nombre;
   }
   
 }

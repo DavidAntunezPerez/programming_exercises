@@ -11,9 +11,10 @@ public class DualGestion {
     Manolo.saluda();
     Manolo.dimeNumero();
     Juan.saluda("debil");
-    System.out.println(Joseph.getNombre()); 
+    System.out.println(Joseph.getNombre());
     Manolo.setTelefono("666666666");
     System.out.println(Manolo.getTelefono());
     profe1.saluda();
+    System.out.print(Persona.getSaludosTotal());
   }
 }
