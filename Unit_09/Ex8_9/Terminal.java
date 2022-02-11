@@ -2,6 +2,10 @@ public class Terminal {
   private String id;
   private static int tiempo;
 
+  public String toString() {
+    return "Nº" + this.id + " - " + getTiempo() + "s de conversación";
+  }
+
   public String getId() {
     return id;
   }
