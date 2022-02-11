@@ -17,7 +17,7 @@ public class Terminal {
   public Terminal(String id) {
     this.id = id;
   }
-  public void llama(){
-
+  public void llama(Terminal t , int tiempo){
+    System.out.println("Nº "+t.getId()+ " - "+(getTiempo()+tiempo)+"s de conversación.");
   }
 }
