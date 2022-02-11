@@ -3,7 +3,7 @@ public class Terminal {
   private static int tiempo;
 
   public String toString() {
-    return "Nº" + this.id + " - " + getTiempo() + "s de conversación";
+    return "Nº " + this.id + " - " + getTiempo() + "s de conversación";
   }
 
   public String getId() {
