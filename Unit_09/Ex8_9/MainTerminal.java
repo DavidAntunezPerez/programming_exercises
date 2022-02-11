@@ -13,5 +13,4 @@ public class MainTerminal {
     System.out.println(t3);
     System.out.println(t4);
   }
-
 }
