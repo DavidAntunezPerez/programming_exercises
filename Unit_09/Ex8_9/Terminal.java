@@ -1,6 +1,6 @@
 public class Terminal {
   private String id;
-  private static int tiempo;
+  private int tiempo;
 
   public String toString() {
     return "Nº " + this.id + " - " + getTiempo() + "s de conversación";
@@ -14,12 +14,12 @@ public class Terminal {
     this.id = id;
   }
 
-  public static int getTiempo() {
+  public int getTiempo() {
     return tiempo;
   }
 
-  public static void setTiempo(int tiempo) {
-    Terminal.tiempo = tiempo;
+  public void setTiempo(int tiempo) {
+    this.tiempo = tiempo;
   }
 
   public Terminal(String id) {
@@ -28,6 +28,7 @@ public class Terminal {
 
   public void llama(Terminal t, int time) {
     System.out.println("Nº " + t.getId() + " - " + (getTiempo() + time) + "s de conversación.");
-    Terminal.tiempo += time;
+    this.tiempo += time;
+    t.tiempo += time;
   }
 }
