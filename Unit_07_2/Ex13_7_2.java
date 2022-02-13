@@ -14,18 +14,18 @@ public class Ex13_7_2 {
     }
     System.out.println("");
     for (fila = 0; fila < datos.length; fila++) {
-      System.out.print(pais[fila]+": ");
+      System.out.print(pais[fila] + ": ");
       for (columna = 0; columna < datos[0].length; columna++) {
-        System.out.print(datos[fila][columna]+" ");
-        if(datos[fila][columna] < min){
+        System.out.print(datos[fila][columna] + " ");
+        if (datos[fila][columna] < min) {
           min = datos[fila][columna];
         }
-        if(datos[fila][columna] > max){
+        if (datos[fila][columna] > max) {
           max = datos[fila][columna];
         }
         avg += datos[fila][columna];
-        if(columna == 9){
-          System.out.print("| "+ avg + " ");
+        if (columna == 9) {
+          System.out.print("| " + avg + " ");
           System.out.print(min + " ");
           System.out.print(max + " ");
           avg = 0;
