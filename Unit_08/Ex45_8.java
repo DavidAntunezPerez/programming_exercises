@@ -1,4 +1,4 @@
-public class Ex45_9 {
+public class Ex45_8 {
   public static void main(String[] args) {
     System.out.print("Introduce la altura:");
     int altura = Integer.parseInt(System.console().readLine());

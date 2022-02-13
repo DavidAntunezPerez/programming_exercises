@@ -1,4 +1,4 @@
-public class Ex46_9 {
+public class Ex46_8 {
   public static void main(String[] args) {
     System.out.print("Introduzca la altura de la figura: ");
     int altura = Integer.parseInt(System.console().readLine());

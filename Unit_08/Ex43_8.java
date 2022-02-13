@@ -1,4 +1,4 @@
-public class Ex43_9 {
+public class Ex43_8 {
   public static void main(String[] args) {
     System.out.print("Introduce la altura de la pirámide:");
     int altura = Integer.parseInt(System.console().readLine());
