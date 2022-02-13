@@ -9,6 +9,8 @@ public class Ex45_9 {
       System.out.print(linea(' ',altura-i));
       System.out.print(linea('*', i));
     }
+    System.out.println();
+    System.out.println(linea('*', altura*2));
   }
 
   public static String linea(char caracter, int repeticiones) {
