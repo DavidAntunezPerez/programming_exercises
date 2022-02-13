@@ -5,7 +5,7 @@ public class Ex48_8 {
     int[] x = {1, 2, 3, 4, 5, 6, 7};
     int[] y = {1, 2, 3, 4, 5, 6, 7};
     System.out.println(
-    "Array Indicado: "+ Arrays.toString(concatena(x, y)));
+    Arrays.toString(concatena(x, y)));
   }
 
   public static int[] concatena(int[] a, int[] b) {
