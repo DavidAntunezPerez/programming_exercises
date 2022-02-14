@@ -27,7 +27,7 @@ public class Terminal {
   }
 
   public void llama(Terminal t, int time) {
-    System.out.println("Nº " + t.getId() + " - " + (getTiempo() + time) + "s de conversación.");
+    System.out.println("Nº " + t.getId() + " - " + (getTiempo() + time) + "s de conversación");
     this.tiempo += time;
     t.tiempo += time;
   }
