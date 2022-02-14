@@ -6,11 +6,11 @@ public class Ex54_8 {
   public static int ocurrencias(int digito, int n) {
     int repeticiones = 0;
     // Separa número del último al primero
-    int cifra = digito;
+    int cifra = n;
     int cogNum = 0;
-    for (int i = 1; i <= digito; i *= 10) {
+    for (int i = 1; i <= n; i *= 10) {
       cogNum = cifra % 10;
-      if (cogNum == n) {
+      if (cogNum == digito) {
         repeticiones++;
       }
       cifra = (cifra - cogNum) / 10;
@@ -21,5 +21,4 @@ public class Ex54_8 {
   public static int ocurrencias(int digito, int[] a) {
 
   }
-
 }
