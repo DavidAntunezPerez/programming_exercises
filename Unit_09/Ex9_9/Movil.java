@@ -5,30 +5,30 @@ public class Movil extends Terminal {
   public Movil(String id, String tarifa) {
     super(id);
     this.tarifa = tarifa;
+    this.costeTotal = 0;
   }
 
   @Override
   public String toString() {
-    return "Nº " + getId() + " - " + getTiempo() + "s de conversación"+ " - tarificados "+ getCosteTotal();
+    return "Nº " + getId() + " - " + getTiempo() + "s de conversación" + " - tarificados " + this.costeTotal + " euros";
   }
 
-  public String getTarifa() {
-    return tarifa;
-  }
+  @Override
+  public void llama(Terminal t, int time) {
+    super.llama(t, time);
+    double minutos = (double) time / 60;
 
-  public void setTarifa(String tarifa) {
-    this.tarifa = tarifa;
-  }
-
-  public double getCosteTotal() {
-    if (this.tarifa.equals("rata")) {
-      costeTotal = 0.06 * getTiempo();
-    } else if (this.tarifa.equals("mono")) {
-      costeTotal = 0.12 * getTiempo();
-    } else if (this.tarifa.equals("bisonte")) {
-      costeTotal = 0.30 * getTiempo();
+    switch (this.tarifa) {
+      case "rata":
+        this.costeTotal += minutos * 0.06;
+        break;
+      case "mono":
+        this.costeTotal += minutos * 0.12;
+        break;
+      case "bisonte":
+        this.costeTotal += minutos * 0.30;
+        break;
+      default:
     }
-    return costeTotal;
   }
-
 }
