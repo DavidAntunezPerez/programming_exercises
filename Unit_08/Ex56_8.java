@@ -9,10 +9,23 @@ public class Ex56_8 {
       }
       System.out.println();
     }
+    int[] n = corteza(x);
+    for (int i = 0; i < n.length; i++) {
+      System.out.print(n[i] + " ");
+    }
   }
 
   public static int[] corteza(int[][] n) {
     int[] result = new int[n.length * n[0].length];
+    int fila, columna;
+    int cont = 0;
+    for (fila = 0; fila < n.length; fila++) {
+      for (columna = 0; columna < n[0].length; columna++) {
+        result[cont] = n[fila][columna];
+        cont++;
+      }
+      System.out.println();
+    }
     return result;
   }
 
