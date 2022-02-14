@@ -1,6 +1,6 @@
 public class Ex56_8 {
   public static void main(String[] args) {
-    int[][] x = generaArrayBiInt(10, 10, 100, 200);
+    int[][] x = generaArrayBiInt(5, 5, 100, 200);
     int fila, columna;
     for (fila = 0; fila < x.length; fila++) {
       System.out.print("Fila: " + fila);
