@@ -10,7 +10,6 @@ public class Ex51_8 {
       System.out.print("El " + n[i] + pintaPrimo(n[i]) + "y" + pintaCapicua(n[i]));
       System.out.println();
     }
-
   }
 
   /**
