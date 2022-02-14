@@ -10,22 +10,27 @@ public class Ex56_8 {
       System.out.println();
     }
     int[] n = corteza(x);
+    System.out.println("CORTEZA DEL ARRAY:");
     for (int i = 0; i < n.length; i++) {
       System.out.print(n[i] + " ");
     }
   }
 
   public static int[] corteza(int[][] n) {
-    int[] result = new int[n.length * n[0].length];
+    int[] aux = new int[n.length * n[0].length];
     int fila, columna;
     int cont = 0;
     for (fila = 0; fila < n.length; fila++) {
       for (columna = 0; columna < n[0].length; columna++) {
         if ((fila == 0) || (columna == 0) || (fila == n.length - 1) || (columna == n[0].length - 1)) {
-          result[cont] = n[fila][columna];
+          aux[cont] = n[fila][columna];
           cont++;
         }
       }
+    }
+    int[] result = new int[cont];
+    for (int i = 0; i < result.length; i++) {
+      result[i] = aux[i];
     }
     return result;
   }
