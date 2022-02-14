@@ -39,6 +39,8 @@ public class TarjetaRegalo {
 
   public TarjetaRegalo fusionaCon(TarjetaRegalo t2) {
     TarjetaRegalo t3 = new TarjetaRegalo(this.saldo + t2.saldo);
+    this.saldo = 0;
+    t2.saldo = 0;
     return t3;
   }
 }
