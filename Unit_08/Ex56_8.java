@@ -21,7 +21,7 @@ public class Ex56_8 {
     int cont = 0;
     for (fila = 0; fila < n.length; fila++) {
       for (columna = 0; columna < n[0].length; columna++) {
-        if ((fila == 0) ||  (columna == 0)) {
+        if ((fila == 0) || (columna == 0) || (fila == n.length )||(columna == n[0].length)) {
           result[cont] = n[fila][columna];
           cont++;
         }
