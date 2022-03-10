@@ -6,6 +6,7 @@
  */
 
 import java.util.ArrayList;
+import java.util.Collections;
 
 public class Ex3_10 {
   public static void main(String[] args) {
@@ -18,8 +19,11 @@ public class Ex3_10 {
       n = Integer.parseInt(System.console().readLine());
       a.add(n);
     }
+    System.out.println("Array Ordenado de menor a mayor:");
+    Collections.sort(a);
     for (int num : a) {
       System.out.print(num + " ");
     }
+
   }
 }
