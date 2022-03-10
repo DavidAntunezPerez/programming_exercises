@@ -1,4 +1,4 @@
-public class Pez extends AnimalDeAcuario {
+public class Pez1 extends AnimalDeAcuario1 {
   // Declaramos las variables específicas para los peces
   private String raza;
 
@@ -18,13 +18,13 @@ public class Pez extends AnimalDeAcuario {
   }
 
   // Generamos el constructor
-  public Pez(String nombre, String color, String raza) {
+  public Pez1(String nombre, String color, String raza) {
     super(nombre, color);
     this.raza = raza;
   }
 
   // Declaramos el método de aparear peces
-  public Pez seApareaCon(Pez a1) {
+  public Pez1 seApareaCon(Pez1 a1) {
     // Declaramos primero todas las variables
     String criaNombre = "";
     int rNombre = (int) (Math.random() * 2 + 1);
@@ -58,7 +58,7 @@ public class Pez extends AnimalDeAcuario {
         break;
     }
     // Generamos la cria y la devolvemos
-    Pez a3 = new Pez(criaNombre, criaColor, criaRaza);
+    Pez1 a3 = new Pez1(criaNombre, criaColor, criaRaza);
     return a3;
   }
 

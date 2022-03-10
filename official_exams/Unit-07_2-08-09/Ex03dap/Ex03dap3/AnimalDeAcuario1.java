@@ -19,13 +19,13 @@
  *       Con los peces sucede lo mismo.
  * 
  */
-public abstract class AnimalDeAcuario {
+public abstract class AnimalDeAcuario1 {
   // Declaramos las clases genéricas para todos los animales de acuario
   // Vamos a ponerlas protected para así tengan visibilidad en Pez y Estrella
   protected String nombre;
   protected String color;
   // Generamos el constructor genérico de Animales de Acuario
-  public AnimalDeAcuario(String nombre, String color) {
+  public AnimalDeAcuario1(String nombre, String color) {
     this.nombre = nombre;
     this.color = color;
   }
