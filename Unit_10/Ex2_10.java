@@ -10,10 +10,14 @@ import java.util.ArrayList;
 
 public class Ex2_10 {
   public static void main(String[] args) {
-    ArrayList<Integer> a = new ArrayList<Integer>();
+    ArrayList<Integer> a = new ArrayList<Integer>(10);
+    int random = 0;
     for (int i = 0; i < a.size(); i++) {
-      a.add((int) (Math.random() * 101));
+      random = (int) (Math.random() * 101);
+      a.add(random);
       System.out.print(a.get(i) + " ");
     }
+    System.out.println("Nº de elementos: " + a.size());
+
   }
 }
